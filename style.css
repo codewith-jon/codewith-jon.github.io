@@ -9,3 +9,9 @@ h1{
     font-family: 'Courier New', Courier, monospace;
     color: brown;
 }
+@media screen(max-width:600){
+    h1{
+        font-size:20px;
+        color:blue;
+    }
+}
