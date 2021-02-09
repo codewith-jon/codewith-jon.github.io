@@ -52,7 +52,7 @@ li .dropdown{
 .dropdown_content a{
     display: block;
     text-align: left;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 2px;
 
 }
