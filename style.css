@@ -9,6 +9,7 @@ body{
 }
 .nav{
     padding: 10px;
+    margin-left: 8%;
     display: flex;
     margin-top: 5px;
     align-items: center;
@@ -23,6 +24,8 @@ body{
 }
 .nav_links ul li .active {
     background: rgba(85, 112, 85, 0.089);
+    border-radius: 10px;
+ 
 }
 .nav_links ul li a{
     text-decoration: none;
@@ -38,6 +41,10 @@ body{
     float: left;
 
 
+}
+.toogle_btn{
+    display: none;
+    font-size: 0;
 }
 
 li .dropdown{
@@ -74,3 +81,48 @@ li a, .dropbtn {
     display: block;
 }
 
+@media screen and (max-width:768px){
+    .nav_links{
+        display: none;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .toogle_btn:hover{
+        border-radius: 10px;
+        border: 1px solid #451;
+    }
+    .toogle_btn{
+        display: inline-block;
+        font-size:50px;
+        cursor: pointer;
+    }
+
+    .nav_links ul li .active {
+        background: none;
+    }
+    .nav_links{
+        z-index: 1;
+        position: fixed;
+        width: 180px;
+        padding: 20px;
+        top: 60px;
+        left: 0;
+        height: 50%;
+        overflow: hidden;
+        
+        background: rgba(152, 141, 163, 0.062);
+      
+    }
+    .closeNav{
+        right: 20px;
+        position: absolute;
+        top: 0;
+        font-size: 40px;
+        text-decoration: none;
+        color: rgba(12, 11, 11, 0.726);
+        font-weight: bold;
+    }
+    }
+  
+}

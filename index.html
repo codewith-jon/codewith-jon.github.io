@@ -17,7 +17,9 @@
         <div class="logo">
             <h1>codeWithJon</h1>
         </div>
+        <span><p class="toogle_btn" onclick="openNav()">&#9776</p></span>
         <div class="nav_links" id="navBar" >
+            <span><a href="javascript:void(0)"class="closeNav" onclick="closeNav()">&times</a></span>
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li class="dropdown">
@@ -37,5 +39,13 @@
             </ul>
         </div>
     </div>
+    <script>
+        function openNav(){
+           document.getElementById('navBar').style.display="block" ;
+        }
+        function closeNav(){
+            document.getElementById('navBar').style.display="none";
+        }
+    </script>
 </body>
 </html>
