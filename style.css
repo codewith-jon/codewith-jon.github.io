@@ -46,7 +46,9 @@ body{
     display: none;
     font-size: 0;
 }
-
+.closeNav{
+    display: none;
+}
 li .dropdown{
     display: inline-block;
 
@@ -86,7 +88,7 @@ li a, .dropbtn {
         display: none;
     }
     .logo{
-        font-size: 25px;
+        font-size: 20px;
     }
     .toogle_btn:hover{
         border-radius: 10px;
@@ -94,7 +96,7 @@ li a, .dropbtn {
     }
     .toogle_btn{
         display: inline-block;
-        font-size:50px;
+        font-size:40px;
         cursor: pointer;
     }
 
