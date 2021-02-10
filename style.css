@@ -115,7 +115,7 @@ li a, .dropbtn {
         padding: 20px;
         top: 60px;
         left: 0;
-        height: 50%;
+        height: 100vh;
         overflow: hidden;
         
         background: rgba(152, 141, 163, 0.062);
