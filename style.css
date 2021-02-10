@@ -83,7 +83,11 @@ li a, .dropbtn {
 .dropdown:hover .dropdown_content {
     display: block;
 }
-
+@media screen and (max-width:400px){
+    .logo{
+        font-size: 16px;
+    }
+}
 @media screen and (max-width:768px){
     .nav_links{
         display: none;
