@@ -48,6 +48,7 @@ body{
 }
 .closeNav{
     display: none;
+    font-size: 0;
 }
 li .dropdown{
     display: inline-block;
