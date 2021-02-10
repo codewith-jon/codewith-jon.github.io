@@ -7,6 +7,12 @@ body{
     max-width: 100%;
 
 }
+.logo{
+    font-size: 30px;
+}
+.fa{
+    padding-left: 5px;
+}
 .nav{
     padding: 10px;
     margin-left: 8%;
@@ -85,7 +91,7 @@ li a, .dropbtn {
 }
 @media screen and (max-width:540px){
     .logo{
-        font-size: 16px;
+        font-size: 30px;
     }
 }
 @media screen and (max-width:768px){
