@@ -25,6 +25,7 @@ body{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.281);
     display: flex;
+    height: 80px;
     margin-top: 5px;
     align-items: center;
     justify-content: space-between;
@@ -44,7 +45,7 @@ body{
 .nav_links ul li a{
     text-decoration: none;
     font-size: 18px;
-    color: #635151;
+    color: #f1e4e4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
