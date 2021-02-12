@@ -20,6 +20,8 @@ body{
 }
 .fa{
     padding-left: 5px;
+    font-size: 20px;
+    color: rgb(245, 9, 9);
 }
 .nav{
     
@@ -34,6 +36,7 @@ body{
 }
 .nav_links{
     display: flex;
+    
     margin: 20px;
     text-decoration: none;
 
@@ -54,6 +57,8 @@ body{
 .nav_links ul li{
     padding-right: 10px;
     display: inline;
+    line-height: 80px;
+
     float: left;
 
 
@@ -70,6 +75,7 @@ li .dropdown{
 .dropdown_content a:hover{
     color: #0db1758e;
     transition: 1s;
+    
     background: rgba(116, 108, 98, 0.411);
 }
 .dropdown_content a{
@@ -91,7 +97,7 @@ li a, .dropbtn {
   }
 .dropdown_content{
     display: none;
-    background-color: #836b660a;
+    background-color: #836b6675;
     margin: 0 5px;
     z-index: 1;
     position: absolute;
@@ -127,6 +133,9 @@ li a, .dropbtn {
     }
     .logo{
         font-size: 30px;
+    }
+    #dpdown{
+        display: none;
     }
     .toogle_btn:hover{
         border-radius: 10px;
