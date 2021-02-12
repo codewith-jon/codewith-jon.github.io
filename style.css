@@ -57,7 +57,7 @@ body{
 .nav_links ul li{
     padding-right: 10px;
     display: inline;
-    line-height: 80px;
+    
 
     float: left;
 
@@ -161,9 +161,11 @@ li a, .dropbtn {
         padding: 20px;
         top: 60px;
         left: 0;
-        height: 100vh;
-        overflow: hidden;
         
+        height: 100vh;
+        line-height: 20px;
+        overflow: hidden;
+        padding: 20px;
         background: rgba(39, 146, 123, 0.301);
       
     }
