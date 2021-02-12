@@ -12,9 +12,10 @@ body{
 
 }
 .logo{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 600;
     margin-left: 60px;
+    color: azure;
     
 }
 .fa{
@@ -26,7 +27,7 @@ body{
     background-color: rgba(255, 255, 255, 0.281);
     display: flex;
     height: 80px;
-    margin-top: 5px;
+    
     align-items: center;
     justify-content: space-between;
     
@@ -58,7 +59,7 @@ body{
 
 }
 .toogle_btn{
-    display: none;
+    
     font-size: 0;
 
 }
@@ -125,7 +126,7 @@ li a, .dropbtn {
         display: none;
     }
     .logo{
-        font-size: 20px;
+        font-size: 30px;
     }
     .toogle_btn:hover{
         border-radius: 10px;
