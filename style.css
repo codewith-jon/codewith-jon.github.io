@@ -87,6 +87,7 @@ nav ul{
          height: 100vh;
          background: #2c3e50;
          top: 80px;
+         transition: 2s;
          left: -100%;
          text-align: center;
      }
