@@ -59,6 +59,10 @@ nav ul{
      background: hsl(206, 38%, 66%);
      transition: .5s;
  }
+ .fa-youtube{
+     color: rgb(252, 6, 6);
+     font-size: 30px;
+ }
  .checkbtn{
      color:#fff;
      font-size: 40px;
