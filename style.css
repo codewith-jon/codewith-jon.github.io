@@ -48,16 +48,13 @@ button{
     border-radius: 35px;
 
 }
-button:hover{
-    background: #5f1813;
 
-}
 button.btn a:hover{
-    color: #fff;
+    text-decoration: none;
+    color: green;;
 }
 .btn:hover{
     color: rgb(0, 0, 0);
-    font-size: 18px;
     transition: 0.5s;
 }
 .coming-text p{
@@ -107,12 +104,13 @@ button.btn a:hover{
         border-radius: 35px;
     }
     .btn:hover{
-        font-size: 13px;
+    
         font-weight: 600;
         transition: 0.5s;
     }
    button.btn a:hover{
         color: green;
+        text-decoration: none;
 
     }
 
