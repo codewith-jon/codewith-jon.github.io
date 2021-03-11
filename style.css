@@ -35,7 +35,10 @@ button{
     width: 10%;
     margin: 20px 45% 0 45%;
 }
-a{
+.social a{
+    color: #272;
+}
+.btn a{
     color: #000;
 }
 .btn{
