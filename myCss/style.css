@@ -117,7 +117,6 @@ nav ul{
          height: 100vh;
          backdrop-filter: blur(140px);
          background-position: center;
-         background-image: url(../unDrawpng/undraw_static_website_0107.png);
          top: 80px;
          transition: .9s;
          left: -100%;
