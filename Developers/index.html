@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Devlopers  codeWJ</title>
+</head>
+<body>
+   
+    <div class="hero">
+        <div class="home" >
+            <a href="../index.html" style="padding: 5px; border-radius: 10px; border: 1px solid green;">Home</a>
+        </div>
+        <h1>#Developers</h1>
+<div class="container">
+    <div class="indicator">
+        <span class="btn active"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+        <span class="btn"></span>
+    </div>
+    <div class="testimonials" id="testimonials">
+        <div class="slider-row"id="slide">
+              <div class="slider-col" >
+              <div class="slider-text">
+             <p>Am a first Year student at Meru University
+                 pursuing a degree in computer Science and fouder of CodeWJ Inc.
+                
+             </p>
+
+                  <h3>Jon Waithira</h3>
+                  <p><i><small>CEO & founder</small></i></p>
+                  <p>codeWJ Inc</p>
+              </div>
+              <div class="user-img">
+                <img src="../media/about.png" style="" >
+
+              </div>
+              </div>
+              <div class="slider-col">
+            <div class="slider-text">
+             <p>Sarah Samona is an American internet enterprenuer
+                 and media propriator, and investor. 
+                 technologyy company Zara.
+             </p>
+
+                  <h3>Jon</h3>
+                  <p>Zara Inc</p>
+            </div>
+            <div class="user-img">
+                 <img src="../media/undraw_Co_workers_re_1i6i.png" alt="">
+            </div>
+              </div>
+              <div class="slider-col">
+            <div class="slider-text">
+             <p>Ann Waithira is a affiliate besuniess minded young lady yearning to bring changes in 
+                  the technological world and the mastermind behind the rise of codeWJ Inc
+             </p>
+
+                  <h3>Waithira Ann</h3>
+                  <p>cpdeWJ Inc</p>
+            </div>
+            <div class="user-img">
+                <img src="../media/undraw_Co_workers_re_1i6i.png" alt="">
+            </div>
+              </div>
+              <div class="slider-col">
+            <div class="slider-text">
+             <p>Sarah Samona is an American internet enterprenuer
+                 and media propriator, and investor. 
+                 technologyy company Zara.
+             </p>
+
+                  <h3>Bacteria</h3>
+                  <p>Zara Inc</p>
+            </div>
+            <div class="user-img">
+                <img src="../media/undraw_Co_workers_re_1i6i.png" alt="">
+            </div>
+              </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+<script>
+    var btn = document.getElementsByClassName("btn");
+
+    var slide = document.getElementById("slide");
+
+    btn[0].onclick = function(){
+        slide.style.transform = "translateX(0px)";
+        for(i=0; i<4;i++)
+        {
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+
+    }
+
+    btn[1].onclick = function(){
+        slide.style.transform = "translateX(-800px)";
+        for(i=0; i<4;i++)
+        {
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+        
+    }
+    
+    btn[2].onclick = function(){
+        slide.style.transform = "translateX(-1600px)";
+        for(i=0; i<4;i++)
+        {
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+    
+    btn[3].onclick = function(){
+        slide.style.transform = "translateX(-2400px)";
+        for(i=0; i<4;i++)
+        {
+            btn[i].classList.remove("active");
+        }
+        this.classList.add("active");
+    }
+</script>
+</body>
+</html>
