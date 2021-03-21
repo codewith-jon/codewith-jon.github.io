@@ -27,11 +27,13 @@ body{
   .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+    border-radius: 5px;
   }
   
   .about-section {
+    height: 45vh;
     padding: 20px;
-    text-align: center;
+ 
     background-color: #e3e7ee;
     color: rgb(2, 2, 2);
   }
@@ -39,13 +41,8 @@ body{
   .container {
     padding: 0 16px;
   }
-  
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
+
+
   .title {
     color: grey;
   }
@@ -85,6 +82,9 @@ body{
     .column {
       width: 100%;
       display: block;
+    }
+    .about-section {
+        height: 100%;
     }
   }
 
