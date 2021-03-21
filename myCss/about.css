@@ -32,8 +32,8 @@ body{
   .about-section {
     padding: 20px;
     text-align: center;
-    background-color: #474e5d;
-    color: white;
+    background-color: #e3e7ee;
+    color: rgb(2, 2, 2);
   }
   
   .container {
