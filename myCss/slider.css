@@ -2,6 +2,15 @@
     overflow: hidden;
     width: 100%;
       }
+      .Start{
+          padding: 5px;
+          background: rgb(106, 235, 134);
+          border-radius: 10px;
+      }
+      .Start a{
+          text-decoration: none;
+          color: black;
+      }
       #video{
           display: none;
       }
