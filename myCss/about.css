@@ -33,8 +33,8 @@ body{
   .about-section {
     height: 45vh;
     padding: 20px;
- 
-    background-color: #e3e7ee2c;
+
+    background-color: #589c8849;
     color: rgb(2, 2, 2);
   }
   
@@ -50,17 +50,19 @@ body{
   .button {
     border: none;
     outline: 0;
+    font-weight: 900;
     display: inline-block;
     padding: 8px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.356);
+    color: rgba(54, 26, 19, 0.822);
+    background-color: rgba(0, 0, 0, 0.123);
     text-align: center;
     cursor: pointer;
+    border-radius: 5px 5px 0 0;
     width: 100%;
   }
   
   .button:hover {
-    background-color: #555;
+    background-color: rgba(17, 41, 77, 0.384);
   }
   @media(min-width:650px)
 {
