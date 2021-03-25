@@ -388,7 +388,7 @@ p a{
  }
  @media(max-width:600px){
      .footer{
-         padding:15px;
+         padding:25px;
      }
      main{
          font-size: 55px;
