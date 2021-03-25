@@ -1,5 +1,15 @@
+<?php 
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+	$user_data = check_login($con);
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +22,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.codewj.ml/myCss/style.css">
     <link rel="stylesheet" href="https://www.codewj.ml/myCss/slider.css">
-    
 </head>
 <body>
+
+
+
 <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -27,20 +39,23 @@
         <li><a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ">Subscribe <i class="fa fa-youtube"></i></a></li>
         <li><a href="https://www.codewj.ml/profile">Developer</a></li>
         <li><a href="https://www.codewj.ml/about">About</a></li>
-        <li><a href="http://codewj.epizy.com/">Login</a></li>
-
     </ul>
 
 </nav>
 <!--start of main section or the body-->
 <section>
+<a href="logout.php">Logout</a>
+
+
+<br>
+Hello, <?php echo $user_data['user_name']; ?>
   <div class="slider">
     <div id="slider">
         <figure>
             <div class="slider-container">
                 <div class="glass" id="glass1">
                     <h1> <span style="font-size: 30px;">HTML</span> Tutorials</h1>
-                    <img src="/mediaa/html.png" alt="jon">
+                    <img src="https://www.codewj.ml/mediaa/html.png" alt="jon">
 
                     <p>
                         HTML is the standard/ Hypertext  markup language for Web pages.<br>
@@ -52,7 +67,7 @@
                
                 <div class="glass" id="glass2">
                     <h1>Css Tutorials</h1>
-                    <img src="/mediaa/css.png" alt="jon">
+                    <img src="https://www.codewj.ml/mediaa/css.png" alt="jon">
 
                     
                     <p>CSS is the language we use to style an HTML document.<br>
@@ -64,7 +79,7 @@
                
                 <div class="glass" id="glass3">
                     <h1>C Tutorials</h1>
-                    <img src="/mediaa/c.png" alt="jon">
+                    <img src="https://www.codewj.ml/mediaa/c.png" alt="jon">
 
                     <p>C is a powerful general-purpose programming language. <br>
                         It can be used to develop software like Os, 
@@ -79,7 +94,7 @@
                
                 <div class="glass" id="glass4">
                     <h1>C++ Tutorials</h1>
-                    <img src="/mediaa/c++.png" alt="jon">
+                    <img src="https://www.codewj.ml/mediaa/c++.png" alt="jon">
                     <p> C++ can be used to develop operating systems, 
                         browsers, games, and so on. C++ supports >different 
                          ways of programming like procedural,OOP, functional,
@@ -175,6 +190,3 @@
   </footer>
 </body>
 </html>
-
-
-
