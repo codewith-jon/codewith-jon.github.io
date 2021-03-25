@@ -5,12 +5,12 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 
-/*html,body{font-family:Verdana,sans-serif;line-height:1.5}html{overflow-x:hidden}
+/html,body{font-family:Verdana,sans-serif;line-height:1.5}html{overflow-x:hidden}
 {font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
-hr{border:0;border-top:1px solid #eee;margin:20px 0}*/
-
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
 .w3-bordered tr,.w3-table-all tr{border-bottom:1px solid #ddd}.w3-striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .w3-table-all tr:nth-child(odd){background-color:#fff}.w3-table-all tr:nth-child(even){background-color:#f1f1f1}
@@ -172,13 +172,11 @@ padding-top:20px;
 .w3-example{background-color:#f1f1f1;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
 .nextprev a {font-size:17px;border:1px solid #cccccc;}
 .nextprev a:link,.nextprev a:visited {background-color:#ffffff;color:#000000;}
-.nextprev a.w3-right,.nextprev a.w3-left {background-color:#4CAF50;color:#ffffff;border-color:#4CAF50}
-
+.nextprev a.w3-right,.nextprev a.w3-left {background-color:#6a4caf;color:#ffffff;border-color:#4CAF50}
 
 
 @media (max-width:600px) {
 .top img {display:block;margin:auto;}
-/*#mypagediv {position:absolute;width:auto;right:0;top:16px;}*/
 }
 @media (max-width:400px) {
 .top .w3schools-logo {font-size:30px;top:24px;}
@@ -216,7 +214,7 @@ padding-top:20px;
   background-color:rgb(40,44,52)!important;color:white;
 }
 .intro {font-size:16px}
-.w3-btn, .w3-btn:link, .w3-btn:visited {color:#FFFFFF;background-color:#4CAF50}
+.w3-btn, .w3-btn:link, .w3-btn:visited {color:#FFFFFF;background-color:#1d065f}
 a.w3-btn[href*="exercise.asp"],a.w3-btn[href*="exercise_js.asp"] {margin:10px 5px 0 0}
 a.btnplayit,a.btnplayit:link,a.btnplayit:visited {background-color:#FFAD33;padding:1px 10px 2px 10px}
 a.btnplayit:hover,a.btnplayit:active {background-color:#ffffff;color:#FFAD33}
@@ -297,7 +295,6 @@ hr {
   font-size:105%;
   background-color:rgba(222,222,222,0.3);
 }
-/*.w3-example p,.w3-panel p {*/
 .w3-example p,.w3-info p,.w3-note p,.w3-warning p {
   margin-top: 1em;
   margin-bottom: 1em;
