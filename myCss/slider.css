@@ -1,0 +1,155 @@
+#slider{
+    overflow: hidden;
+    width: 100%;
+      }
+      .Start{
+          
+          padding: 5px 10px;
+          background: rgb(106, 235, 134);
+          border-radius: 10px;
+      }
+      a.Start{
+          text-decoration: none;
+          color: black;
+      }
+      #video{
+          display: none;
+      }
+      #slider figure{
+          position: relative;
+          width: 500%;
+          margin: 0;
+          left: 0;
+          animation: 30s slider infinite;
+      }
+      #slider figure .glass{
+          float: left;
+          width: 20%;
+      }
+      @keyframes slider{
+          0%{
+              left: 0;
+          }
+          20%{
+              left: 0;
+          }
+          25%{
+              left: -100%;
+                     
+          }
+          45%{
+             left: -100%;
+          }
+          50%{
+             left: -200%;
+          
+          }
+          70%{
+              left: -200%;
+          }
+          75%{
+              left: -300%;
+          }
+          
+          95%{
+              left: -300%;
+          }
+          100%{
+              left: -400%;
+          }
+      }
+
+.slider{
+  padding: 20px;
+  width: 100%;
+  grid-row: auto;
+  text-align:center ;
+  height: 80vh;
+ 
+          
+  }
+
+  #glass1, #glass2, #glass3, #glass4{
+
+    background-position: center;
+    background-size: cover;
+}
+#glass1{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.712),rgba(255, 255, 255, 0.651)),url(../unDrawpng/undraw_slider_5bgj.png);
+}
+#glass2{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.623),rgb(255, 255, 255)),url(../unDrawpng/undraw_software_engineer_lvl5.png);
+}
+#glass3{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.973),rgb(255, 255, 255)),url(../unDrawpng/undraw_Subscriber_re_om92.png);
+}
+#glass4{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.973),rgb(255, 255, 255)),url(../unDrawpng/undraw_social_girl_562b.png);
+}
+
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+ 
+}
+
+.slider-container{
+  margin-bottom: 40px;
+
+  
+}
+.glass img{
+   width: 100px;
+   z-index: 1;
+   height: 100px;
+   border-radius: 150px;
+  }
+.glass{
+  
+    font-size:20px;
+  z-index: 1;
+  width: 80%;
+  height: 60vh;
+  padding: 50px;
+  border-radius: 5px;
+  backdrop-filter: blur(30px);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+  line-height: 1.5;
+}
+
+@media (max-width:600px){
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  .slider{
+    margin-bottom: 1vh;      
+      width: 100%;
+      padding: 10px;
+  }
+  .glass img{
+   width: 100px;
+   z-index: 1;
+   height: 100px;
+   border-radius: 150px;
+  }
+
+  .glass{
+    font-size: 16px;
+      width: 100%;
+      height: 400px;
+      padding: 30px;
+      margin-bottom: 40px;
+      border-radius: 5px;
+      backdrop-filter: blur(30px);
+      border: 1px solid transparent;
+      background-clip: padding-box;
+      line-height: 1.5;
+  }
+
+
+  

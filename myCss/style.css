@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+    text-decoration: none;
+
+    list-style-type: none;
+    
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+section{
+    margin-top: 80px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: grid;
+    font-size: 14px;
+    
+}
+nav{
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    position: fixed;
+   
+    
+}
+label.logo{
+    color: rgb(15, 15, 15);
+    font-size: 45px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+ nav ul li{
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 5px;
+
+ }
+ nav ul li a{
+     color: rgb(19, 17, 17);
+     font-size: 17px;
+     padding: 7px 13px;
+     border-radius: 3px;
+     text-transform: uppercase;
+ }
+ a.active, a:hover{
+     background: hsl(0, 0%, 100%);
+     transition: .5s;
+     border: none;
+     color: #000;
+ }
+ .fa-youtube{
+     color: rgb(153, 31, 31);
+     font-size: 30px;
+ }
+ .checkbtn{
+     color:#fff;
+     font-size: 40px;
+     line-height: 80px;
+     margin-right: 20px;
+     cursor: pointer;
+     float: right;
+     display: none;
+     }
+     #check{
+         display: none;
+     }
+ @media (max-width: 952px){
+     label.logo{
+         font-size: 30px;
+         padding-left: 50px;
+     }
+     nav ul li a{
+         font-size: 16px;
+     
+     }
+ }
+ @media (max-width: 500px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .container h2 span {
+        font-size: 12px;
+    }
+
+ }
+ @media (max-width: 400px){
+    label.logo{
+        font-size: 30px;
+        padding-left:20px;
+    }
+
+
+ }
+ @media (max-width: 858px)
+ {
+     .checkbtn{
+         color: #000;
+         display: block;
+     }
+
+    nav ul{
+         position: absolute;
+         width: 100%;
+         height: 100vh;
+         backdrop-filter: blur(140px);
+         background-position: center;
+         top: 80px;
+         transition: .9s;
+         left: -100%;
+         text-align: center;
+     }
+     nav ul li{
+         display: block;
+         margin: 50px 0;
+         line-height: 30px;
+     }
+     nav ul li a{
+         font-size: 20px;
+     }
+     a:hover,a.active{
+         background: none;
+         color: #5ebdad;
+     }
+     #check:checked ~ ul{   
+         left:0;
+     }
+ }
+ section{
+
+     height: calc(100% - 80px);
+ }
+ /*slider*/
+ .container h2{
+     text-align: center;
+     margin: 30px 0 0 0;
+     font-size: 35px;
+ }
+ .container h2 span{
+     color: rgb(150, 54, 54);
+ }
+ .blog span{
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .btn{
+     border-radius: 25px;
+     border: none;
+
+ }
+ button.btn:hover{
+     background-color:rgb(153, 9, 9);
+     color: #fff;
+ }
+ .owl-carousel{
+    width: 500%;
+    display: flex;
+    
+}
+.blog{
+   height: 100%;
+   overflow: scroll;
+   width: 100%;
+}
+.blog .blog-post{
+    padding-top: 10px;
+
+}
+
+.blog-post .blog-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 5%;
+    border-radius: 0 0 10px 10px;
+    margin: 50px 30px 50px 0px;
+    box-shadow: 0 2px 10px rgba(0, 0,0, 0.7);
+
+}
+img{
+    padding:5px ;
+}
+ .blog-content .blog-title{
+     padding: 30px 0;
+     font-size: 15px;
+ }
+ 
+
+ .blog-content .btn-blog{
+     padding: 10px 20px;
+     background: rgba(108, 141, 139, 0.808);
+     margin: 10px;
+ }
+ .blog-content span{
+     display: block;
+ }
+ @media(max-width:600px){
+    .blog-content img{
+        width: 410px;
+ }}
+
+ @media(max-width:490px){
+    .blog-content img{
+        width: 330px;
+ }}
+
+ @media(max-width:600px)
+ {
+    .owl-carousel{
+         width: 90%;
+         display:block;
+            
+        }
+    .blog{
+        height: 100%;
+        width: 100%;
+    }
+     .blog .blog-post{
+         padding-top: 10px;
+    
+     }
+     
+     .blog-post .blog-content{
+         display: inline-block;
+         flex-direction: column;
+         text-align: center;
+         width: 90%;
+         border-radius: 0 0 10px 10px;
+         margin: 10px 30px;
+
+     }
+    .blog-content img{
+        width: 260px;
+ }}
+ 
+ @media(max-width:299px){
+    .blog-content img{
+        width: 150px;
+ }}
+ @media(max-width:340x)
+ {
+
+.owl-carousel{
+     width: 100%;
+     display:block;
+        
+    }
+.blog{
+    background-image: url(../unDrawpng/undraw_social_girl_562b.png);
+    height: 100%;
+    width: 100%;
+}
+ .blog .blog-post{
+     padding-top: 10px;
+
+ }
+ 
+ .blog-post .blog-content{
+     display: inline-block;
+     flex-direction: column;
+     text-align: center;
+     width: 90%;
+     border-radius: 0 0 20px 20px;
+     margin: 50px 30px;
+ }
+ }
+
+
+ /*foooter section*/
+footer{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+    padding: 10px;
+    background-color:rgb(255, 255, 254) ;}
+.footer > *{
+    flex: 1 100%;
+}
+footer h1{
+
+color: rgb(201, 24, 24);
+}
+footer span{
+    cursor: pointer;
+    color: black;
+}
+footer h4{
+
+    color: rgb(201, 24, 24);
+    }
+    footer span{
+        color: black;
+    }
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+.footer-left h1{
+    width: 50%;
+}
+h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer-right{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+}
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #999;
+}
+.box a:hover{
+    color: rgb(3, 90, 49);
+    }
+}
+.footer-bottom{
+    text-align: center;
+    
+}
+
+p a{
+    color: rgba(24, 124, 57, 0.575);
+    margin-top:10px;
+    line-height: 20px;
+
+}
+.footer-left p{
+    padding-right: 20%;
+    color: #999;
+}
+.socials a{
+    background: #364a62;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 40px;
+    display: inline-block;
+}
+.socials a i{
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 25px;
+}
+ 
+ @media screen and (min-width:600px){
+     .footer-right > *{
+         flex: 1;
+     }
+     .footer-left{
+         flex: 1 0px;
+     }
+     .footer-right{
+         flex: 2 0px;
+     }
+ }
+ @media(max-width:600px){
+     .footer{
+         padding:15px;
+     }
+     main{
+         font-size: 55px;
+     }
+ }
+
+/*main section*/
+ main{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+    padding: 50px;
+    background-color: #f4f4f565;
+}
+.main > *{
+    flex: 1 100%;
+}
+main h1{
+
+color: rgb(201, 24, 24);
+}
+main span{
+    cursor: pointer;
+    color: black;
+}
+main h4{
+
+    color: rgb(201, 24, 24);
+    }
+    main span{
+        color: black;
+    }
+.main-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+.main-left h1{
+    width: 50%;
+}
+h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+}
+.main ul{
+    list-style: none;
+    padding-left: 0;
+}
+.main li{
+    line-height: 2em;
+}
+.main a{
+    text-decoration: none;
+}
+.main-right{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+}
+.main-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #999;
+}
+.box a:hover{
+    color: rgb(3, 90, 49);
+    }
+}
+
+
+p a{
+    color: rgb(226, 93, 15);
+    margin-top:10px;
+    line-height: 40px;
+}
+.main-left p{
+    padding-right: 20%;
+    color: #999;
+}
+.socials a{
+    background: #364a62;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 40px;
+    display: inline-block;
+}
+.socials a i{
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 25px;
+}
+ 
+ @media screen and (min-width:600px){
+     .main-right > *{
+         flex: 1;
+     }
+     .main-left{
+         flex: 1 0px;
+     }
+     .main-right{
+         flex: 2 0px;
+     }
+ }
+ @media(max-width:600px){
+     .main{
+         padding:15px;
+     }
+     main{
+         font-size: 15px;
+
+ }
+ 
