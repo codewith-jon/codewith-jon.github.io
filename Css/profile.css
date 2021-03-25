@@ -152,7 +152,7 @@ width:204px;
 #sidenav a.activesub:link,#sidenav a.activesub:visited {background-color:#ddd;color:#000;}
 #sidenav a.activesub:hover,#sidenav a.activesub:active {background-color:#ccc;color:#000;}
 #leftmenuinner {
-position:fixed;
+
 top:0;
 padding-top:112px;
 padding-bottom:0;    
