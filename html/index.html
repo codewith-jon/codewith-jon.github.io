@@ -30,81 +30,135 @@
 
 </nav>
 <section>
-  <div class='w3-sidebar w3-collapse' id='sidenav'>
-    <div id='leftmenuinner'>
-      <div class='w3-light-grey' id='leftmenuinnerinner'>
-  <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
-  <a target="_top" href="default.asp">HTML HOME</a>
-  <a target="_top" href="html_intro.asp">HTML Introduction</a>
-  <a target="_top" href="html_editors.asp">HTML Editors</a>
-  <a target="_top" href="html_basic.asp">HTML Basic</a>
-  <a target="_top" href="html_elements.asp">HTML Elements</a>
-  <a target="_top" href="html_attributes.asp">HTML Attributes</a>
-  <a target="_top" href="html_headings.asp">HTML Headings</a>
-  <a target="_top" href="html_paragraphs.asp">HTML Paragraphs</a>
-  <a target="_top" href="html_styles.asp">HTML Styles</a>
-  <a target="_top" href="html_formatting.asp">HTML Formatting</a>
-  <a target="_top" href="html_quotation_elements.asp">HTML Quotations</a>
-  <a target="_top" href="html_comments.asp">HTML Comments</a>
-  <a target="_top" href="html_colors.asp">HTML Colors</a>
-  <div class="tut_overview">
-    <a target="_top" href="html_colors.asp">Colors</a>
-    <a target="_top" href="html_colors_rgb.asp">RGB</a>
-    <a target="_top" href="html_colors_hex.asp">HEX</a>
-    <a target="_top" href="html_colors_hsl.asp">HSL</a>
-  </div>
-  <a target="_top" href="html_css.asp">HTML CSS</a>
-  <a target="_top" href="html_links.asp">HTML Links</a>
-  <div class="tut_overview">
-    <a target="_top" href="html_links.asp">Links</a>
-    <a target="_top" href="html_links_colors.asp">Link Colors</a>
-    <a target="_top" href="html_links_bookmarks.asp">Link Bookmarks</a>
-  </div>
-  <a target="_top" href="html_images.asp">HTML Images</a>
-  <div class="tut_overview">
-    <a target="_top" href="html_images.asp">Images</a>
-    <a target="_top" href="html_images_imagemap.asp">Image Map</a>
-    <a target="_top" href="html_images_background.asp">Background Images</a>
-    <a target="_top" href="html_images_picture.asp">The Picture Element</a>
-  </div>
-  <a target="_top" href="html_tables.asp">HTML Tables</a>
-  <a target="_top" href="html_lists.asp">HTML Lists</a>
-  <div class="tut_overview">
-  <a target="_top" href="html_lists.asp">Lists</a>
-  <a target="_top" href="html_lists_unordered.asp">Unordered Lists</a>
-  <a target="_top" href="html_lists_ordered.asp">Ordered Lists</a>
-  <a target="_top" href="html_lists_other.asp">Other Lists</a>
-  </div>
-  <a target="_top" href="html_blocks.asp">HTML Block &amp; Inline</a>
-  <a target="_top" href="html_classes.asp">HTML Classes</a>
-  <a target="_top" href="html_id.asp">HTML Id</a>
-  <a target="_top" href="html_iframe.asp">HTML Iframes</a>
-  <a target="_top" href="html_scripts.asp">HTML JavaScript</a>
-  <a target="_top" href="html_filepaths.asp">HTML File Paths</a>
-  <a target="_top" href="html_head.asp">HTML Head</a>
-  <a target="_top" href="html_layout.asp">HTML Layout</a>
-  <a target="_top" href="html_responsive.asp">HTML Responsive</a>
-  <a target="_top" href="html_computercode_elements.asp">HTML Computercode</a>
-  <a target="_top" href="html5_semantic_elements.asp">HTML Semantics</a>
-  <a target="_top" href="html5_syntax.asp">HTML Style Guide</a>
-  <a target="_top" href="html_entities.asp">HTML Entities</a>
-  <a target="_top" href="html_symbols.asp">HTML Symbols</a>
-  <a target="_top" href="html_emojis.asp">HTML Emojis</a>
-  <a target="_top" href="html_charset.asp">HTML Charset</a>
-  <a target="_top" href="html_urlencode.asp">HTML URL Encode</a>
-  <a target="_top" href="html_xhtml.asp">HTML vs. XHTML</a>
-  <br>
-  <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
-  <a target="_top" href="html_forms.asp">HTML Forms</a>
-  <a target="_top" href="html_forms_attributes.asp">HTML Form Attributes</a>
-  <a target="_top" href="html_form_elements.asp">HTML Form Elements</a>
-  <a target="_top" href="html_form_input_types.asp">HTML Input Types</a>
-  <a target="_top" href="html_form_attributes.asp">HTML Input Attributes</a>
-  <a target="_top" href="html_form_attributes_form.asp">HTML Input Form Attributes</a>
-  
+  <div id="mySidenav" class="sidenavz">
+		<style>
+
+			.sidenavz{
+					height: 100%;
+          margin-top: 80px;
+          z-index: 6;
+					width: 0;
+					left: 0;
+					top: 0;
+					padding-top: 50px;
+					position: fixed;
+					z-index: 1;
+					overflow-x: hidden;
+					transition: 1s;
+					background: #333;
+					}
+					.sidenavz a{
+					text-decoration: none;
+					font-size: 30px;
+					display: block;
+					color: #fff;
+					padding: 8px 8px 8px 40px;
+					
+					
+					}
+					.closebtn{
+					color: #fff;
+					font-size: 30px;
+					top: 0;
+					position: absolute;
+					right: 35px;
+					}
+
+					.sidenavz a:hover{
+					color: #272;
+					
+					}
+					
+					
+					}
+				</style>
+    	<a href="jaavascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+    
+      <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+      <a target="_top" href="default.asp">HTML HOME</a>
+      <a target="_top" href="html_intro.asp">HTML Introduction</a>
+      <a target="_top" href="html_editors.asp">HTML Editors</a>
+      <a target="_top" href="html_basic.asp">HTML Basic</a>
+      <a target="_top" href="html_elements.asp">HTML Elements</a>
+      <a target="_top" href="html_attributes.asp">HTML Attributes</a>
+      <a target="_top" href="html_headings.asp">HTML Headings</a>
+      <a target="_top" href="html_paragraphs.asp">HTML Paragraphs</a>
+      <a target="_top" href="html_styles.asp">HTML Styles</a>
+      <a target="_top" href="html_formatting.asp">HTML Formatting</a>
+      <a target="_top" href="html_quotation_elements.asp">HTML Quotations</a>
+      <a target="_top" href="html_comments.asp">HTML Comments</a>
+      <a target="_top" href="html_colors.asp">HTML Colors</a>
+      <div class="tut_overview">
+        <a target="_top" href="html_colors.asp">Colors</a>
+        <a target="_top" href="html_colors_rgb.asp">RGB</a>
+        <a target="_top" href="html_colors_hex.asp">HEX</a>
+        <a target="_top" href="html_colors_hsl.asp">HSL</a>
       </div>
+      <a target="_top" href="html_css.asp">HTML CSS</a>
+      <a target="_top" href="html_links.asp">HTML Links</a>
+      <div class="tut_overview">
+        <a target="_top" href="html_links.asp">Links</a>
+        <a target="_top" href="html_links_colors.asp">Link Colors</a>
+        <a target="_top" href="html_links_bookmarks.asp">Link Bookmarks</a>
+      </div>
+      <a target="_top" href="html_images.asp">HTML Images</a>
+      <div class="tut_overview">
+        <a target="_top" href="html_images.asp">Images</a>
+        <a target="_top" href="html_images_imagemap.asp">Image Map</a>
+        <a target="_top" href="html_images_background.asp">Background Images</a>
+        <a target="_top" href="html_images_picture.asp">The Picture Element</a>
+      </div>
+      <a target="_top" href="html_tables.asp">HTML Tables</a>
+      <a target="_top" href="html_lists.asp">HTML Lists</a>
+      <div class="tut_overview">
+      <a target="_top" href="html_lists.asp">Lists</a>
+      <a target="_top" href="html_lists_unordered.asp">Unordered Lists</a>
+      <a target="_top" href="html_lists_ordered.asp">Ordered Lists</a>
+      <a target="_top" href="html_lists_other.asp">Other Lists</a>
+      </div>
+      <a target="_top" href="html_blocks.asp">HTML Block &amp; Inline</a>
+      <a target="_top" href="html_classes.asp">HTML Classes</a>
+      <a target="_top" href="html_id.asp">HTML Id</a>
+      <a target="_top" href="html_iframe.asp">HTML Iframes</a>
+      <a target="_top" href="html_scripts.asp">HTML JavaScript</a>
+      <a target="_top" href="html_filepaths.asp">HTML File Paths</a>
+      <a target="_top" href="html_head.asp">HTML Head</a>
+      <a target="_top" href="html_layout.asp">HTML Layout</a>
+      <a target="_top" href="html_responsive.asp">HTML Responsive</a>
+      <a target="_top" href="html_computercode_elements.asp">HTML Computercode</a>
+      <a target="_top" href="html5_semantic_elements.asp">HTML Semantics</a>
+      <a target="_top" href="html5_syntax.asp">HTML Style Guide</a>
+      <a target="_top" href="html_entities.asp">HTML Entities</a>
+      <a target="_top" href="html_symbols.asp">HTML Symbols</a>
+      <a target="_top" href="html_emojis.asp">HTML Emojis</a>
+      <a target="_top" href="html_charset.asp">HTML Charset</a>
+      <a target="_top" href="html_urlencode.asp">HTML URL Encode</a>
+      <a target="_top" href="html_xhtml.asp">HTML vs. XHTML</a>
+      <br>
+      <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+      <a target="_top" href="html_forms.asp">HTML Forms</a>
+      <a target="_top" href="html_forms_attributes.asp">HTML Form Attributes</a>
+      <a target="_top" href="html_form_elements.asp">HTML Form Elements</a>
+      <a target="_top" href="html_form_input_types.asp">HTML Input Types</a>
+      <a target="_top" href="html_form_attributes.asp">HTML Input Attributes</a>
+      <a target="_top" href="html_form_attributes_form.asp">HTML Input Form Attributes</a>
+      
+          </div>
+        </div>
+      </div>
+    	
     </div>
-  </div>
+    <span style="position: fixed; cursor: pointer; font-size: 35px; color: #376; " onclick="openNav()">&#9776</span>
+
+    <script type="text/javascript">
+    	function openNav(){
+    		document.getElementById("mySidenav").style.width ="100%";
+    	}
+    	function closeNav(){
+    		document.getElementById("mySidenav").style.width = "0";
+    	}
+    </script>
+  
   <div class='w3-main w3-light-grey' id='belowtopnav' style='margin-left:220px;'>
     <div class='w3-row w3-white'>
       <div class='w3-col l10 m12' id='main'>
