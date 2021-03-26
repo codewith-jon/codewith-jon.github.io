@@ -60,6 +60,24 @@ nav ul{
      border: none;
      color: #000;
  }
+ .ytubecontainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 62.5%; /* 8:5 Aspect Ratio */
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5%;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    border: none;
+  }
  .fa-youtube{
      color: rgb(153, 31, 31);
      font-size: 30px;
@@ -85,10 +103,8 @@ nav ul{
          font-size: 16px;
      
      }
-     iframe{
-         margin: 5%;
-         width: 90%;
-     }
+
+
  }
  @media (max-width: 500px){
     label.logo{
