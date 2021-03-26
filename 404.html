@@ -22,7 +22,17 @@
 
       ul { list-style: none; margin: 25px 0; padding: 0; }
       li { display: table-cell; font-weight: bold; width: 1%; }
+      @media(max-width:600px)
+      {
+        .container {  width: 100%; text-align: center; }
+        h1 { width: 100%; text-align: center; 
+        left: -100px; letter-spacing: 1px;
+         line-height: 60px;
+          font-size: 60px; 
+          font-weight: 100; margin: 0px 0 0px 0;
+           text-shadow: 0 1px 0 #fff; }
 
+      }
       .logo { display: inline-block; margin-top: 35px; }
       .logo-img-2x { display: none; }
       @media
