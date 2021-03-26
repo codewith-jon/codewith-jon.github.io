@@ -63,6 +63,7 @@ nav ul{
  .ytubecontainer {
     position: relative;
     width: 100%;
+    height: 150%;
     overflow: hidden;
     padding-top: 45%; /* 8:5 Aspect Ratio */
   }
@@ -75,7 +76,7 @@ nav ul{
     bottom: 0;
     right: 0;
     width: 98%;
-    height: 100%;
+    height: 120%;
     border: none;
   }
  .fa-youtube{
