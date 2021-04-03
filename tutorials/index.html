@@ -40,6 +40,41 @@
      }
      }
    </style> 
+    <style>
+      
+    #myUL {
+     list-style-type: none;
+     padding: 0;
+      margin: 0;
+    }
+      ::placeholder{
+        color: rgba(182, 107, 21, 0.637);
+      }
+      input[type=text] {
+        float: right;
+        padding: 6px 6px 6px 30px;
+        border-radius: 20px;
+        margin-top: 22px;
+        margin-right: 16px;
+        border: 1px solid pink;
+        font-size: 17px;
+      }
+    
+      @media screen and (max-width: 900px) {
+    
+        input[type=text] {
+          float: none;
+          display: block;
+          text-align: left;
+          width: 90%;
+          border-radius: 20px;
+          margin: 0  5%;
+          padding: 10px;
+        }
+    
+
+      }
+    </style>
 </head>
 <body>
 <nav>
@@ -47,7 +82,9 @@
     <label for="check" class="checkbtn">
         &#9776
     </label>
+    
     <label class="logo">codeWJ </label>
+    <input type="text" placeholder="Search tutorial... codewj" id="myInput" onkeyup="myFunction()"  title="Type in a name">
     <ul>
         <li ><a class="active" href="https://www.codewj.ml">Home</a></li>
         <li><a href="https://www.codewj.ml/tutorials">Tutorial</a></li>
@@ -58,7 +95,11 @@
     </ul>
 
 </nav>
-<section>
+
+         
+<section style="margin-top: 120px; " >
+  <ul id="myUL">
+<li>
 <div class="row">
   <div class="column" style=" text-align: center;">
     <div class="card">
@@ -73,6 +114,8 @@
     </div>
     
   </div>
+  </li>
+  <li>
   <div class="row">
     <div class="column" style=" text-align: center;">
       <div class="card">
@@ -90,6 +133,8 @@
       </div>
   
     </div>
+    </li>
+    <li>
   <div class="row">
     <div class="column" style=" text-align: center;">
       <div class="card">
@@ -107,6 +152,8 @@
       </div>
   
     </div>
+    </li>
+    <li>
 <div class="row">
   <div class="column" style=" text-align: center;">
     <div class="card">
@@ -124,6 +171,8 @@
     </div>
 
   </div>
+  </li>
+  <li>
 <div class="row">
   <div class="column" style=" text-align: center;">
     <div class="card">
@@ -141,6 +190,8 @@
     </div>
 
   </div>
+  </li>
+  <li>
   <div class="row">
     <div class="column" style=" text-align: center;">
       <div class="card">
@@ -150,7 +201,7 @@
           <i>
             <h3>youTube <span style="text-decoration: none;">Video</span> </h3>
           </i>
-          <p> Navigation Bar using Html & Css <small>| @codeWJ </small></p>
+          <p> Kotlin Bar using Html & Css <small>| @codeWJ </small></p>
           <p class="title">7 mins</p>
   
           <a href="../html&css/"><button class="button">Watch</button></a>
@@ -158,6 +209,8 @@
       </div>
   
     </div>
+    </li>
+    <li>
 <div class="row">
   <div class="column" style=" text-align: center;">
     <div class="card">
@@ -167,7 +220,7 @@
         <i>
           <h3>youTube <span style="text-decoration: none;">Video</span> </h3>
         </i>
-        <p> Navigation Bar using Html & Css <small>| @codeWJ </small></p>
+        <p> anDroiD in Kotlin <small>| @codeWJ </small></p>
         <p class="title">7 mins</p>
 
         <a href="../html&css/"><button class="button">Watch</button></a>
@@ -175,6 +228,8 @@
     </div>
 
   </div>
+  </li>
+  <li>
   <div class="row">
     <div class="column" style=" text-align: center;">
       <div class="card">
@@ -184,7 +239,7 @@
           <i>
             <h3>youTube <span style="text-decoration: none;">Video</span> </h3>
           </i>
-          <p> Navigation Bar using Html & Css <small>| @codeWJ </small></p>
+          <p> OOP  C++ <small>| @codeWJ </small></p>
           <p class="title">7 mins</p>
   
           <a href="../html&css/"><button class="button">Watch</button></a>
@@ -192,6 +247,8 @@
       </div>
   
     </div>
+    </li>
+    <li>
     <div class="row">
       <div class="column" style=" text-align: center;">
         <div class="card">
@@ -201,7 +258,7 @@
             <i>
               <h3>youTube <span style="text-decoration: none;">Video</span> </h3>
             </i>
-            <p> Navigation Bar using Html & Css <small>| @codeWJ </small></p>
+            <p> python for ML <small>| @codeWJ </small></p>
             <p class="title">7 mins</p>
     
             <a href="../html&css/"><button class="button">Watch</button></a>
@@ -209,6 +266,8 @@
         </div>
     
       </div>
+      </li>
+      <li>
       <div class="row">
         <div class="column" style=" text-align: center;">
           <div class="card">
@@ -218,7 +277,7 @@
               <i>
                 <h3>youTube <span style="text-decoration: none;">Video</span> </h3>
               </i>
-              <p> Navigation Bar using Html & Css <small>| @codeWJ </small></p>
+              <p> Java introduction <small>| @codeWJ </small></p>
               <p class="title">7 mins</p>
       
               <a href="../html&css/"><button class="button">Watch</button></a>
@@ -226,6 +285,8 @@
           </div>
       
         </div>
+        </li>
+        <li>
         <div class="row">
           <div class="column" style=" text-align: center;">
             <div class="card">
@@ -243,6 +304,9 @@
             </div>
         
           </div>
+          </li>
+
+          </ul>
 </section>
 <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
 <footer class="footer">
@@ -300,7 +364,27 @@
      <p>Made by <a href="tel:+254726354504">codeWj Lab</a> webMasters</p>
      
   </div>
+  
   <p style="text-align: center;"><a href="https://www.codewj.ml/profile"style="color: #272;">JonWaithira</a> <span style="font-style:italic;">CEO & founder</span> <a href="#">codeWJ, Inc</a></p>
 </footer>
+
+<script>
+  function myFunction() {
+    var input, filter, ul, li, p, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      p = li[i].getElementsByTagName("p")[0];
+      txtValue = p.textContent || p.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script>
 </body>
 </html>
