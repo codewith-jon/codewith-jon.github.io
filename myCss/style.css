@@ -164,7 +164,7 @@ nav ul{
          position: absolute;
          width: 100%;
          overflow: scroll;
-         height: 100vh;
+         height: 90vh;
          backdrop-filter: blur(30px);
          background-position: center;
          top: 80px;
