@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGMQTKNBNP"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-SGMQTKNBNP');
-    </script>
 
 <meta property="og:title" content="codeWJ | Learn basic programming skills together" />
 <meta property="og:description" content="codeWJ | Learn basic programming skills together" />
@@ -141,6 +132,11 @@
 <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
 <footer class="footer">
     <div class="footer-left">
+        <div class="viewer">
+        <h1 id="count">codeWJ</h1>
+        <p> Total visits </p>
+
+        </div>
         <h1><span>Co</span>deWJ</h1>
         <p>codeWj is geared towards helping and training all kind of of programmers in basic skills of programming by setting a user friendly environment for learning. Hope you will learn and become a professional developer in your field</p>
             <div class="socials">
@@ -196,6 +192,23 @@
     </div>
     <p style="text-align: center;"><a href="https://www.codewj.ml/profile"style="color: #272;">JonWaithira</a> <span style="font-style:italic;">CEO & founder</span> <a href="#">codeWJ, Inc</a></p>
   </footer>
+
+
+<script>
+
+    const countEl = document.getElementById('count');
+
+    updateVisitCount();
+
+    function updateVisitCount() {
+        fetch('https://api.countapi.xyz/update/codewj/jon/?amount= 1')
+            .then(res => res.json())
+            .then(res => {
+                countEl.innerHTML = res.value;
+            })
+    }
+
+</script>
     <script>
         var mybutton = document.getElementById("myBtn");
         window.onscroll = function () { scrollFunction() };
