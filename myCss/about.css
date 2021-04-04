@@ -29,7 +29,10 @@ body{
     margin: 8px;
     border-radius: 5px;
   }
-  
+  .about-section a{
+      color: rgba(15, 156, 57, 0.788);
+      font-weight: 900;
+  }
   .about-section {
     height: 45vh;
     padding: 20px;
