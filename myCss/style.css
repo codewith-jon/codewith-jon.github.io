@@ -163,6 +163,7 @@ nav ul{
     nav ul{
          position: absolute;
          width: 100%;
+         overflow: scroll;
          height: 100vh;
          backdrop-filter: blur(30px);
          background-position: center;
@@ -174,7 +175,8 @@ nav ul{
      nav ul li{
          display: block;
          margin: 50px 0;
-         line-height: 20%;
+        line-height: 30px;
+
      }
      nav ul li a{
          font-size: 20px;
