@@ -1,0 +1,50 @@
+section{
+    margin-top: 120px;
+    text-align: center;
+    background-color: rgba(223, 11, 159, 0.055);
+}
+section h1{
+    text-decoration: underline;
+  font-size: 35px;
+
+}
+.que{
+    width: 90%;
+    padding: 0 10%;
+    margin:  5%;
+    text-align: justify;
+    text-decoration: none;
+}
+.que ol  li{
+    list-style-type:decimal-leading-zero;
+    font-weight: 500;
+    padding-bottom: 25px;
+    font-size: 22px;
+}
+ .que ol  li .ans{
+     font-weight:200px;
+   
+     text-transform: initial;
+     padding-left: 5px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     color: rgba(4, 59, 4, 0.719);
+ }
+@media (max-width:855px) {
+    section h1{
+    text-decoration: underline;
+  font-size: 20px;
+
+  color: lightslategrey;
+}
+.que{
+    width: 90%;
+    margin:  5%;
+    text-align: justify;
+}
+.que ol  li{
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: normal;
+        padding-bottom: 15px;
+}
+}

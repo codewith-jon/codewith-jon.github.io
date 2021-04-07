@@ -14,22 +14,22 @@
     display: none;
     position: fixed;
     bottom: 20px;
-    right: 30px;
+    right: 10px;
     z-index: 99;
  
-    transition: all .5s ease;
+    transition: all  .9s ease;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(12, 126, 63, 0.801);
+    background: linear-gradient(rgba(26, 116, 201, 0.801),rgba(126, 12, 78, 0.801));
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 50px 5px 10px 60px;
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background:linear-gradient(rgba(32, 201, 26, 0.801),rgba(206, 16, 120, 0.801));
   }
 
 section{
@@ -55,7 +55,7 @@ label.logo{
     color: rgb(15, 15, 15);
     font-size: 45px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 0 0 20px;
     font-weight: bold;
 }
 nav ul{
@@ -75,6 +75,10 @@ nav ul{
      border-radius: 3px;
      text-transform: uppercase;
  }
+
+
+
+  }
  a.active, a:hover{
      background: hsl(0, 0%, 100%);
      transition: .5s;
@@ -87,8 +91,7 @@ nav ul{
     margin: 0 20%;
     height: 100%;
     overflow: hidden;
-    padding-top: 45%; /* 8:5 Aspect Ratio */
-  }
+    padding-top: 45%; }
   
   .responsive-iframe {
     position: absolute;
