@@ -36,6 +36,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   padding: 0 0 0 15px;
   overflow: scroll;
 }
+@media(max-width:601px){
+  .fa{
+  float: none;
+}
+.top{
+  margin-top:0%;
+  padding-left: 0px;
+}
+}
+.fa{
+  float: left;
+}
+.top{
+  margin-top: -15%;
+  padding-left: 10px;
+}
 @media (min-width:601px){.codeWJ-col.m1{width:8.33333%}.codeWJ-col.m2{width:16.66666%}
 .codeWJ-col.m3,.w3-quarter{width:24.99999%}
 .codeWJ-col.m4,.w3-third{width:33.33333%}
@@ -72,6 +88,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media screen and (max-width:600px) {
 .codeWJ-example{margin-left:-16px;margin-right:-16px;  max-width: 90%;}
 }
+.codeWJ-col{float:left;width:100%}
 .intro {font-size:16px}
 .codeWJ-btn, .codeWJ-btn:link, .codeWJ-btn:visited {color:#FFFFFF;background-color:#5f063d; border-radius: 20px;}
 @media only screen and (max-device-width: 480px) {
@@ -136,9 +153,23 @@ round-color:rgba(222, 222, 222,0.3);
 
  @media screen and (max-width:310px) {
   .codeWJ-left{margin-right: 0;}
+    .fa{
+  float: none;
+}
+.top{
+  margin-top:0%;
+  padding-left: 0px;
+}
 }
 @media screen and (max-width:600px) {
 .codeWJ-example{margin-left:2.5% ;margin-right:2.5%; }
+  .fa{
+  float: none;
+}
+.top{
+  margin-top:0%;
+  padding-left: 0px;
+}
 }
 @media only screen and (max-width: 500px) {
 #main {padding:24px;padding:16px}
@@ -158,13 +189,10 @@ h2 {
     display: none!important;
 }
 }
-.x{
-  margin-left: 10px;
-padding-left: 10px;
-   list-style-type: square;
+.codeWJ-clear{
+  width: 100%;
 }
-.x ul li{
-  margin-left: 10px;
-padding-left: 10px;
-   list-style-type: square;
+
+.nextprev.codeWJ-left{
+  margin-right: 0%;
 }
