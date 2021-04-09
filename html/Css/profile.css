@@ -3,6 +3,9 @@ body{
   max-width: 95%;
 
 }
+.codeWJ-right{
+  float: right;
+}
 html{overflow-x:hidden}
 h1{font-size:30px}
 h3{font-size:24px}
