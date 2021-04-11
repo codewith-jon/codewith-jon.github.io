@@ -15,6 +15,9 @@
     padding: 8px;
     text-align: center;
   }
+   .box p{
+     color: #fff;
+   }
     .box span{
       position: relative;
       top: 0;
