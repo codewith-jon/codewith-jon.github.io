@@ -1,0 +1,52 @@
+
+  #jon {
+    display: none;
+    background: rgb(114, 104, 82);
+    position: fixed;
+    width: 300px;
+    top: 50%;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .box {
+    padding: 8px;
+    text-align: center;
+  }
+    .box span{
+      position: relative;
+      top: 0;
+      float: right;
+
+    }
+    .q{
+            font-size: 40px;
+      padding: 0;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 50%;
+      width: 35px;
+      height: 45px;
+      margin-right: 20px;
+    }
+button{
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+  .box img {
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .bo {
+    z-index: 1;
+
+  }
+        .c .button:hover{
+            background-color: crimson;
+            color: #fff;
+        }
