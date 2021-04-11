@@ -24,7 +24,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./myCss/style.css">
     <link rel="stylesheet" href="./myCss/slider.css">
+    <style>
+        #jon {
+            display: none;
+            background: rgb(114, 104, 82);
+            position: fixed;
+            width: 300px;
+            top: 50%;
+            z-index: 999;
+            left: 50%;
+            transform: translate(-50%, -50%);
     
+        }
+    
+        .box {
+            padding: 8px;
+            text-align: center;
+        }
+    
+        .box span {
+            position: relative;
+            top: 0;
+            float: right;
+    
+        }
+    
+        .q {
+            font-size: 40px;
+            padding: 0;
+            cursor: pointer;
+            color: #fff;
+            border-radius: 50%;
+            width: 35px;
+            height: 45px;
+            margin-right: 20px;
+        }
+    
+        .button {
+            padding: 5px;
+            font-size: 22px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+     .box p{
+         color: #fff;
+     }
+        .box img {
+            width: 100%;
+            margin-top: -30px;
+        }
+    
+        .bo {
+            z-index: 1;
+    
+        }
+    
+        .c .button {}
+    </style>
 </head>
 <body>
 <nav>
@@ -45,80 +101,95 @@
     </ul>
 
 </nav>
+
 <button onclick="topFunction()" id="myBtn" title="Go to the top of the page" style="display: block; "><img src="./mediaa/download.png" style="width: 30px; transform: rotate(180deg)" alt=""></button>
-
+    <div id="jon">
+        <div class="box">
+            <span class="q" onclick="c()">&times;</span>
+    
+            <img src="../unDrawpng/undraw_youtube_tutorial_2gn3.svg" alt="">
+            <p style="text-align: center; font-size: 18px;">Subscribe to My youTube channel</p>
+    
+            <div class="c">
+                <button  class="button " onclick="go()">Subscribe</button>
+            </div>
+        </div>
+    </div>
 <!--start of main section or the body-->
+
+<div class="bo" id="b">
 <section>
-  <div class="slider">
-    <div id="slider">
-        <figure>
-            <div class="slider-container">
-                <div class="glass" id="glass1">
-                    <h1> <span style="font-size: 30px;">HTML</span> Tutorials</h1>
-                    <img src="./mediaa/html.png" alt="jon">
+    <div class="slider">
+        <div id="slider">
+            <figure>
+                <div class="slider-container">
+                    <div class="glass" id="glass1">
+                        <h1> <span style="font-size: 30px;">HTML</span> Tutorials</h1>
+                        <img src="./mediaa/html.png" alt="jon">
 
-                    <p>
-                        HTML is the standard/ Hypertext  markup language for Web pages.<br>
-                        With HTML you can create your own Website.<br>
-                        HTML is easy to learn - You will enjoy it! </p>
-                         <a class="Start" href="./html/">Start Learning HTML now ></a> 
-                        
-                </div>
-               
-                <div class="glass" id="glass2">
-                    <h1>Css Tutorials</h1>
-                    <img src="./mediaa/css.png" alt="jon">
+                        <p>
+                            HTML is the standard/ Hypertext markup language for Web pages.<br>
+                            With HTML you can create your own Website.<br>
+                            HTML is easy to learn - You will enjoy it! </p>
+                        <a class="Start" href="./html/">Start Learning HTML now ></a>
 
-                    
-                    <p>CSS is the language we use to style an HTML document.<br>
-                        CSS describes how HTML elements should be displayed.  <br>       
-                        This tutorial will teach you CSS from basic to advanced.</p>
-                        <a class="Start" href="./html&css/">Start Learning CSS now ></a> 
-                </div>
-               
-               
-                <div class="glass" id="glass3">
-                    <h1>C Tutorials</h1>
-                    <img src="./mediaa/c.png" alt="jon">
+                    </div>
 
-                    <p>C is a powerful general-purpose programming language. <br>
-                        It can be used to develop software like Os, 
-                        databases, <br>compilers, etc. C programming is an excellent <br>
-                        language to learn to program for beginners.<br>
+                    <div class="glass" id="glass2">
+                        <h1>Css Tutorials</h1>
+                        <img src="./mediaa/css.png" alt="jon">
+
+
+                        <p>CSS is the language we use to style an HTML document.<br>
+                            CSS describes how HTML elements should be displayed. <br>
+                            This tutorial will teach you CSS from basic to advanced.</p>
+                        <a class="Start" href="./html&css/">Start Learning CSS now ></a>
+                    </div>
+
+
+                    <div class="glass" id="glass3">
+                        <h1>C Tutorials</h1>
+                        <img src="./mediaa/c.png" alt="jon">
+
+                        <p>C is a powerful general-purpose programming language. <br>
+                            It can be used to develop software like Os,
+                            databases, <br>compilers, etc. C programming is an excellent <br>
+                            language to learn to program for beginners.<br>
 
                         </p>
-                    <a class="Start" href="./c/">Start Learning C now ></a> 
+                        <a class="Start" href="./c/">Start Learning C now ></a>
 
+                    </div>
+
+
+                    <div class="glass" id="glass4">
+                        <h1>C++ Tutorials</h1>
+                        <img src="./mediaa/c++.png" alt="jon">
+                        <p> C++ can be used to develop operating systems,
+                            browsers,<br> games, and so on. C++ supports different
+                            ways <br> programming like procedural,OOP, functional,
+                            and so on. <br> makes C++ powerful as well as flexible. <br>
+
+                        </p>
+                        <a class="Start" href="./c++/">Start Learning C++ now ></a>
+
+
+                    </div>
+                    <div class="glass" id="glass1">
+                        <h1>HTML Tutorials</h1>
+                        <img src="./mediaa/html.png" alt="jon">
+                        <p> HTML is the standard/ Hypertext markup language for Web pages.<br>
+
+                            With HTML you can create your own Website.<br>
+                            HTML is easy to learn - You will enjoy it! </p>
+                        </p>
+                        <a class="Start" href="./html/">Start Learning HTML now ></a>
+                    </div>
                 </div>
-               
-               
-                <div class="glass" id="glass4">
-                    <h1>C++ Tutorials</h1>
-                    <img src="./mediaa/c++.png" alt="jon">
-                    <p> C++ can be used to develop operating systems, 
-                        browsers,<br> games, and so on. C++ supports different 
-                         ways <br> programming like procedural,OOP, functional,
-                          and so on. <br> makes C++ powerful as well as flexible. <br>
-                       
-                    </p>
-                    <a class="Start" href="./c++/">Start Learning C++ now ></a> 
-
-
-                </div>
-                <div class="glass" id="glass1">
-                    <h1>HTML Tutorials</h1>
-                    <img src="./mediaa/html.png" alt="jon">
-                    <p> HTML is the standard/ Hypertext  markup language for Web pages.<br>
-
-                        With HTML you can create your own Website.<br>
-                        HTML is easy to learn - You will enjoy it! </p>
-                   </p>
-                   <a class="Start" href="./html/">Start Learning HTML now ></a> 
-                </div>
-               </div>
-        </figure>
+            </figure>
+        </div>
     </div>
-</div>
+    </div>
 
 
 
@@ -227,6 +298,26 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+        <script>
+            var my = setTimeout(me, 100000);
+            function me() {
+                document.getElementById("jon").style.display = ("block");
+                document.getElementById("b").style.filter = ("blur(5px")
+
+            }
+            function c() {
+                document.getElementById("jon").style.display = ("none")
+                document.getElementById("b").style.filter = ("blur(0px")
+
+            }
+            function go() {
+                window.location.assign("https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ")
+                document.getElementById("jon").style.display = ("none")
+                document.getElementById("b").style.filter = ("blur(0px")
+
+            }
+
+        </script>
 </body>
 </html>
 
