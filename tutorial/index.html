@@ -77,6 +77,58 @@
 
   }
 </style>
+<style>
+  #jon {
+    display: none;
+    background: rgb(114, 104, 82);
+    position: fixed;
+    width: 300px;
+    top: 50%;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .box {
+    padding: 8px;
+    text-align: center;
+  }
+    .box span{
+      position: relative;
+      top: 0;
+      float: right;
+
+    }
+    .q{
+            font-size: 40px;
+      padding: 0;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 50%;
+      width: 35px;
+      height: 45px;
+      margin-right: 20px;
+    }
+button{
+  padding: 5px;
+  font-size: 22px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+  .box img {
+    width: 100%;
+    margin-top: -30px;
+  }
+
+  .bo {
+    z-index: 1;
+
+  }
+.c button{
+
+}
+</style>
 </head>
 
 <body>
@@ -100,8 +152,22 @@
     </ul>
 
   </nav>
+  <!--popup begin-->
+    <div id="jon">
+      <div class="box">
+            <span class="q" onclick="c()">&times;</span>
 
+        <img src="../unDrawpng/undraw_youtube_tutorial_2gn3.svg" alt="">
+        <p style="text-align: center; font-size: 18px;">Subscribe to My youTube channel</p>
+    
+        <div class="c">
+          <button onclick="go()">Subscribe</button>
+        </div>
+      </div>
+    </div>
+      <!--popup end-->
 
+<div class="bo" id="b">
   <section style="margin-top: 120px; ">
     <ul id="myUL">
       <li>
@@ -117,15 +183,15 @@
                 <p> Setting up HTML and CSS environment </p>
                 <p class="title">1:56 mins</p>
                 <code><small style="float: right;">by codeWJ </small></code>
-
-
+  
+  
                 <a href="https://youtu.be/H1WdGGNqSlU"><button class="button">Watch</button></a>
               </div>
             </div>
-
+  
           </div>
       </li>
-
+  
       <li>
         <div class="row">
           <div class="column" style=" text-align: center;">
@@ -139,11 +205,11 @@
                 <p> Setting up C and C++ environment </p>
                 <p class="title">1:41 mins</p>
                 <code><small style="float: right;">by codeWJ </small></code>
-
+  
                 <a href="https://youtu.be/XSxPTPr1GzU"><button class="button">Watch</button></a>
               </div>
             </div>
-
+  
           </div>
       </li>
       <li>
@@ -159,19 +225,21 @@
                 <p> Navigation Bar using Html & Css</p>
                 <p class="title">7 mins</p>
                 <code><small style="float: right;">by codeWJ </small></code>
-
+  
                 <a href="https://youtu.be/TjOIcP1RYiU"><button class="button">Watch</button></a>
               </div>
             </div>
-
+  
           </div>
         </div>
       </li>
-
-
-
+  
+  
+  
     </ul>
   </section>
+</div>
+
   <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
 <footer class="footer">
   <div class="footer-left">
@@ -250,7 +318,26 @@
       }
 
     </script>
-    
+    <script>
+      var my = setTimeout(me, 1000);
+      function me() {
+        document.getElementById("jon").style.display = ("block");
+        document.getElementById("b").style.filter = ("blur(2px")
+
+      }
+      function c() {
+        document.getElementById("jon").style.display = ("none")
+        document.getElementById("b").style.filter = ("blur(0px")
+
+      }
+      function go() {
+        window.location.assign("https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ")
+        document.getElementById("jon").style.display = ("none")
+        document.getElementById("b").style.filter = ("blur(0px")
+
+      }
+
+    </script>
     <script>
       var d = new Date();
       document.getElementById("year").innerHTML = d.getFullYear();
