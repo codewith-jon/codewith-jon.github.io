@@ -28,6 +28,22 @@
 
 </head>
 <body>
+        <!--popup begin-->
+        <div id="jon">
+            <div class="boxi">
+                <span class="q" onclick="c()">&times;</span>
+        
+                <img src="./unDrawpng/undraw_youtube_tutorial_2gn3.svg" alt="">
+                <p style="text-align: center; font-size: 18px;">Subscribe to My youTube channel</p>
+        
+                <div class="c">
+                    <button class="button " onmouseover="popupbackground()" onmouseout="popupbackgroundout()"
+                        onclick="go()">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <!--popup end-->
+
 <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -46,23 +62,15 @@
     </ul>
 
 </nav>
+<button onclick="topFunction()" id="myBtn" title="Go to the top of the page" style="display: block; "><img
+        src="./mediaa/download.png" style="width: 30px; transform: rotate(180deg)" alt=""></button>
 
-<button onclick="topFunction()" id="myBtn" title="Go to the top of the page" style="display: block; "><img src="./mediaa/download.png" style="width: 30px; transform: rotate(180deg)" alt=""></button>
-    <div id="jon">
-        <div class="box">
-            <span class="q" onclick="c()">&times;</span>
-    
-            <img src="../unDrawpng/undraw_youtube_tutorial_2gn3.svg" alt="">
-            <p style="text-align: center; font-size: 18px;">Subscribe to My youTube channel</p>
-    
-            <div class="c">
-                <button  class="button " onclick="go()">Subscribe</button>
-            </div>
-        </div>
-    </div>
+    <div class="bo" id="b">
+
+
+
 <!--start of main section or the body-->
 
-<div class="bo" id="b">
 <section>
     <div class="slider">
         <div id="slider">
@@ -134,8 +142,9 @@
             </figure>
         </div>
     </div>
-    </div>
-
+</section>
+    
+</div>
 
 
  
@@ -146,7 +155,7 @@
 
 <!--team*-->
 <!--footer-->
-<hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
+<hr style="margin-top:50px; border: 1px solid rgba(145, 134, 134, 0.521);">
 <footer class="footer">
     <div class="footer-left">
         <small>
@@ -207,11 +216,6 @@
 
 
 <script>
-    var d =  new Date();
-    document.getElementById("year").innerHTML = d.getFullYear();
-</script>
-
-<script>
 
     const countEl = document.getElementById('count');
 
@@ -226,42 +230,26 @@
     }
 
 </script>
-    <script>
+
+        <script src="js/jon.js">
+
+        </script>
+        <script>
         var mybutton = document.getElementById("myBtn");
         window.onscroll = function () { scrollFunction() };
-
+        
         function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
         }
-
+        }
+        
         function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
         }
-    </script>
-        <script>
-            var my = setTimeout(me, 1000);
-            function me() {
-                document.getElementById("jon").style.display = ("block");
-                document.getElementById("b").style.filter = ("blur(5px")
-
-            }
-            function c() {
-                document.getElementById("jon").style.display = ("none")
-                document.getElementById("b").style.filter = ("blur(0px")
-
-            }
-            function go() {
-                window.location.assign("https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ")
-                document.getElementById("jon").style.display = ("none")
-                document.getElementById("b").style.filter = ("blur(0px")
-
-            }
-
         </script>
 </body>
 </html>

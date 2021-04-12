@@ -1,9 +1,10 @@
 
   #jon {
     display: none;
-    background: rgb(114, 104, 82);
+    background: linear-gradient(rgb(134, 9, 96),rgb(191, 7, 55)) ;
     position: fixed;
-    width: 300px;
+    transition: 3s;
+    width: 500px;
     top: 50%;
     z-index: 999;
     left: 50%;
@@ -11,14 +12,14 @@
 
   }
 
-  .box {
+  .boxi {
     padding: 8px;
     text-align: center;
   }
-   .box p{
+   .boxi p{
      color: #fff;
    }
-    .box span{
+    .boxi span{
       position: relative;
       top: 0;
       float: right;
@@ -34,13 +35,21 @@
       height: 45px;
       margin-right: 20px;
     }
-button{
+    .q:hover{
+      color: green;
+    }
+ .c .button{
+  background-color: rgb(224, 224, 235);
   padding: 5px;
+  font-weight: normal;
   font-size: 22px;
+  margin-right: 0%;
+  max-width: 55%;
+  margin-left:0%;
   margin-top: 10px;
   border-radius: 10px;
 }
-  .box img {
+  .boxi img {
     width: 100%;
     margin-top: -30px;
   }
@@ -49,7 +58,61 @@ button{
     z-index: 1;
 
   }
-        .c .button:hover{
+       .c .button:hover{
             background-color: crimson;
             color: #fff;
+        }
+        @media (max-width: 858px) {
+            #jon {
+    display: none;
+     background: linear-gradient(rgb(134, 9, 96),rgb(191, 7, 55)) ;
+    position: fixed;
+    width: 300px;
+    top: 50%;
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+        }
+
+          @media (max-width: 300px) {
+            #jon {
+    display: none;
+    background: linear-gradient(rgb(134, 9, 96),rgb(191, 7, 55)) ;
+    position: fixed;
+    width: 90%;
+    top: 50%;
+     transition: 5s;
+
+    z-index: 999;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+  }
+  .c .button{
+  background-color: rgb(224, 224, 235);
+  padding: 5px;
+  font-weight: normal;
+  font-size: 22px;
+  margin-right: 0%;
+  max-width: 95%;
+  margin-left:0%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+      .q{
+            font-size: 40px;
+      padding: 0;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 50%;
+          transition: 5s;
+
+      width: 35px;
+      height: 45px;
+      margin-top: -10px;
+      margin-right: 0px;
+    }
         }

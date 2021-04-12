@@ -57,7 +57,7 @@
 					
 					
 					}
-          @media (max-width:600px) {
+          @media (max-width:60px) {
             .sidenavz a{
 					text-decoration: none;
 					font-size: 20px;
@@ -161,14 +161,7 @@
     <span style="position: fixed; font-weight: 800px; cursor: pointer; font-size: 35px; color: rgb(9, 29, 82); margin-left: 20px;margin-top: -10px;" 
     onclick="openNav()">&#9776</span>
 
-    <script type="text/javascript">
-    	function openNav(){
-    		document.getElementById("mySidenav").style.width ="100%";
-    	}
-    	function closeNav(){
-    		document.getElementById("mySidenav").style.width = "0";
-    	}
-    </script>
+    
   
   <div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px;'>
     <div class='codeWJ-row codeWJ-white'>
@@ -180,17 +173,19 @@
          
         </div>
   <h1>HTML<span class="color_h1"> Tutorial</span></h1>
-  <div class="codeWJ-clear nextprev">
-  <a class="codeWJ-left codeWJ-btn" href="../">&#10094;Home</a>
-  <a class="codeWJ-right codeWJ-btn" href="./html_intro/">Next &#10095;</a>
-  </div>
+<div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+  <a class="codeWJ-left codeWJ-btn" href="./">&#10094; <span class="nn">Previous</span></a>
+  <a class="codeWJ-right codeWJ-btn" href="./html_intro/"><span class="nn">Next</span> &#10095;</a>
+</div>
   
   <div class="codeWJ-panel codeWJ-info intro">
   <div class="codeWJ-row-padding">
   <div class="w3-col w3-hide-small" style="width:140px">
-  <p style="margin-top:12px"><b style="font-size:25px;font-family:Arial rgba(0, 0, 0, 0.438), Verdana, serif">HTML</b><br><i class="fa fa-html5" style="font-size:100px;color:#be4511"></i></p>
+  <p style="margin-top:12px">
+    <b style="font-size:25px;font-family:Arial rgba(0, 0, 0, 0.438), Verdana, serif">HTML</b>
+    <br><i class="fa fa-html5" style="font-size:100px;color:#bb2a10; float: left; margin-right: 20px;"></i></p>
   </div>
-  <div class="codeWJ-rest top">
+  <div class="codeWJ-rest top" style="margin-top: -35px;">
   <p>HTML is the standard markup language for Web pages.</p>
   <p>With HTML you can create your own Website.</p>
   <p>HTML is easy to learn - You will enjoy it!</p>
@@ -214,12 +209,12 @@
   </div>
   </div>
   <hr>
-
+                    <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+                      <a class="codeWJ-left codeWJ-btn" href="./">&#10094; <span class="nn">Previous</span></a>
+                      <a class="codeWJ-right codeWJ-btn" href="./html_intro/"><span class="nn">Next</span> &#10095;</a>
+                    </div>
  
-          <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
-      <a class="codeWJ-left codeWJ-btn" href="../">&#10094;Home</a>
-      <a class="codeWJ-right codeWJ-btn" href="./html_intro/">Next &#10095;</a>
-      </div>
+
 </section>
 <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
 <footer class="footer">
@@ -280,10 +275,7 @@
 </footer>
 
 
-<script>
-  var d = new Date();
-  document.getElementById("year").innerHTML = d.getFullYear();
-</script>
+<script src="./js/jon.js"  ></script>
 </body>
 </html>
 

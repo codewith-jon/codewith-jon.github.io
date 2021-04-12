@@ -169,15 +169,6 @@
             style="position: fixed; font-weight: 800px; cursor: pointer; font-size: 35px; color: rgb(9, 29, 82); margin-left: 20px;margin-top: -10px;"
             onclick="openNav()">&#9776</span>
 
-        <script type="text/javascript">
-            function openNav() {
-                document.getElementById("mySidenav").style.width = "100%";
-            }
-            function closeNav() {
-                document.getElementById("mySidenav").style.width = "0";
-            }
-        </script>
-
         <div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px;'>
             <div class='codeWJ-row codeWJ-white'>
                 <div class='codeWJ-col l10 m12' id='main'>
@@ -188,9 +179,10 @@
 
                     </div>
                     <h1>HTML<span class="color_h1"> Basics</span></h1>
-                    <div class="codeWJ-clear nextprev">
-                        <a class="codeWJ-left codeWJ-btn" href="../editors/">&#10094; Previous</a>
-                        <a class="codeWJ-right codeWJ-btn" href="../elements/">Next &#10095;</a>
+
+                    <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+                        <a class="codeWJ-left codeWJ-btn" href="../editors/">&#10094; <span class="nn">Previous</span></a>
+                        <a class="codeWJ-right codeWJ-btn" href="../elements/"><span class="nn">Next</span> &#10095;</a>
                     </div>
 
                     <div class="codeWJ-panel codeWJ-info intro">
@@ -354,11 +346,10 @@
                         <p><strong>src</strong>, <strong>width</strong> & <strong>height</strong> are provided as
                             attributes </p>
                         <p>alt text is what is displayed when the browser fails to load the image </p>
-                        <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
-                            <a class="codeWJ-left codeWJ-btn" href="../html_intro/">&#10094; Previous</a>
-                            <a class="codeWJ-right codeWJ-btn" href="../basic/">Next &#10095;</a>
-                        </div>
-
+                    <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+                        <a class="codeWJ-left codeWJ-btn" href="../editors/">&#10094; <span class="nn">Previous</span></a>
+                        <a class="codeWJ-right codeWJ-btn" href="../elements/"><span class="nn">Next</span> &#10095;</a>
+                    </div>
 
     </section>
     <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
@@ -422,9 +413,7 @@
     </footer>
 
 
-    <script>
-        var d = new Date();
-        document.getElementById("year").innerHTML = d.getFullYear();
+    <script src="../js/jon.js">
     </script>
 </body>
 

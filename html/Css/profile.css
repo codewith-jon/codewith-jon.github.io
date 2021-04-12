@@ -171,3 +171,9 @@ padding-left: 10px;
 padding-left: 10px;
    list-style-type: square;
 }
+@media(max-width:250px ) {
+ .nn{ 
+   display: none;
+ }
+
+}

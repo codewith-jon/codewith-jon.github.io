@@ -82,6 +82,21 @@
 </head>
 
 <body>
+  <!--popup begin-->
+  <div id="jon">
+    <div class="boxi">
+      <span class="q" onclick="c()">&times;</span>
+  
+      <img src="../unDrawpng/undraw_youtube_tutorial_2gn3.svg" alt="">
+      <p style="text-align: center; font-size: 18px;">Subscribe to My youTube channel</p>
+  
+      <div class="c">
+        <button class="button " onmouseover="popupbackground()" onmouseout="popupbackgroundout()"
+          onclick="go()">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <!--popup end-->
   <nav>
     <input type="checkbox" id="check">
     <label for="check" class="checkbtn">
@@ -102,22 +117,10 @@
     </ul>
 
   </nav>
-  <!--popup begin-->
-    <div id="jon">
-      <div class="box">
-            <span class="q" onclick="c()">&times;</span>
+ 
+  <div class="bo" id="b">
 
-        <img src="../unDrawpng/undraw_youtube_tutorial_2gn3.svg" alt="">
-        <p style="text-align: center; font-size: 18px;">Subscribe to My youTube channel</p>
-    
-        <div class="c">
-          <button onclick="go()">Subscribe</button>
-        </div>
-      </div>
-    </div>
-      <!--popup end-->
 
-<div class="bo" id="b">
   <section style="margin-top: 120px; ">
     <ul id="myUL">
       <li>
@@ -268,62 +271,7 @@
       }
 
     </script>
-    <script>
-      var my = setTimeout(me, 10000);
-      function me() {
-        document.getElementById("jon").style.display = ("block");
-        document.getElementById("b").style.filter = ("blur(5px")
-
-      }
-      function c() {
-        document.getElementById("jon").style.display = ("none")
-        document.getElementById("b").style.filter = ("blur(0px")
-
-      }
-      function go() {
-        window.location.assign("https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ")
-        document.getElementById("jon").style.display = ("none")
-        document.getElementById("b").style.filter = ("blur(0px")
-
-      }
-
-    </script>
-    <script>
-      var d = new Date();
-      document.getElementById("year").innerHTML = d.getFullYear();
-    </script>
-    <script>
-      function myFunction() {
-        var input, filter, ul, li, p, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        ul = document.getElementById("myUL");
-        li = ul.getElementsByTagName("li");
-        for (i = 0; i < li.length; i++) {
-          p = li[i].getElementsByTagName("p")[0];
-          txtValue = p.textContent || p.innerText;
-          if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-          } else {
-            li[i].style.display = "none";
-          }
-        }
-      }
-    </script>
-    <script>
-
-      const countEl = document.getElementById('count');
-
-      updateVisitCount();
-
-      function updateVisitCount() {
-        fetch('https://api.countapi.xyz/update/codewj/tutorials/?amount=1')
-          .then(res => res.json())
-          .then(res => {
-            countEl.innerHTML = res.value;
-          })
-      }
-
-    </script>
+    <script src="../js/jon.js">
+      </script>
 </body>
 </html>

@@ -59,3 +59,9 @@ button a{
     font-size: 18px;
     text-decoration: none;
 }
+@media(max-width:250px ) {
+ .nn{ 
+   display: none;
+ }
+
+}
