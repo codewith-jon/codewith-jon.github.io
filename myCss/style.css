@@ -52,11 +52,14 @@ nav{
     
 }
 label.logo{
-    color: rgb(15, 15, 15);
+    color: rgb(4, 80, 74);
     font-size: 45px;
     line-height: 80px;
     padding: 0 0 0 20px;
     font-weight: bold;
+}
+label.logo span{
+    color: rgb(55, 4, 90);
 }
 nav ul{
     float: right;

@@ -37,7 +37,17 @@
     }
     .q:hover{
       color: green;
+            animation: spinn 2s;                  
     }
+     @keyframes spinn {
+  0% { transform: rotate(0deg); 
+  background: rgb(30, 146, 82);
+color: black;}
+ 
+  100% { transform: rotate(360deg);
+  background: rgb(71, 9, 151);
+color: rgb(219, 204, 204); }
+}
  .c .button{
   background-color: rgb(224, 224, 235);
   padding: 5px;
@@ -61,7 +71,18 @@
        .c .button:hover{
             background-color: crimson;
             color: #fff;
+            animation: spin 1s;                  
+
         }
+        @keyframes spin {
+  0% { transform: rotate(0deg); 
+  background: rgb(30, 146, 82);
+color: black;}
+  50% { transform: rotate(180deg); 
+  background: rgb(146, 92, 30);
+color: purple;}
+  100% { transform: rotate(360deg); }
+}
         @media (max-width: 858px) {
             #jon {
     display: none;

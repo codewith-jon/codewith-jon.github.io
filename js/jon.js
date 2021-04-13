@@ -1,6 +1,6 @@
 //popup begin
 
-var my = setTimeout(me, 5000);
+var my = setTimeout(me, 000);
 function me() {
     document.getElementById("jon").style.display = ("block");
     document.getElementById("b").style.filter = ("blur(5px")
@@ -70,3 +70,11 @@ function topFunction() {
 var d = new Date();
 document.getElementById("year").innerHTML = d.getFullYear();
 //date end
+//opennav & close begin 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "100%";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+//opennav & close end
