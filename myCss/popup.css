@@ -44,7 +44,7 @@
   background: rgb(30, 146, 82);
 color: black;}
  
-  100% { transform: rotate(360deg);
+  100% { transform: rotate(36000deg);
   background: rgb(71, 9, 151);
 color: rgb(219, 204, 204); }
 }
@@ -78,9 +78,7 @@ color: rgb(219, 204, 204); }
   0% { transform: rotate(0deg); 
   background: rgb(30, 146, 82);
 color: black;}
-  50% { transform: rotate(180deg); 
-  background: rgb(146, 92, 30);
-color: purple;}
+
   100% { transform: rotate(360deg); }
 }
         @media (max-width: 858px) {

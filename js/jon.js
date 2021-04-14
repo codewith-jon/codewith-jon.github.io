@@ -1,6 +1,6 @@
 //popup begin
 
-var my = setTimeout(me, 5000);
+var my = setTimeout(me, 000);
 function me() {
     document.getElementById("jon").style.display = ("block");
     document.getElementById("b").style.filter = ("blur(5px")
