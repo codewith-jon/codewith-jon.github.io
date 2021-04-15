@@ -43,6 +43,7 @@ body{
 
 .card img{
     width:50%;
+    background-color: brown;
     border-radius: 60%;
     border: 1px solid green ;
     
