@@ -11,6 +11,7 @@ body{
 }
 img{
     width: 100%;
+    background-color:linear-gradient(rgb(134, 9, 96),rgb(124, 6, 37)) ;
 }
 .title{
     color: grey;
