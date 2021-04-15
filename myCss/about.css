@@ -163,7 +163,7 @@ body{
     display: flex;
     flex-flow: row wrap ;
     padding: 10px;
-    background-color:rgb(255, 255, 254) ;}
+    background-color:rgb(36, 36, 36) ;}
 .footer > *{
     flex: 1 100%;
 }
@@ -173,14 +173,14 @@ color: rgb(201, 24, 24);
 }
 footer span{
     cursor: pointer;
-    color: black;
+    color: rgb(241, 234, 234);
 }
 footer h4{
 
     color: rgb(201, 24, 24);
     }
     footer span{
-        color: black;
+        color: rgb(243, 236, 236);
     }
 .footer-left{
     margin-right: 1.25em;
@@ -192,7 +192,7 @@ footer h4{
 h2{
     font-weight: 600;
     font-size: 20px;
-    color: rgb(5, 5, 5);
+    color: rgb(15, 82, 68);
 }
 .footer ul{
     list-style: none;
@@ -217,7 +217,7 @@ h2{
     margin-right: 1.25em;
 }
 .box a{
-    color: #999;
+    color: rgb(243, 235, 235);
 }
 .box a:hover{
     color: rgb(3, 90, 49);
@@ -236,7 +236,7 @@ p a{
 }
 .footer-left p{
     padding-right: 20%;
-    color: #999;
+    color: rgb(230, 224, 224);
 }
 .socials a{
     background: #364a62;
