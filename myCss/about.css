@@ -10,7 +10,7 @@ body{
   }
   .home{
       padding: 5px 15px;
-      background-color: rgba(8, 99, 20, 0.356);
+      background-color: rgba(158, 137, 17, 0.788);
       font-size: 20px;
       border: none;
       color: rgb(18, 42, 150);
@@ -49,7 +49,7 @@ body{
 }
   
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(41, 40, 40, 0.2);
     margin: 8px; 
 
     text-align: center;

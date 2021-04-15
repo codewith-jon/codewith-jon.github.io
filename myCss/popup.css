@@ -37,14 +37,14 @@
     }
     .q:hover{
       color: green;
-            animation: spinn 2s;                  
+            animation: spinn 1s;                  
     }
      @keyframes spinn {
   0% { transform: rotate(0deg); 
   background: rgb(30, 146, 82);
 color: black;}
  
-  100% { transform: rotate(36000deg);
+  100% { transform: rotate(390deg);
   background: rgb(71, 9, 151);
 color: rgb(219, 204, 204); }
 }
