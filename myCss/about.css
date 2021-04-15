@@ -43,7 +43,7 @@ body{
 
 .card img{
     width:50%;
-    background-color: brown;
+    background:linear-gradient linear-gradient(rgb(134, 9, 96),rgb(124, 6, 37)) ;
     border-radius: 60%;
     border: 1px solid green ;
     
