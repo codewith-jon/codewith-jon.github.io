@@ -7,6 +7,22 @@
     list-style-type: none;
     
 }
+:root{
+    --red:#41043ed7;
+}
+
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
 *,*:before,*:after{
     box-sizing: border-box;
 }
@@ -48,6 +64,8 @@ nav{
     z-index: 2;
     background: #fff;
     position: fixed;
+ box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+
    
     
 }
@@ -164,7 +182,11 @@ nav ul{
          color: #000;
          display: block;
      }
-   
+    nav hr{
+     width: 90%;
+     border-top: 2px solid rgb(10, 133, 31);
+     margin: 0 5%;
+ }
  
     nav ul{
          position: absolute;
@@ -337,13 +359,14 @@ img{
  /*foooter section*/
 footer{
     display: -webkit-flex;
+        width: 100%;
     display: -ms-flex;
     display: -moz-flex;
     display: -o-flex;
     display: flex;
     flex-flow: row wrap ;
     padding: 10px;
-    background-color:rgb(255, 255, 254) ;}
+    background-color:rgb(87, 46, 46) ;}
 .footer > *{
     flex: 1 100%;
 }
@@ -369,10 +392,10 @@ footer h4{
 .footer-left h1{
     width: 50%;
 }
-h2{
+ footer h2{
     font-weight: 600;
     font-size: 20px;
-    color: rgb(5, 5, 5);
+    color: rgb(10, 100, 22);
 }
 .footer ul{
     list-style: none;
@@ -405,6 +428,7 @@ h2{
 }
 .footer-bottom{
     text-align: center;
+    color: #fff;
     
 }
 

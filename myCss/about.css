@@ -153,7 +153,22 @@ body{
   }
 
 
+:root{
+    --red:#41043ed7;
+}
 
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
 
   footer{
     display: -webkit-flex;
@@ -225,6 +240,7 @@ h2{
 }
 .footer-bottom{
     text-align: center;
+    color :#fff;
     
 }
 

@@ -48,9 +48,30 @@ nav{
     z-index: 2;
     background: #fff;
     position: fixed;
-   
-    
+    box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+
 }
+:root{
+    --red:#41043ed7;
+}
+
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
+ nav hr{
+     width: 90%;
+     border-top: 2px solid rgb(10, 133, 31);
+     margin: 0 5%;
+ }
 label.logo{
     color: rgb(4, 80, 74);
     font-size: 45px;
@@ -338,12 +359,15 @@ img{
 footer{
     display: -webkit-flex;
     display: -ms-flex;
+        width: 100%;
+
     display: -moz-flex;
     display: -o-flex;
     display: flex;
     flex-flow: row wrap ;
     padding: 10px;
-    background-color:rgb(255, 255, 254) ;}
+    color: rgb(10, 9, 9);
+    background-color:rgba(255, 253, 253, 0.267) ;}
 .footer > *{
     flex: 1 100%;
 }
@@ -369,10 +393,10 @@ footer h4{
 .footer-left h1{
     width: 50%;
 }
-h2{
+ footer h2{
     font-weight: 600;
     font-size: 20px;
-    color: rgb(5, 5, 5);
+    color: rgb(10, 100, 22);
 }
 .footer ul{
     list-style: none;
@@ -403,8 +427,9 @@ h2{
     color: rgb(3, 90, 49);
     }
 }
-.footer-bottom{
+.footer-bottom p{
     text-align: center;
+    color :#fff;
     
 }
 
