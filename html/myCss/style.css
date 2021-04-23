@@ -183,6 +183,7 @@ nav ul{
          display: block;
      }
     nav hr{
+     display: none;   
      width: 90%;
      border-top: 2px solid rgb(10, 133, 31);
      margin: 0 5%;

@@ -58,7 +58,7 @@ nav{
 
 
 html::-webkit-scrollbar{
-    width:1.3rem;
+    width:0.3rem;
 }
 
 html::-webkit-scrollbar-track{
@@ -70,6 +70,7 @@ html::-webkit-scrollbar-thumb{
 }
  nav hr{
      width: 90%;
+     display: none;
      border-top: 2px solid rgb(10, 133, 31);
      margin: 0 5%;
  }
