@@ -10,6 +10,7 @@
 *,*:before,*:after{
     box-sizing: border-box;
 }
+
 #myBtn {
     display: none;
     position: fixed;
@@ -43,6 +44,7 @@ body{
     font-size: 14px;
     
 }
+
 nav{
     height: 80px;
     width: 100%;
@@ -118,7 +120,7 @@ nav ul{
     height: 100%;
     overflow: hidden;
     padding-top: 45%; }
-  
+
   .responsive-iframe {
     position: absolute;
     top: 0;

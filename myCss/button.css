@@ -1,0 +1,80 @@
+  .bck{
+      position: fixed;
+      padding: 5px 20px;
+      float: right;
+  }
+  .home{
+      padding: 5px 15px;
+      background-color: rgba(158, 137, 17, 0.788);
+      font-size: 20px;
+      border: none;
+      color: rgb(18, 42, 150);
+      border-radius: 20px;
+      font-weight: 600;
+  }
+
+  /**/
+      .codewj-animate-zoom {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {
+      -webkit-transform: scale(0)
+    }
+
+    to {
+      -webkit-transform: scale(1)
+    }
+  }
+
+  @keyframes animatezoom {
+    from {
+      transform: scale(0)
+    }
+
+    to {
+      transform: scale(1)
+    }
+  }
+  .logo{
+    position: absolute;
+  }
+
+  .codewj-animate-left{
+position:relative;
+-webkit-animation:animateleft 0.4s;
+animation:animateleft 0.6s;
+}
+@-webkit-keyframes animateleft{
+from{
+left:-300px;opacity:0;
+} 
+to{left:0;opacity:1;
+}
+}
+@keyframes animateleft
+{
+from{
+left:-300px;opacity:0;
+} to{left:0;opacity:1};
+}
+  .codewj-animate-right{
+position:relative;
+-webkit-animation:animateright 0.4s;
+animation:animateright 0.8s;
+}
+@-webkit-keyframes animateright{
+from{
+right:-300px;opacity:0;
+} 
+to{right:0;opacity:1;
+}
+}
+@keyframes animateright
+{
+from{
+right:-300px;opacity:0;
+} to{right:0;opacity:1};
+}

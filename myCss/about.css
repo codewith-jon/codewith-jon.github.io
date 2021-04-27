@@ -3,20 +3,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
   }
-  .bck{
-      position: fixed;
-      padding: 5px 20px;
-      float: right;
-  }
-  .home{
-      padding: 5px 15px;
-      background-color: rgba(158, 137, 17, 0.788);
-      font-size: 20px;
-      border: none;
-      color: rgb(18, 42, 150);
-      border-radius: 20px;
-      font-weight: 600;
-  }
+
   html {
     box-sizing: border-box;
   }

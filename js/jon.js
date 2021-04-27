@@ -78,3 +78,16 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 //opennav & close end
+
+/*show active link in the nav bar*/
+var codewjActive = document.getElementById("codewj-active");
+var codeWJ = codewjActive.getElementsByClassName("codewj");
+for (i = 0; i < codeWJ.length; i++) {
+    codeWJ[i].addEventListener("click", function () {
+        var
+            current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace("active", "");
+        this.className += " active";
+    });
+}
+     /*end show active link in the nav bar*/
