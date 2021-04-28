@@ -79,10 +79,9 @@ html::-webkit-scrollbar-thumb{
 label.logo{
     line-height: 80px;
     padding: 0 0 0 10px;
-    font-weight: bold;
 }
 label.logo img{
-    width: 180px;
+    width: 100px;
     color: rgb(55, 4, 90);
 }
 nav ul{
