@@ -132,6 +132,107 @@
       }
       
       }
+              .text{
+            overflow: hidden;
+            width: 95%;
+            margin:2.5%;
+        }
+
+       .inner{
+           width:80%;
+           z-index: 1;
+           border-radius: 20px; 
+           background-color: rgb(124, 115, 28);
+           border-left:9px solid rgb(124, 115, 28);
+           border-top: 9px solid rgb(124, 115, 28);
+           border-bottom:3px solid rgb(124, 115, 28);
+           border-right: 3px solid rgb(124, 115, 28);
+       }
+        .inner img{
+           border-radius: 10px;
+        }
+       .innerm{
+           width:60%;
+           margin: 0;
+           z-index: 2;
+           height: 0%;
+           transform: translate(49%, -96%);
+           border-radius: 20px;
+           background-color: rgb(106, 129, 20);
+           border-left: 8px solid rgb(106, 129, 20);
+           border-top: 8px solid rgb(106, 129, 20);
+           border-bottom:3px solid rgb(106, 129, 20);
+           border-right: 3px solid rgb(106, 129, 20);
+        }
+        .innerm img{
+            border-radius: 10px;
+        }
+        .innermb{
+           width: 20%;
+           z-index: 3;
+           transform: translate(388%, -212%);
+           border-radius: 20px;
+           background-color: rgb(6, 14, 92);
+           border-left: 6px solid  rgb(6, 14, 92);
+           border-top: 19px solid  rgb(6, 14, 92);
+           border-bottom:19px solid  rgb(6, 14, 92);
+           border-right: 6px solid rgb(6, 14, 92);
+        }
+        .innermb img{
+          border-radius: 0px;
+        }
+        @media ( max-width:600px)
+        {
+          .demo{
+            width: 100%;
+            margin:0 auto;
+           }
+           .demo .inner{
+           width:80%;
+           z-index: 1;
+           border-radius: 5px; 
+            transform: translate(1%, 1%);
+            background-color:rgb(33, 34, 33);
+           border-left:1px solid rgb(33, 34, 33);
+           border-top: 1px solid rgb(33, 34, 33);
+           border-bottom:5px solid rgb(33, 34, 33);
+           border-right: 1px solid rgb(33, 34, 33);
+         }
+             .demo .inner img{
+           border-radius: 1px;
+          }
+         .demo .innerm{
+           width:60%;
+           margin: 0;
+           z-index: 2;
+           height: 0%;
+           border-radius: 5px;
+           background-color:rgb(33, 34, 33);
+           transform: translate(60%, -96%);
+           border-left: 2px solid rgb(33, 34, 33);
+           border-top: 2px solid rgb(33, 34, 33);
+           border-bottom:3px solid rgb(33, 34, 33);
+           border-right: 2px solid rgb(33, 34, 33);
+        }
+        .innerm img{
+            border-radius: 1px;
+        }
+            .innermb{
+           width: 20%;
+           z-index: 3;
+          background-color: rgb(16, 69, 168);     
+          transform: translate(398%, -212%);
+           border-radius:5px;
+           border-left: 2px solid rgb(16, 69, 168);
+           border-top: 5px solid rgb(16, 69, 168);
+           border-bottom:5px solid rgb(16, 69, 168);
+           border-right: 2px solid rgb(16, 69, 168);
+        }
+        .innermb img{
+          border-radius: 1px;
+        }
+    }
+    </style>
     </style>
     <a href="jaavascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
 
@@ -148,12 +249,7 @@
   <div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px;'>
     <div class='codeWJ-row codeWJ-white'>
       <div class='codeWJ-col l10 m12' id='main'>
-        <div id='mainLeaderboard' style='overflow:hidden;'>
 
-
-
-
-        </div>
         <h1 class="codewj-animate-zoom">Responsive Image Grid</span></h1>
         <div class="codeWJ-clear nextprev">
           <a class="codeWJ-left codeWJ-btn codewj-animate-left" href="">&#10094; <span class="nn ">Previous</span></a>
@@ -162,11 +258,7 @@
 
         <div class="codeWJ-panel codeWJ-info intro">
           <div class="codeWJ-row-padding">
-            <div class="w3-col w3-hide-small" style="width:140px">
-
-
-
-            </div>
+    
             <div class="codeWJ-rest">
               <p>We are going to create an image Grid which has different heights using html & css only
               </p>
@@ -175,12 +267,19 @@
           </div>
         </div>
         <hr>
-<div class="picture">
-  <img src="../mediaa/how-to/Capture.PNG" alt="" class="b codewj-animate-right">
-   <img src="../mediaa/how-to/Capturem.PNG" alt="" class="m codewj-animate-zoom">
-  <img src="../mediaa/how-to/Capturemb.PNG" alt="" class="mb codewj-animate-left">
+        <div class="demo">
+          <div class="inner">
+            <img src="../mediaa/how-to/Capture.PNG" alt="">
+        
+          </div>
+          <div class="innerm">
+            <img src="../mediaa/how-to/Capturem.PNG" alt="">
+          </div>
+          <div class="innermb">
+            <img src="../mediaa/how-to/Capturemb.PNG" alt="">
+          </div>
+        </div>
 
-</div>
         <div class="codeWJ-rest">
           <h1>The HTML  Attribute</h1>
           <p>HTML links are defined with the <strong>&lt;a&gt;</strong> tag. The link address is specified in the

@@ -1,9 +1,11 @@
+
   .bck{
       position: fixed;
       padding: 5px 20px;
       float: right;
   }
   .home{
+          cursor: pointer;
       padding: 5px 15px;
       background-color: rgba(158, 137, 17, 0.788);
       font-size: 20px;
