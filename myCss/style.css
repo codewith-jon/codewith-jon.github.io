@@ -189,7 +189,6 @@ nav ul{
          display: block;
      }
    
- 
     nav ul{
          position: absolute;
          height:80px ;
@@ -458,6 +457,10 @@ p a{
      }
      main{
          font-size: 15px;
-
+     }
  }
- 
+.fa-download{
+    float: left;
+    color: rgb(199, 211, 199);
+ margin-left: 10%;
+}
