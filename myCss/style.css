@@ -192,13 +192,12 @@ nav ul{
  
     nav ul{
          position: absolute;
+         height: 0vh;
          width: 100%;
          overflow: scroll;
-         height: 90vh;
          background-color: #fff;
-         top: 80px;
          transition: .9s;
-         left: -100%;
+         top: -100%;
          text-align: center;
      }
      nav ul li{
@@ -215,7 +214,8 @@ nav ul{
          color: #5ebdad;
      }
      #check:checked ~ ul{   
-         left:0;
+        top:80px;
+        height: 100vh;
      }
  }
  section{
