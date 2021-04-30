@@ -195,8 +195,7 @@ nav ul{
          width: 100%;
          overflow: scroll;
          height: 90vh;
-         backdrop-filter: blur(30px);
-         background-position: center;
+         background-color: #fff;
          top: 80px;
          transition: .9s;
          left: -100%;
