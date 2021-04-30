@@ -68,7 +68,19 @@ function topFunction() {
 
 //date begins
 var d = new Date();
-document.getElementById("year").innerHTML = d.getFullYear();
+document.getElementById("year").innerHTML = d.getFullYear(); 
+//year found
+
+var d = new Date();
+document.getElementById("found").innerHTML = "2021  - ";
+
+if (d.getFullYear()==2021){
+    document.getElementById("found").style.display = "none";
+}
+else{
+    document.getElementById("found").style.display = "inline-block";
+
+}
 //date end
 //opennav & close begin 
 function openNav() {
@@ -91,3 +103,13 @@ for (i = 0; i < codeWJ.length; i++) {
     });
 }
      /*end show active link in the nav bar*/
+/*downloadmessage */
+function  download(){
+    document.getElementById("download").style.display = "none";
+    document.getElementById("downloadmessage").innerHTML
+        ="Thank for downloading  From codeWJ ....... your download will start right away ";
+
+}
+
+
+/*downloadmessage */

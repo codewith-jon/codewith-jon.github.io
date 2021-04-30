@@ -44,7 +44,7 @@
   background: rgb(30, 146, 82);
 color: black;}
  
-  100% { transform: rotate(390deg);
+  100% { transform: rotate(30deg);
   background: rgb(71, 9, 151);
 color: rgb(219, 204, 204); }
 }
@@ -79,7 +79,7 @@ color: rgb(219, 204, 204); }
   background: rgb(30, 146, 82);
 color: black;}
 
-  100% { transform: rotate(360deg); }
+  100% { transform: rotate(180deg); }
 }
         @media (max-width: 858px) {
             #jon {

@@ -12,6 +12,7 @@
     <link rel="icon" href="../icon/5.png">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../myCss/style.css">
+    <link rel="stylesheet" href="../myCss/sidenavz.css">
         <link rel="stylesheet" href="../Css/profile.css">
     <link rel="stylesheet" href="https://stackpath.boostrapcdn.com/font-aweosome/4.7.0/css/font-awesome.min.css">
 
@@ -36,80 +37,22 @@
 </nav>
 <section>
   <div id="mySidenav" class="sidenavz">
-    <style>
-      .sidenavz {
-        height: 100%;
-        margin-top: 80px;
-        z-index: 6;
-        width: 0;
-        left: 0;
-        top: 0;
-        padding-top: 50px;
-        position: fixed;
-        z-index: 1;
-        overflow-x: hidden;
-        transition: .5s;
-        background: rgb(255, 255, 255);
-      }
 
-      .sidenavz a {
-        text-decoration: none;
-        font-size: 20px;
-        display: block;
-        color: rgb(0, 0, 0);
-        padding: 8px 8px 8px 40px;
-
-
-      }
-
-      @media (max-width:60px) {
-        .sidenavz a {
-          text-decoration: none;
-          font-size: 20px;
-          display: block;
-          color: rgb(29, 28, 28);
-          padding: 8px 8px 8px 40px;
-
-
-        }
-      }
-
-      .closebtn {
-        top: 0;
-        position: absolute;
-        right: 53px;
-      }
-
-
-      .sidenavz a:hover {
-        color: rgba(255, 255, 255, 0.897);
-        background: grey;
-
-      }
-
-      .sidenavz h2 {
-
-        margin-left: 20px;
-        color: rgba(55, 75, 18, 0.664);
-        background: rgba(197, 201, 200, 0.137);
-      }
-      #year{
-        color: rgb(16, 23, 85);
-        font-weight: 900;
-      }
-    </style>
-    <a href="jaavascript:void(0)" class="closebtn" style="font-size: 39px;           font-weight: bolder;
+    <p href="jaavascript:void(0)" class="closebtn"
+     style="color: rgb(255, 255, 253); font-size:30px; font-weight: bolder;
       color: rgb(10, 97, 63);
-"  onclick="closeNav()">&times</a>
+"  onclick="closeNav()">&times<p>
 
     <h2 class="left"><span class="left_h2">C++</span> Tutorial</h2>
-    <a target="_top" href="../c++/">C++ HOME</a>
-    
+    <a target="_top" href="../c++/" class="activee">C++ HOME</a>
+        <a target="_top" href="./cpp_intro/index.html">C++ Introduction</a>
+                    <a target="_top" href="./start_cpp/index.html" > IDE installation</a>
+
+
 
     <br>
-    <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+    <h2 class="left"><span class="left_h2">OOP</span> Advanced</h2>
     
-    <a target="_top" href="../html/formattributesform/">HTML Input Form Attributes</a>
 
   </div>
   </div>
@@ -130,49 +73,54 @@
 
 
         </div>
-        <h1>HTML<span class="color_h1"> Tutorial</span></h1>
+        <h1>C++<span class="color_h1"> Tutorial</span></h1>
         <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
-          <a class="codeWJ-left codeWJ-btn" href="./">&#10094; <span class="nn">Previous</span></a>
-          <a class="codeWJ-right codeWJ-btn" href="./html_intro/"><span class="nn">Next</span> &#10095;</a>
+          <a class="codeWJ-left codeWJ-btn" href="../index.html">&#10094; <span class="nn">cWJ Home</span></a>
+          <a class="codeWJ-right codeWJ-btn" href="./cpp_intro/index.html"><span class="nn">Next</span> &#10095;</a>
         </div>
 
         <div class="codeWJ-panel codeWJ-info intro">
           <div class="codeWJ-row-padding">
-            <div class="w3-col w3-hide-small" style="width:140px">
+            <div  style="width:140px">
               <p style="margin-top:12px">
-                <b style="font-size:25px;font-family:Arial rgba(0, 0, 0, 0.438), Verdana, serif">HTML</b>
-                <br><i class="fa fa-html5" style="font-size:100px;color:#bb2a10; float: left; margin-right: 20px;"></i>
-              </p>
+                <b style="font-size:25px;font-family:Arial rgba(0, 0, 0, 0.438), Verdana, serif">C++</b>
+                <br><i class="fa fa-cpp" style="font-size:100px;color:#bb2a10; float: left; margin-right: 20px;"></i> </p>
             </div>
             <div class="codeWJ-rest top" style="margin-top: -35px;">
-              <p>HTML is the standard markup language for Web pages.</p>
-              <p>With HTML you can create your own Website.</p>
-              <p>HTML is easy to learn - You will enjoy it!</p>
-              <a class=" codeWJ-btn w3-margin-bottom" href="./html_intro/">Start learning HTML now &raquo;</a>
+              <p>C++ is an object-oriented programming language.</p>
+              <a class=" codeWJ-btn w3-margin-bottom" href="./cpp_intro/index.html">Start learning OOP now &raquo;</a>
             </div>
           </div>
         </div>
         <hr>
 
-        <h2> Learning HTML from &quot;codeWj&quot;</h2>
-        <p>With our &quot;programs &quot; , you can copy the HTML code to your favourite Edittor and view the
+        <h2> Learning C++ from &quot;codeWj&quot;</h2>
+        <p>With our &quot;programs &quot; , you can copy the C++ code to your favourite Edittor and view the
           result:</p>
 
         <div class="codeWJ-example">
-          <h3>Example</h3>
+          <h3>Example of C++</h3>
           <div class="codeWJ-code">
-            &lt;!DOCTYPE html&gt;<br>
-            &lt;html&gt;<br> &lt; head&gt;<br> &lt;title&gt;Page Title&lt;/title&gt;<br>
-            &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;This is a Heading&lt;/h1&gt;<br>&lt;p&gt;This is a
-            paragraph.&lt;/p&gt;<br><br>
-            &lt;/body&gt;<br>&lt;/html&gt;
+            <span class="comment">//simple c++ program to output &quot;Hello codeWJ&quot;</span> <br>
+
+          <span class="c">#include</span> <span class="element1">&lt;iostream&gt;</span>
+<br><br>
+<span class="co">using namespace</span> std; <br><br>
+<span class="element1">int</span> main()
+<br>
+
+{<br>
+cout&lt;&lt;<span class="element1">&quot;Hello, codeWJ&quot;</span>;<br>
+return <span class="element2">0</span>;
+<br>}<br>
+
           </div>
         </div>
         <hr>
-        <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
-          <a class="codeWJ-left codeWJ-btn" href="./">&#10094; <span class="nn">Previous</span></a>
-          <a class="codeWJ-right codeWJ-btn" href="./html_intro/"><span class="nn">Next</span> &#10095;</a>
-        </div>
+            <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+              <a class="codeWJ-left codeWJ-btn" href="../index.html">&#10094; <span class="nn">cWJ Home</span></a>
+              <a class="codeWJ-right codeWJ-btn" href="./cpp_intro/index.html"><span class="nn">Next</span> &#10095;</a>
+             </div>
 
 
 </section>

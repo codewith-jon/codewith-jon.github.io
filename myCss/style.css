@@ -48,6 +48,7 @@ body{
 nav{
     height: 80px;
     width: 100%;
+    position: fixed;
     z-index: 2;
     background: #fff;
     box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
@@ -77,11 +78,11 @@ html::-webkit-scrollbar-thumb{
      margin: 0 5%;
  }
 label.logo{
-    line-height: 80px;
     padding: 0 0 0 10px;
 }
 label.logo img{
     width: 180px;
+    overflow: hidden;
     color: rgb(55, 4, 90);
 }
 nav ul{

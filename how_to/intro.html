@@ -5,140 +5,341 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../Css/profile.css">
     <style>
         *{
             margin: 0px;
             padding: 0;
             max-width: 100%;
-            box-sizing: border-box;
-             max-width: 100%;
 
         }
         .text{
             overflow: hidden;
-            width: 95%;
-            margin:2.5%;
+            width: 80%;
+            margin:10%;
         }
 
-       .inner{
-           width:80%;
-           z-index: 1;
-           border-radius: 20px; 
-           background-color: rgb(124, 115, 28);
-           border-left:9px solid rgb(124, 115, 28);
-           border-top: 9px solid rgb(124, 115, 28);
-           border-bottom:3px solid rgb(124, 115, 28);
-           border-right: 3px solid rgb(124, 115, 28);
-       }
-        .inner img{
-           border-radius: 10px;
-        }
-       .innerm{
-           width:60%;
-           margin: 0;
-           z-index: 2;
-           height: 0%;
-           transform: translate(49%, -96%);
-           border-radius: 20px;
-           background-color: rgb(106, 129, 20);
-           border-left: 8px solid rgb(106, 129, 20);
-           border-top: 8px solid rgb(106, 129, 20);
-           border-bottom:3px solid rgb(106, 129, 20);
-           border-right: 3px solid rgb(106, 129, 20);
-        }
-        .innerm img{
-            border-radius: 10px;
-        }
-        .innermb{
-           width: 20%;
-           z-index: 3;
-           transform: translate(388%, -212%);
-           border-radius: 20px;
-           background-color: rgb(6, 14, 92);
-           border-left: 6px solid  rgb(6, 14, 92);
-           border-top: 19px solid  rgb(6, 14, 92);
-           border-bottom:19px solid  rgb(6, 14, 92);
-           border-right: 6px solid rgb(6, 14, 92);
-        }
-        .innermb img{
-          border-radius: 0px;
-        }
         @media ( max-width:600px)
         {
-          .demo{
-            width: 100%;
-            margin:0 auto;
-           }
-           .demo .inner{
-           width:80%;
-           z-index: 1;
-           border-radius: 5px; 
-            transform: translate(1%, 1%);
-            background-color:rgb(33, 34, 33);
-           border-left:1px solid rgb(33, 34, 33);
-           border-top: 1px solid rgb(33, 34, 33);
-           border-bottom:5px solid rgb(33, 34, 33);
-           border-right: 1px solid rgb(33, 34, 33);
-         }
-             .demo .inner img{
-           border-radius: 1px;
-          }
-         .demo .innerm{
-           width:60%;
-           margin: 0;
-           z-index: 2;
-           height: 0%;
-           border-radius: 5px;
-           background-color:rgb(33, 34, 33);
-           transform: translate(60%, -96%);
-           border-left: 2px solid rgb(33, 34, 33);
-           border-top: 2px solid rgb(33, 34, 33);
-           border-bottom:3px solid rgb(33, 34, 33);
-           border-right: 2px solid rgb(33, 34, 33);
-        }
-        .innerm img{
-            border-radius: 1px;
-        }
-            .innermb{
-           width: 20%;
-           z-index: 3;
-          background-color: rgb(16, 69, 168);     
-          transform: translate(398%, -212%);
-           border-radius:5px;
-           border-left: 2px solid rgb(16, 69, 168);
-           border-top: 5px solid rgb(16, 69, 168);
-           border-bottom:5px solid rgb(16, 69, 168);
-           border-right: 2px solid rgb(16, 69, 168);
-        }
-        .innermb img{
-          border-radius: 1px;
-        }
+            
     }
     </style>
 </head>
 
 <body>
+<div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px; max-width: 100%;'>
+    <div class='codeWJ-row codeWJ-white'>
+        <div class='codeWJ-col l10 m12' id='main'>
 
-    <div class="demo">
-        <div class="inner">
-            <img src="../mediaa/how-to/Capture.PNG" alt="">
-        
-        </div>
-        <div class="innerm">
-            <img src="../mediaa/how-to/Capturem.PNG" alt="">
-        </div>
-        <div class="innermb">
-            <img src="../mediaa/how-to/Capturemb.PNG" alt="">
+            <h1 class="codewj-animate-zoom">Responsive Image Grid</span></h1>
+            <div class="codeWJ-clear nextprev">
+                <a class="codeWJ-left codeWJ-btn codewj-animate-left" href="">&#10094; <span
+                        class="nn ">Previous</span></a>
+                <a class="codeWJ-right codeWJ-btn codewj-animate-right" href=""><span class="nn">Next</span>&#10095;</a>
+            </div>
+
+            <div class="codeWJ-panel codeWJ-info intro">
+                <div class="codeWJ-row-padding">
+
+                    <div class="codeWJ-rest">
+                        <p>We are going to create an image Grid which has different heights using html & css only
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="codeWJ-rest">
+                <h1 class="codewj-animate-zoom">Responsive Image Grid</h1>
+                <img src="../mediaa/Capture.PNG" style="width: 100%;">
+
+            </div>
+            <hr>
+
+            <div class="codeWJ-rest">
+                <h1>Create Responsive Image Grid</h1>
+                <p>1) HTML part:</p>
+                <div class="codeWJ-example">
+                    <h3>Responsive Image Grid</h3>
+                    <div class="codeWJ-code"
+                        style="width: 100%;  overflow: scroll; border-left: 5px solid rgb(82, 8, 92); border-radius: ">
+                        <div class="text" style="width: 200%; ">
+                            <br>
+                            <!--new-->
+                            &lt;<span class="element">div</span> <span class="element1">class=</span>
+                            <span class="element2">"row"</span>&gt; <br>
+                            <span style="padding-left: 10px;"></span>&lt;<span class="element">div</span> <span
+                                class="element1">class=</span>
+                            <span class="element2">"column"</span>&gt; <br>
+                            <span style="padding-left: 19px;"></span> &lt;<span class="element">img <span
+                                    class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd car wallpapers
+                                for mobile (1).jpg" &gt;
+                                <br> <span style="padding-left: 19px;"></span> &lt;<span class="element">img <span
+                                        class="element2">src=</span>"https://www.codewj.ml/mediaa/5.png" &gt;
+                                    <br> <span style="padding-left: 19px;"></span> &lt;<span class="element">img <span
+                                            class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd car
+                                        wallpapers for mobile (11).jpg" &gt;
+                                        <br> <span style="padding-left: 19px;"></span> &lt;<span class="element">img
+                                            <span class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                            car wallpapers for mobile (12).jpg" &gt;
+                                            <br> <span style="padding-left: 19px;"></span> &lt;<span class="element">img
+                                                <span
+                                                    class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                car wallpapers for mobile (13).jpg"
+                                                &gt;
+                                                <br> <span style="padding-left: 19px;"></span> &lt;<span
+                                                    class="element">img <span
+                                                        class="element2">src=</span>"https://www.codewj.ml/mediaa/02.png"
+                                                    &gt;
+
+                                                    <br>
+                                                    <span style="padding-left: 10px;"></span> &lt;<span
+                                                        class="element">div&gt;
+                                                        <br>
+                                                        <br><span style="padding-left: 10px;"></span>&lt;<span
+                                                            class="element">div</span> <span
+                                                            class="element1">class=</span>
+                                                        <span class="element2">"column"</span>&gt; <br>
+                                                        <span style="padding-left: 19px;"></span> &lt;<span
+                                                            class="element">img <span
+                                                                class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                            car wallpapers for mobile (15).jpg" &gt;
+                                                            <br> <span style="padding-left: 19px;"></span> &lt;<span
+                                                                class="element">img <span
+                                                                    class="element2">src=</span>"https://www.codewj.ml/mediaa/12.png"
+                                                                &gt;
+                                                                <br> <span style="padding-left: 19px;"></span> &lt;<span
+                                                                    class="element">img <span
+                                                                        class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                    car wallpapers for mobile (17).jpg" &gt;
+                                                                    <br> <span style="padding-left: 19px;"></span>
+                                                                    &lt;<span class="element">img <span
+                                                                            class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                        car wallpapers for mobile (18).jpg" &gt;
+                                                                        <br> <span style="padding-left: 19px;"></span>
+                                                                        &lt;<span class="element">img <span
+                                                                                class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                            car wallpapers for mobile (2).jpg"
+                                                                            &gt;
+
+                                                                            <br>
+                                                                            <span style="padding-left: 10px;"></span>
+                                                                            &lt;<span class="element">div&gt;
+                                                                                <br>
+                                                                                <br>
+                                                                                <span
+                                                                                    style="padding-left: 10px;"></span>&lt;<span
+                                                                                    class="element">div</span> <span
+                                                                                    class="element1">class=</span>
+                                                                                <span
+                                                                                    class="element2">"column"</span>&gt;
+                                                                                <br>
+                                                                                <span
+                                                                                    style="padding-left: 19px;"></span>
+                                                                                &lt;<span class="element">img <span
+                                                                                        class="element2">src=</span>"https://www.codewj.ml/mediaa/03.png"
+                                                                                    &gt;
+                                                                                    <br> <span
+                                                                                        style="padding-left: 19px;"></span>
+                                                                                    &lt;<span class="element">img <span
+                                                                                            class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                        car wallpapers for mobile
+                                                                                        (22).jpg" &gt;
+                                                                                        <br> <span
+                                                                                            style="padding-left: 19px;"></span>
+                                                                                        &lt;<span class="element">img
+                                                                                            <span
+                                                                                                class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                            car wallpapers for mobile
+                                                                                            (21).jpg" &gt;
+                                                                                            <br> <span
+                                                                                                style="padding-left: 19px;"></span>
+                                                                                            &lt;<span
+                                                                                                class="element">img
+                                                                                                <span
+                                                                                                    class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                car wallpapers for
+                                                                                                mobile (23).jpg" &gt;
+                                                                                                <br> <span
+                                                                                                    style="padding-left: 19px;"></span>
+                                                                                                &lt;<span
+                                                                                                    class="element">img
+                                                                                                    <span
+                                                                                                        class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                    car wallpapers for
+                                                                                                    mobile (25).jpg"
+                                                                                                    &gt;
+                                                                                                    <br> <span
+                                                                                                        style="padding-left: 19px;"></span>
+                                                                                                    &lt;<span
+                                                                                                        class="element">img
+                                                                                                        <span
+                                                                                                            class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                        car wallpapers
+                                                                                                        for mobile
+                                                                                                        (24).jpg" &gt;
+
+                                                                                                        <br>
+                                                                                                        <span
+                                                                                                            style="padding-left: 10px;"></span>
+                                                                                                        &lt;<span
+                                                                                                            class="element">div&gt;
+                                                                                                            <br>
+                                                                                                            <br>
+                                                                                                            <span
+                                                                                                                style="padding-left: 10px;"></span>&lt;<span
+                                                                                                                class="element">div</span>
+                                                                                                            <span
+                                                                                                                class="element1">class=</span>
+                                                                                                            <span
+                                                                                                                class="element2">"column"</span>&gt;
+                                                                                                            <br>
+                                                                                                            <span
+                                                                                                                style="padding-left: 19px;"></span>
+                                                                                                            &lt;<span
+                                                                                                                class="element">img
+                                                                                                                <span
+                                                                                                                    class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                                car
+                                                                                                                wallpapers
+                                                                                                                for
+                                                                                                                mobile
+                                                                                                                (28).jpg"
+                                                                                                                &gt;
+                                                                                                                <br>
+                                                                                                                <span
+                                                                                                                    style="padding-left: 19px;"></span>
+                                                                                                                &lt;<span
+                                                                                                                    class="element">img
+                                                                                                                    <span
+                                                                                                                        class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                                    car
+                                                                                                                    wallpapers
+                                                                                                                    for
+                                                                                                                    mobile
+                                                                                                                    (27).jpg"
+                                                                                                                    &gt;
+                                                                                                                    <br>
+                                                                                                                    <span
+                                                                                                                        style="padding-left: 19px;"></span>
+                                                                                                                    &lt;<span
+                                                                                                                        class="element">img
+                                                                                                                        <span
+                                                                                                                            class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                                        car
+                                                                                                                        wallpapers
+                                                                                                                        for
+                                                                                                                        mobile
+                                                                                                                        (29).jpg"
+                                                                                                                        &gt;
+                                                                                                                        <br>
+                                                                                                                        <span
+                                                                                                                            style="padding-left: 19px;"></span>
+                                                                                                                        &lt;<span
+                                                                                                                            class="element">img
+                                                                                                                            <span
+                                                                                                                                class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                                            car
+                                                                                                                            wallpapers
+                                                                                                                            for
+                                                                                                                            mobile
+                                                                                                                            (3).jpg"
+                                                                                                                            &gt;
+                                                                                                                            <br>
+                                                                                                                            <span
+                                                                                                                                style="padding-left: 19px;"></span>
+                                                                                                                            &lt;<span
+                                                                                                                                class="element">img
+                                                                                                                                <span
+                                                                                                                                    class="element2">src=</span>"https://www.codewj.ml/mediaa/12.png"
+                                                                                                                                &gt;
+                                                                                                                                <br>
+                                                                                                                                <span
+                                                                                                                                    style="padding-left: 19px;"></span>
+                                                                                                                                &lt;<span
+                                                                                                                                    class="element">img
+                                                                                                                                    <span
+                                                                                                                                        class="element2">src=</span>"https://www.codewj.ml/mediaa/Pictures/hd
+                                                                                                                                    car
+                                                                                                                                    wallpapers
+                                                                                                                                    for
+                                                                                                                                    mobile
+                                                                                                                                    (26).jpg"
+                                                                                                                                    &gt;
+
+                                                                                                                                    <br>
+                                                                                                                                    <span
+                                                                                                                                        style="padding-left: 10px;"></span>
+                                                                                                                                    &lt;<span
+                                                                                                                                        class="element">div&gt;
+                                                                                                                                        <br>
+                                                                                                                                        <br>
+                                                                                                                                        &lt;<span
+                                                                                                                                            class="element">div&gt;
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr>
+            <div class="codeWJ-rest">
+                <h1>Size Attributes</h1>
+                <p>2) CSS.
+                <div class="codeWJ-rest">
+                    <div class="codeWJ-example">
+                        <h3>Example</h3>
+                        <div class="codeWJ-code"
+                            style="width: 98%; max-height: 150px; overflow: scroll; border-left: 5px solid rgb(82, 8, 92);">
+                            <div class="text" style="width: 300%; ">
+                                <p>&lt; <span style="color: blue;">img</span> src="/codewj.png" alt="image " width:
+                                    "300px"
+                                    height"200px" ;&gt;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="codeWJ-rest">
+                <h1>Size Attributes</h1>
+                <p>The <strong>alt</strong> ttribute specifies an alternative text to be used,
+                    when an HTML element cannot be displayed..
+                    href </strong>attribute:</p>
+                <div class="codeWJ-rest">
+                    <div class="codeWJ-example">
+                        <h3>Example</h3>
+                        <div class="codeWJ-code"
+                            style="width: 98%; max-height: 150px; overflow: scroll; border-left: 5px solid rgb(82, 8, 92);">
+                            <div class="text" style="width: 300%; ">
+                                <p>&lt; <span style="color: blue;">img</span> src="/codewj.png" alt="codeWJ "&gt;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+                <a class="codeWJ-left codeWJ-btn" href="../elements/">&#10094; <span class="nn">Previous</span></a>
+                <a class="codeWJ-right codeWJ-btn" href="../heading/"><span class="nn">Next</span> &#10095;</a>
+            </div>
+
         </div>
     </div>
+</div>
+<div class="ME">
+    <div class="img">
+        <img src="Capture1.PNG" alt="">
+    </div>
+</div>
 </body>
 </html>
 
 
 
-<div class="picture">
-    <img src="../mediaa/how-to/Capture.PNG" alt="" class="b codewj-animate-right">
-    <img src="../mediaa/how-to/Capturem.PNG" alt="" class="m codewj-animate-zoom">
-    <img src="../mediaa/how-to/Capturemb.PNG" alt="" class="mb codewj-animate-left">
 
-</div>

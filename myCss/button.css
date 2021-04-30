@@ -64,7 +64,7 @@ left:-300px;opacity:0;
 }
   .codewj-animate-right{
 position:relative;
--webkit-animation:animateright 0.4s;
+-webkit-animation:animateright 6.4s;
 animation:animateright 0.8s;
 }
 @-webkit-keyframes animateright{
