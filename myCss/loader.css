@@ -36,8 +36,7 @@ main page of the loader*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image:
-url(../mediaa/IMG_20210501_123609.jpg);
+  background-image:url(../mediaa/IMG_20210501_123609.jpg);
    background-size: cover;
     z-index: 999;
     height: 1000vh;
