@@ -18,7 +18,7 @@
    min-width: 805;
    width: 80%;
    left: 50%;
-   color: #fff;
+   color: rgb(12, 129, 32);
    position: fixed;
    font-size: 12px;
    width: 100%;
@@ -35,16 +35,15 @@ main page of the loader*/
   background-repeat: no-repeat;
   background-image: url(../5.png);
    background-size: cover;
-  width: 100%;
     z-index: 999;
-    height: 100vh;
+    height: 1000vh;
 }
 /*rotating loaders*/
 #rotateloader{
  animation: .8s rotateloader infinite;
 height: 100px;
 width: 100px;
-background-color: rgb(255, 255, 255);
+background-color: rgb(23, 16, 124);
 margin: auto;
 border-radius: 50%;
  border-right: 0px solid blue;
