@@ -13,173 +13,191 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../myCss/style.css">
     <link rel="stylesheet" href="../../myCss/sidenavz.css">
-
+<link rel="stylesheet" href="../../myCss/loader.css">
     <link rel="stylesheet" href="../../Css/profile.css">
     <link rel="stylesheet" href="https://stackpath.boostrapcdn.com/font-aweosome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            &#9776
-        </label>
-        <label class="logo"> <img src="../../mediaa/logo2.png" alt="logo.png"></label>
-        <ul>
-            <li><a class="active" href="../../">Home</a></li>
-            <li><a href="../../languages">Languages</a></li>
-            <li><a href="../../tutorial">Tutorial</a></li>
-        <li><a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ">&Sopf;ubscribe <i class="fa fa-youtube"></i></a>
-        </li>
-            <li><a href="../../profile">Developer</a></li>
-            <li><a href="../../about">About</a></li>
-        </ul>
-        <hr>
-
-    </nav>
-    <section>
-<div id="mySidenav" class="sidenavz">
-
-    <p href="jaavascript:void(0)" class="closebtn" style="color: rgb(255, 255, 253); font-size:30px; font-weight: bolder;
-      color: rgb(10, 97, 63);
-" onclick="closeNav()">&times
-    <p>
-
-    <h2 class="left"><span class="left_h2">C++</span> Tutorial</h2>
-    <a target="_top" href="../../c++/index.html">C++ HOME</a>
-    <a target="_top" href="../cpp_intro/index.html"  class="activee">C++ Introduction</a>
-    <a target="_top" href="../start_cpp/index.html" > IDE installation</a>
-
-
-    <br>
-    <h2 class="left"><span class="left_h2">OOP</span> Advanced</h2>
-
-
-</div>
-        </div>
-        </div>
-
-        </div>
-        <span
-            style="position: fixed; font-weight: 800px; cursor: pointer; font-size: 35px; color: rgb(9, 29, 82); margin-left: 20px;margin-top: -10px;"
-            onclick="openNav()">&#9776</span>
-
-
-
-        <div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px;'>
-            <div class='codeWJ-row codeWJ-white'>
-                <div class='codeWJ-col l10 m12' id='main'>
-                    <div id='mainLeaderboard' style='overflow:hidden;'>
-
-
-
-
-                    </div>
-                    <h1>Introduction<span class="color_h1"> to C++ </span></h1>
-                    <div class="codeWJ-clear nextprev">
-                        <a class="codeWJ-left codeWJ-btn" href="../index.html">&#10094; <span class="nn">Previous</span></a>
-                        <a class="codeWJ-right codeWJ-btn" href="../start_cpp/index.html"><span class="nn">Next</span>&#10095;</a>
-                    </div>
-
-                    <div class="codeWJ-panel codeWJ-info intro">
-                        <div class="codeWJ-row-padding">
-                            <div class="w3-col w3-hide-small" style="width:140px">
-
-
-
-                            </div>
-                            <div class="codeWJ-rest">
-                                <h1>What is C++?</h1>
-                                <p>C++ is an object-oriented programming language.</p>
-                                <p>It was developed by Bjarne Stroustrup
-                                at AT&T Bell Laboratories in Murray Hill, New Jersey, USA, in the early 1980’s.</p>
-<p>C++ is an extension of C with a major addition of the class
-construct feature of Simula67.</p>
-<p>C+ + is a superset of C.</p>
-<p>The most important facilities that C++ adds on to C care classes, inheritance, function
-overloading and operator overloading</p>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-
-
-
-
-
-
-                    <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
-                        <a class="codeWJ-left codeWJ-btn" href="../index.html">&#10094; <span class="nn">Previous</span></a>
-                        <a class="codeWJ-right codeWJ-btn" href="../start_cpp/index.html"><span class="nn">Next</span> &#10095;</a>
-                    </div>
-
-
-    </section>
-    <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
-    <footer class="footer">
-        <div class="footer-left">
-            <h1><span>&copf;&oopf;&dopf;&#1241;</span>&Wopf;&jopf;</h1>
-            <p>codeWj is geared towards helping and training all kind of of programmers in basic skills of programming
-                by
-                setting a user friendly environment for learning. Hope you will learn and become a professional
-                developer in your
-                field</p>
-            <div class="socials">
-                <a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ"><i class="fa fa-youtube"></i></a>
-                <a href="https://wa.link/w1kegl"><i class="fa fa-whatsapp"></i></a>
-
-                <a href="tel:+254726354504"><i class="fa fa-phone"></i></a>
-                <a href="mailto:jon.codewj.dev@gmail.com"><i class="fa fa-envelope"></i></a>
+        <div id="timeout">
+            <div id="loader">
+                <div id="rotateloader">
+                </div>
+        
+            </div>
+            <p id="logoloader">
+                codeWj <span id="logoloaderinc">Inc<span>
+            </p>
+            <div id="byjon">
+                <p>CEO<br>jonWaithira</p>
             </div>
         </div>
-        <ul class="footer-right">
-            <li>
-                <h2>&Lopf;anguages</h2>
-                <ul class="box">
-                    <li><a href="../../c/">&Copf; &Topf;utorials</a></li>
-                    <li><a href="../../html">&Hopf;TML </a></li>
-                    <li><a href="../../html&css">&Copf;SS </a></li>
-                    <li><a href="../../python">&Popf;ython</a></li>
-                    <li><a href="../../c++">&Copf;++</a></li>
-                    <li><a href="../../java">&Jopf;ava</a></li>
-                </ul>
-            </li>
-            <li class="features">
-                <h2>Quick links</h2>
-                <ul class="box">
-                    <li><a href="../../">&Hopf;ome</a></li>
-                    <li><a href="../../about">&Aopf;bout</a></li>
-                    <li><a href="../../tutorial">&Topf;utorials</a></li>
-                    <li><a href="../../FAQ">&Fopf;AQs</a></li>
-                    <li><a href="https://www.devcodewj.ml">&Dopf;eveloper</a></li>
-                </ul>
-            </li>
-            <li>
-                <h2>&Copf;ontact</h2>
-                <ul class="box">
-                    <li><a href="tel:+254726354504">+(254) 726-3545-04 </a></li>
-                    <li><a href="mailto:jonwaithira@gmail.com">info@codewj.ml</a></li>
-                    <li><a href="mailto:jonwaithira@gmail.com">jonwaithira@gmail.com</a></li>
+<div id="logl">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                &#9776
+            </label>
+            <label class="logo"> <img src="../../mediaa/logo2.png" alt="logo.png"></label>
+            <ul>
+                <li><a class="active" href="../../">Home</a></li>
+                <li><a href="../../languages">Languages</a></li>
+                <li><a href="../../tutorial">Tutorial</a></li>
+                <li><a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ">&Sopf;ubscribe <i
+                            class="fa fa-youtube"></i></a>
+                </li>
+                <li><a href="../../profile">Developer</a></li>
+                <li><a href="../../about">About</a></li>
+            </ul>
+            <hr>
+        
+        </nav>
+        <section>
+            <div id="mySidenav" class="sidenavz">
+        
+                <p href="jaavascript:void(0)" class="closebtn" style="color: rgb(255, 255, 253); font-size:30px; font-weight: bolder;
+              color: rgb(10, 97, 63);
+        " onclick="closeNav()">&times
+                <p>
+        
+                <h2 class="left"><span class="left_h2">C++</span> Tutorial</h2>
+                <a target="_top" href="../../c++/index.html">C++ HOME</a>
+                <a target="_top" href="../cpp_intro/index.html" class="activee">C++ Introduction</a>
+                <a target="_top" href="../start_cpp/index.html"> IDE installation</a>
+        
+        
+                <br>
+                <h2 class="left"><span class="left_h2">OOP</span> Advanced</h2>
+        
+        
+    
+        
+            </div>
+            <span
+                style="position: fixed; font-weight: 800px; cursor: pointer; font-size: 35px; color: rgb(9, 29, 82); margin-left: 20px;margin-top: -10px;"
+                onclick="openNav()">&#9776</span>
+        
+        
+        
+            <div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px;'>
+                <div class='codeWJ-row codeWJ-white'>
+                    <div class='codeWJ-col l10 m12' id='main'>
 
-                </ul>
-            </li>
-        </ul>
-        <div class="footer-bottom" style="text-align:center; padding: 50px 50px 0px 50px;">
-
-            </p>
-
-            <p>&copy; <span id="year"> </span> &copf;&oopf;&dopf;&#1241;<span>&Wopf;&jopf;, &Iopf;&nopf;&copf;
-                    &Aopf;&lopf;&lopf;
-                    &ropf;&iopf;&gopf;&hopf;&topf;&sopf; &ropf;&#1241;&sopf;&#1241;&ropf;&vopf;&#1241;&dopf;
-            </p>
-        </div>
-    </footer>
+                        <h1>Introduction<span class="color_h1"> to C++ </span></h1>
+                        <div class="codeWJ-clear nextprev">
+                            <a class="codeWJ-left codeWJ-btn" href="../index.html">&#10094; <span class="nn">Previous</span></a>
+                            <a class="codeWJ-right codeWJ-btn" href="../start_cpp/index.html"><span
+                                    class="nn">Next</span>&#10095;</a>
+                        </div>
+        
+                        <div class="codeWJ-panel codeWJ-info intro">
+                            <div class="codeWJ-row-padding">
+                                <div class="codeWJ-rest">
+                                    <h1>What is C++?</h1>
+                                    <p>C++ is an object-oriented programming language.</p>
+                                    <p>It was developed by Bjarne Stroustrup
+                                        at AT&T Bell Laboratories in Murray Hill, New Jersey, USA, in the early 1980’s.</p>
+                                    <p>C++ is an extension of C with a major addition of the class
+                                        construct feature of Simula67.</p>
+                                    <p>C+ + is a superset of C.</p>
+                                    <p>The most important facilities that C++ adds on to C care classes, inheritance, function
+                                        overloading and operator overloading</p>
+                                </div>
+                            </div>
+                        </div>
+                                                <div class="codeWJ-panel codeWJ-info intro">
+                                                    <div class="codeWJ-row-padding">
+                                                        <div class="codeWJ-rest">
+                                                            <h1>What is C++?</h1>
+                                                            <p>C++ is an object-oriented programming language.</p>
+                                                            <p>It was developed by Bjarne Stroustrup
+                                                                at AT&T Bell Laboratories in Murray Hill, New Jersey, USA, in the early 1980’s.</p>
+                                                            <p>C++ is an extension of C with a major addition of the class
+                                                                construct feature of Simula67.</p>
+                                                            <p>C+ + is a superset of C.</p>
+                                                            <p>The most important facilities that C++ adds on to C care classes, inheritance, function
+                                                                overloading and operator overloading</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                        <hr>
+        
+        
+                        <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+                            <a class="codeWJ-left codeWJ-btn" href="../index.html">&#10094; <span class="nn">Previous</span></a>
+                            <a class="codeWJ-right codeWJ-btn" href="../start_cpp/index.html"><span class="nn">Next</span>
+                                &#10095;</a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-left">
+                <h1><span>&copf;&oopf;&dopf;&#1241;</span>&Wopf;&jopf;</h1>
+                <p>codeWj is geared towards helping and training all kind of of programmers in basic skills of programming
+                    by
+                    setting a user friendly environment for learning. Hope you will learn and become a professional
+                    developer in your
+                    field</p>
+                <div class="socials">
+                    <a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ"><i class="fa fa-youtube"></i></a>
+                    <a href="https://wa.link/w1kegl"><i class="fa fa-whatsapp"></i></a>
+        
+                    <a href="tel:+254726354504"><i class="fa fa-phone"></i></a>
+                    <a href="mailto:jon.codewj.dev@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+            <ul class="footer-right">
+                <li>
+                    <h2>&Lopf;anguages</h2>
+                    <ul class="box">
+                        <li><a href="../../c/">&Copf; &Topf;utorials</a></li>
+                        <li><a href="../../html">&Hopf;TML </a></li>
+                        <li><a href="../../html&css">&Copf;SS </a></li>
+                        <li><a href="../../python">&Popf;ython</a></li>
+                        <li><a href="../../c++">&Copf;++</a></li>
+                        <li><a href="../../java">&Jopf;ava</a></li>
+                    </ul>
+                </li>
+                <li class="features">
+                    <h2>Quick links</h2>
+                    <ul class="box">
+                        <li><a href="../../">&Hopf;ome</a></li>
+                        <li><a href="../../about">&Aopf;bout</a></li>
+                        <li><a href="../../tutorial">&Topf;utorials</a></li>
+                        <li><a href="../../FAQ">&Fopf;AQs</a></li>
+                        <li><a href="https://www.devcodewj.ml">&Dopf;eveloper</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>&Copf;ontact</h2>
+                    <ul class="box">
+                        <li><a href="tel:+254726354504">+(254) 726-3545-04 </a></li>
+                        <li><a href="mailto:jonwaithira@gmail.com">info@codewj.ml</a></li>
+                        <li><a href="mailto:jonwaithira@gmail.com">jonwaithira@gmail.com</a></li>
+        
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-bottom" style="text-align:center; padding: 50px 50px 0px 50px;">
+        
+                </p>
+        
+                <p>&copy; <span id="year"> </span> &copf;&oopf;&dopf;&#1241;<span>&Wopf;&jopf;, &Iopf;&nopf;&copf;
+                        &Aopf;&lopf;&lopf;
+                        &ropf;&iopf;&gopf;&hopf;&topf;&sopf; &ropf;&#1241;&sopf;&#1241;&ropf;&vopf;&#1241;&dopf;
+                </p>
+            </div>
+        </footer>
+</div>
 
 
     <script src="../../js/jon.js">
 
     </script>
+    <script src="../../js/loader.js"></script>
 </body>
 
 </html>

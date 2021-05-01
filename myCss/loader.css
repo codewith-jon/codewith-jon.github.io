@@ -1,0 +1,136 @@
+
+/*hiding main content*/
+#log{
+    display: none;
+}
+#loglo{
+      display: none;
+
+}
+
+/* end of hiding main content*/
+/*displaying info about Jon Waithira*/
+#byjon{
+   top: 35%;
+   text-align: center;
+   margin: 0 auto;
+   min-width: 805;
+   width: 80%;
+   left: 50%;
+   position: fixed;
+   font-size: 12px;
+   width: 100%;
+   margin: auto;
+   transform: translate(-50%, -50%);
+}
+/*displaying info about Jon Waithira*/
+/*main page of the loader*/
+#timeout
+{
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 999;
+    height: 100vh;
+}
+/*rotating loaders*/
+#rotateloader{
+ animation: .8s rotateloader infinite;
+height: 100px;
+width: 100px;
+margin: auto;
+border-radius: 50%;
+ border-right: 0px solid blue;
+ ;border-top: 2px solid red;
+border-bottom: 2px solid green;
+border-left: 0px solid black;
+      }
+      /*rotating loaders*/
+#loader{
+   top: 50%;
+   left: 50%;
+   position: fixed;
+   font-size: 22px;
+   width: 100%;
+   margin: auto;
+   transform: translate(-50%, -50%);
+}
+/*displaying company's logo*/
+
+#logoloaderinc{
+    animation: 1.3s logoloaderinc infinite;
+}
+#logoloader{
+   top: 50%;
+   left: 50%;
+   position: fixed;
+   margin: auto;
+   z-index: 999;
+   transform: translate(-50%, -50%);
+animation: 1.3s logoloader infinite;
+
+}
+/*displaying company's logo*/
+
+/*main page of the loader*/
+
+/************Animations***************/
+
+/*animation of the  rotating loader*/
+
+     @keyframes rotateloader{
+  0% { transform: rotate(0deg); 
+  } 
+
+    25% { transform: rotate(90deg); 
+  } 
+
+   50% { transform: rotate(180deg); 
+  } 
+
+   75% { transform: rotate(270deg); 
+  } 
+  
+  100% { transform: rotate(360deg);
+}}
+/*animation of the  rotating loadeer*/
+
+/*animation of the  changing color of the  company's logo*/
+
+     @keyframes logoloaderinc{
+  0% { 
+    color: rgb(20, 220, 70);
+  } 
+
+    25% { color:  rgb(20, 220, 70);
+  } 
+
+   50% { color: crimson;
+  } 
+
+   75% { color: rgb(24, 90, 11);
+  } 
+  
+  100% { color: crimson;
+
+}}
+
+     @keyframes logoloader{
+  0% { color: crimson;
+  } 
+
+    25% { color: crimson;
+  } 
+
+   50% { color: rgb(20, 220, 70);
+  } 
+
+   75% { color: rgb(24, 90, 11);
+  } 
+  
+  100% { color: rgb(20, 220, 70);
+}
+
+}
+/*animation of the  changing color of the  company's logo*/
+
+/************Animations***************/

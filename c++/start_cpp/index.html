@@ -6,13 +6,14 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C++ IDE installation </title>
+    <title id="downloadmessagetitle" class="title">C++ IDE installation </title>
     <meta name="description"
         content="Learn basic programming and become a proffesional in various field with a student taking BCS Computer Science in KENYA">
     <link rel="icon" href="https://www.codewj.ml/5.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../myCss/style.css">
     <link rel="stylesheet" href="../../myCss/sidenavz.css">
+    <link rel="stylesheet" href="../../myCss/loader.css">
 
     <link rel="stylesheet" href="../../Css/profile.css">
     <link rel="stylesheet" href="https://stackpath.boostrapcdn.com/font-aweosome/4.7.0/css/font-awesome.min.css">
@@ -20,6 +21,20 @@
 </head>
 
 <body>
+    <div id="timeout">
+        <div id="loader">
+            <div id="rotateloader">
+            </div>
+    
+        </div>
+        <p id="logoloader">
+            codeWj <span id="logoloaderinc">Inc<span>
+        </p>
+        <div id="byjon">
+            <p>CEO<br>jonWaithira</p>
+        </div>
+    </div>
+    <div id="logl">
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -57,10 +72,8 @@
 
 
         </div>
-        </div>
-        </div>
+ 
 
-        </div>
         <span
             style="position: fixed; font-weight: 800px; cursor: pointer; font-size: 35px; color: rgb(9, 29, 82); margin-left: 20px;margin-top: -10px;"
             onclick="openNav()">&#9776</span>
@@ -130,7 +143,10 @@
                         <hr>
                         <h1>Step 1: Open Falcon&nbsp;C++</h1>
                         <p>Ensure that you have installed Falcon&nbsp;C++ in your PC.</p>
-                        <p>If youIf you are having a problem in the installation <a href="https://youtu.be/XSxPTPr1GzU" style="font-weight: 900; color: blue">WATCH </a>HOW TO
+                        <p>If you are having a problem in the 
+                            installation 
+                            <a href="https://youtu.be/XSxPTPr1GzU" 
+                            style="font-weight: 900;  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: rgb(17, 17, 129)">WATCH </a>HOW TO
                             INSTALL Falcon&nbsp;C++. </p>
                     </div>
                     <hr>
@@ -141,7 +157,8 @@
                             <h3>A C++ program :</h3>
         <div class="codeWJ-code">
             <span class="comment">//simple c++ program to output &quot;Hello codeWJ&quot;</span> <br>
-        
+                                    
+
             <span class="c">#include</span> <span class="element1">&lt;iostream&gt;</span>
             <br><br>
             <span class="co">using namespace</span> std; <br><br>
@@ -155,28 +172,28 @@
         
         </div>
                         </div>
-                        <img src="../mediaa/1.PNG" style="border: 1px solid green; width: 95%; margin-top: 20px;">
                     
                     </div>
                     <hr>
                     <div class="codeWJ-rest">
-                        <h1>Step 3: Save the HTML doc </h1>
-                        <p>Select <strong>File > Save As </strong> in VS Code menu.</p>
-                        <p>Name the page as &quot;index.html&quot; and click on save . </p>
-                        <img src="../mediaa/3.PNG" style="border: 1px solid green; width: 95%; margin-top: 20px;">
+                        <h1>Step 3: Save the program </h1>
+                        <p>Select <strong>File > Save As </strong> in the menu.</p>
+                        <p>Name the page as 
+                            <span style="text-decoration: underline;">
+                                &quot;myfirstprogram.cpp&quot;</span>  and click on save . </p>
                     
                     </div>
                     <hr>
                     <div class="codeWJ-rest">
-                        <h1>Step 4: View the HTML doc </h1>
-                        <p>In this case, you will use your favorite browse...in my case i'm using chrome </p>
-                        <p>The page will look like this </p>
-                        <img src="../mediaa/4.PNG" style="border: 1px solid green; width: 95%; margin-top: 20px;">
+                        <h1>Step 4: Run the program </h1>
+                        <p>Press F9 ro run the program.  </p>
+                        <div class="note">
+                            <p>Note!! Not all  computers support the F9 key to run programs in Falcon&nbsp;C++. </p>
+                        </div>
+                        <p style=" margin: 20px;"> <i>or</i> Press the Run button indicated in the pic below </p>
+                        <img src="./Capture.PNG" style="border: 3px solid green; width: 100%; margin: 0 auto;">
                     
                     </div>
-
-
-
 
                     <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
                         <a class="codeWJ-left codeWJ-btn" href="../index.html">&#10094; <span
@@ -185,7 +202,7 @@
                             &#10095;</a>
                     </div>
 
-
+                
     </section>
     <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
     <footer class="footer">
@@ -247,10 +264,11 @@
         </div>
     </footer>
 
-
+</div>
     <script src="../../js/jon.js">
 
     </script>
+            <script src="../../js/loader.js"></script>
 </body>
 
 </html>

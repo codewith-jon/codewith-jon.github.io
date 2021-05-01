@@ -26,6 +26,7 @@
           float: left;
           width: 20%;
       }
+
       @keyframes slider{
           0%{
               left: 0;

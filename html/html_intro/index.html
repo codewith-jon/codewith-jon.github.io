@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../../myCss/style.css">
         <link rel="stylesheet" href="../../myCss/sidenavz.css">
+        <link rel="stylesheet" href="../../myCss/loader.css">
 
     <link rel="stylesheet" href="../../Css/profile.css">
     <link rel="stylesheet" href="https://stackpath.boostrapcdn.com/font-aweosome/4.7.0/css/font-awesome.min.css">
@@ -20,243 +21,257 @@
 </head>
 
 <body>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            &#9776
-        </label>
-    <label class="logo"> <img src="../../mediaa/logo2.png" alt="logo.png"></label>
-        <ul>
-            <li><a class="active" href="../../">Home</a></li>
-            <li><a href="../../languages">Languages</a></li>
-            <li><a href="../../tutorial">Tutorial</a></li>
-            <li><a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ">Subscribe <i
-                        class="fa fa-youtube"></i></a></li>
-            <li><a href="../../profile">Developer</a></li>
-            <li><a href="../../about">About</a></li>
-        </ul>
-    <hr>
-
-    </nav>
-    <section>
-        <div id="mySidenav" class="sidenavz">
-
-    <p href="jaavascript:void(0)" class="closebtn" style="color: rgb(255, 255, 253); font-size:30px; font-weight: bolder;
-          color: rgb(10, 97, 63);
-    " onclick="closeNav()">&times
-    <p>
-            <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
-            <a target="_top" href="../">HTML HOME</a>
-            <a target="_top" href="../html_intro/" class="activee">HTML Introduction</a>
-            <a target="_top" href="../editors/">HTML Editors</a>
-            <a target="_top" href="../basic/">HTML Basic</a>
-            <a target="_top" href="../elements/">HTML Elements</a>
-            <a target="_top" href="../attributes/">HTML Attributes</a>
-            <a target="_top" href="../heading/">HTML Headings</a>
-            <a target="_top" href="../paragraphs/">HTML Paragraphs</a>
-            <a target="_top" href="../styles/">HTML Styles</a>
-            <a target="_top" href="../formatting/">HTML Formatting</a>
-            <a target="_top" href="../quotations/">HTML Quotations</a>
-            <a target="_top" href="../comments/">HTML Comments</a>
-            <a target="_top" href="../colors/">HTML Colors</a>
-            <div class="tut_overview">
-                <a target="_top" href="../colors/">Colors</a>
-                <a target="_top" href="../RGB/">RGB</a>
-                <a target="_top" href="../HEX/">HEX</a>
-                <a target="_top" href="../HSL/">HSL</a>
-            </div>
-            <a target="_top" href="../Css/">HTML CSS</a>
-            <a target="_top" href="../links/">HTML Links</a>
-            <div class="tut_overview">
-                <a target="_top" href="../links/">Links</a>
-                <a target="_top" href="../linkcolor/">Link Colors</a>
-                <a target="_top" href="../linkbookmarks/">Link Bookmarks</a>
-            </div>
-            <a target="_top" href="../images/">HTML Images</a>
-            <div class="tut_overview">
-
-                <a target="_top" href="../backgroundimages/">Background Images</a>
-                <a target="_top" href="../pictureelement/">The Picture Element</a>
-            </div>
-            <a target="_top" href="../tables/">HTML Tables</a>
-            <a target="_top" href="../lists/">HTML Lists</a>
-            <div class="tut_overview">
-
-                <a target="_top" href="../unorderedlists/">Unordered Lists</a>
-                <a target="_top" href="../orderedlists/">Ordered Lists</a>
-                <a target="_top" href="../otherlists/">Other Lists</a>
-            </div>
-            <a target="_top" href="../block&inline/">HTML Block &amp; Inline</a>
-            <a target="_top" href="../classes/">HTML Classes</a>
-            <a target="_top" href="../id/">HTML Id</a>
-            <a target="_top" href="../iframes/">HTML Iframes</a>
-            <a target="_top" href="../javascript/">HTML JavaScript</a>
-            <a target="_top" href="../filepaths/">HTML File Paths</a>
-            <a target="_top" href="../head/">HTML Head</a>
-            <a target="_top" href="../layout/">HTML Layout</a>
-            <a target="_top" href="../responsive/">HTML Responsive</a>
-
-            <br>
-            <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
-            <a target="_top" href="../forms/">HTML Forms</a>
-            <a target="_top" href="../formsattributes/">HTML Form Attributes</a>
-            <a target="_top" href="../formelements/">HTML Form Elements</a>
-            <a target="_top" href="../forminputtypes/">HTML Input Types</a>
-            <a target="_top" href="../forminputattributes/">HTML Input Attributes</a>
-            <a target="_top" href="../formattributesform/">HTML Input Form Attributes</a>
-
-        </div>
-        </div>
-        </div>
-
-        </div>
-    <span
-        style="position: fixed; font-weight: 800px; cursor: pointer; font-size: 35px; color: rgb(9, 29, 82); margin-left: 20px;margin-top: -10px;"
-            onclick="openNav()">&#9776</span>
-
- 
-
-        <div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px;'>
-            <div class='codeWJ-row codeWJ-white'>
-                <div class='codeWJ-col l10 m12' id='main'>
-                    <div id='mainLeaderboard' style='overflow:hidden;'>
-
-
-
-
+            <div id="timeout">
+                <div id="loader">
+                    <div id="rotateloader">
                     </div>
-                    <h1>HTML<span class="color_h1"> Introduction</span></h1>
-                    <div class="codeWJ-clear nextprev">
-                        <a class="codeWJ-left codeWJ-btn" href="../">&#10094; <span class="nn">Previous</span></a>
-                        <a class="codeWJ-right codeWJ-btn" href="../editors/"><span class="nn">Next</span>&#10095;</a>
-                    </div>
+            
+                </div>
+                <p id="logoloader">
+                    codeWj <span id="logoloaderinc">Inc<span>
+                </p>
+                <div id="byjon">
+                    <p>CEO<br>jonWaithira</p>
+                </div>
+            </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                &#9776
+            </label>
+            <label class="logo"> <img src="../../mediaa/logo2.png" alt="logo.png"></label>
+            <ul>
+                <li><a class="active" href="../../">Home</a></li>
+                <li><a href="../../languages">Languages</a></li>
+                <li><a href="../../tutorial">Tutorial</a></li>
+                <li><a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ">Subscribe <i
+                            class="fa fa-youtube"></i></a></li>
+                <li><a href="../../profile">Developer</a></li>
+                <li><a href="../../about">About</a></li>
+            </ul>
+            <hr>
+        
+        </nav>
+        <section>
+            <div id="mySidenav" class="sidenavz">
+        
+                <p href="jaavascript:void(0)" class="closebtn" style="color: rgb(255, 255, 253); font-size:30px; font-weight: bolder;
+                  color: rgb(10, 97, 63);
+            " onclick="closeNav()">&times
+                <p>
+                <h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+                <a target="_top" href="../">HTML HOME</a>
+                <a target="_top" href="../html_intro/" class="activee">HTML Introduction</a>
+                <a target="_top" href="../editors/">HTML Editors</a>
+                <a target="_top" href="../basic/">HTML Basic</a>
+                <a target="_top" href="../elements/">HTML Elements</a>
+                <a target="_top" href="../attributes/">HTML Attributes</a>
+                <a target="_top" href="../heading/">HTML Headings</a>
+                <a target="_top" href="../paragraphs/">HTML Paragraphs</a>
+                <a target="_top" href="../styles/">HTML Styles</a>
+                <a target="_top" href="../formatting/">HTML Formatting</a>
+                <a target="_top" href="../quotations/">HTML Quotations</a>
+                <a target="_top" href="../comments/">HTML Comments</a>
+                <a target="_top" href="../colors/">HTML Colors</a>
+                <div class="tut_overview">
+                    <a target="_top" href="../colors/">Colors</a>
+                    <a target="_top" href="../RGB/">RGB</a>
+                    <a target="_top" href="../HEX/">HEX</a>
+                    <a target="_top" href="../HSL/">HSL</a>
+                </div>
+                <a target="_top" href="../Css/">HTML CSS</a>
+                <a target="_top" href="../links/">HTML Links</a>
+                <div class="tut_overview">
+                    <a target="_top" href="../links/">Links</a>
+                    <a target="_top" href="../linkcolor/">Link Colors</a>
+                    <a target="_top" href="../linkbookmarks/">Link Bookmarks</a>
+                </div>
+                <a target="_top" href="../images/">HTML Images</a>
+                <div class="tut_overview">
+        
+                    <a target="_top" href="../backgroundimages/">Background Images</a>
+                    <a target="_top" href="../pictureelement/">The Picture Element</a>
+                </div>
+                <a target="_top" href="../tables/">HTML Tables</a>
+                <a target="_top" href="../lists/">HTML Lists</a>
+                <div class="tut_overview">
+        
+                    <a target="_top" href="../unorderedlists/">Unordered Lists</a>
+                    <a target="_top" href="../orderedlists/">Ordered Lists</a>
+                    <a target="_top" href="../otherlists/">Other Lists</a>
+                </div>
+                <a target="_top" href="../block&inline/">HTML Block &amp; Inline</a>
+                <a target="_top" href="../classes/">HTML Classes</a>
+                <a target="_top" href="../id/">HTML Id</a>
+                <a target="_top" href="../iframes/">HTML Iframes</a>
+                <a target="_top" href="../javascript/">HTML JavaScript</a>
+                <a target="_top" href="../filepaths/">HTML File Paths</a>
+                <a target="_top" href="../head/">HTML Head</a>
+                <a target="_top" href="../layout/">HTML Layout</a>
+                <a target="_top" href="../responsive/">HTML Responsive</a>
+        
+                <br>
+                <h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+                <a target="_top" href="../forms/">HTML Forms</a>
+                <a target="_top" href="../formsattributes/">HTML Form Attributes</a>
+                <a target="_top" href="../formelements/">HTML Form Elements</a>
+                <a target="_top" href="../forminputtypes/">HTML Input Types</a>
+                <a target="_top" href="../forminputattributes/">HTML Input Attributes</a>
+                <a target="_top" href="../formattributesform/">HTML Input Form Attributes</a>
+        
+            
+            </div>
+            <span
+                style="position: fixed; font-weight: 800px; cursor: pointer; font-size: 35px; color: rgb(9, 29, 82); margin-left: 20px;margin-top: -10px;"
+                onclick="openNav()">&#9776</span>
+        
+        
+        
+            <div class='codeWJ-main codeWJ-light-grey' id='belowtopnav' style='margin-left:220px;'>
+                <div class='codeWJ-row codeWJ-white'>
+                    <div class='codeWJ-col l10 m12' id='main'>
 
-                    <div class="codeWJ-panel codeWJ-info intro">
-                        <div class="codeWJ-row-padding">
-                            <div class="w3-col w3-hide-small" style="width:140px">
-
-
-
-                            </div>
-                            <div class="codeWJ-rest">
-                                <h1>What is HTML?</h1>
-                                <p>HTML is the standard markup language for describing  Web pages.</p>
-
-                            </div>
+                        <h1>HTML<span class="color_h1"> Introduction</span></h1>
+                        <div class="codeWJ-clear nextprev">
+                            <a class="codeWJ-left codeWJ-btn" href="../">&#10094; <span class="nn">Previous</span></a>
+                            <a class="codeWJ-right codeWJ-btn" href="../editors/"><span class="nn">Next</span>&#10095;</a>
                         </div>
-                    </div>
-                    <hr>
+        
+                        <div class="codeWJ-panel codeWJ-info intro">
+                            <div class="codeWJ-row-padding">
 
-                    <h2>HTML Example</h2>
-
-
-                    <div class="codeWJ-example">
-                        <h3>A HTML document:</h3>
-                        <div class="codeWJ-code" style="width: 98%; max-height: 250px; overflow: scroll; border-left: 5px solid rgb(82, 8, 92);" >
-                            <div class="text"  style="width: 200%; ">
-                             &lt;<span  style="color: brown;">!DOCTYPE html</span> &gt;
-                                <br>
-                                &lt;<span style="color: brown;">html</span>&gt;<br> 
-                                &lt;<span style="color: brown;">head</span>&gt;
-                                <br>
-                                 &lt;<span style="color: brown;">title</span>&gt;Page Title&lt;/<span style="color: brown;">title
-                                </span>&gt;
-                                <br>
-                                &lt;<span style="color: brown;">/head</span>&gt;
-                                <br>
-                                &lt;<span style="color: brown;">body</span>&gt;
-                                <br>
-                                <br>
-                                &lt;<span style="color: brown;">h1</span>&gt;This is a Heading&lt;/h1&gt;
-                                <br>&lt;<span style="color: brown;">p</span>&gt;This
-                                is a paragraph.&lt;<span style="color: brown;">/p</span>&gt;
-                                <br><br>
-                                &lt;/<span style="color: brown;">body</span>&gt;<br>&lt;<span style="color: brown;">/html</span>&gt;
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-
-                            <div class="codeWJ-rest">
-                                <h2>Example Explained</h2>
-                                <div class="x">
-                                    <ul>
-                                        <li>
-                                            The <strong> DOCTYPE</strong> defines the document type to be HTML.
-                                        </li>
-                                        <li>
-                                            The text between <strong>&lt;html&gt;</strong> and <strong>&lt;/html&gt;</strong> describes HTML
-                                            document.
-                                        </li>
-                                        <li>
-                                            The text between <strong>&lt;head &gt;</strong> and <strong>&lt;/head&gt;</strong> provides information
-                                            about the document.
-                                        </li>
-                                        <li>
-                                            The text between <strong>&lt;title&gt;</strong> and <strong>&lt;/title&gt;</strong> provides a title for
-                                            the document.
-                                        </li>
-                                        <li>
-                                            The text between <strong>&lt;/body&gt;</strong> and <strong>&lt;/body&gt;</strong> describes the visible
-                                            page content.
-                                        </li>
-                                        <li>
-                                            The text between <strong>&lt;/h1&gt;</strong> and <strong>&lt;/h1&gt;</strong> describes a heading.
-                                        </li>
-                                        <li>
-                                            The text between <strong>&lt;/p1&gt;</strong> and <strong>&lt;/p1&gt;</strong> describes a paragraph.
-                                        </li>
-                                    </ul>
+                                <div class="codeWJ-rest">
+                                    <h1>What is HTML?</h1>
+                                    <p>HTML is the standard markup language for describing Web pages.</p>
+        
                                 </div>
-                          
-                                                
-                     </div>
-                    <hr>
-                            <div class="codeWJ-rest">
-                                <h1>Web Broswer</h1>
-                                <p>The purpose of a web browser is to read HTML documents and display them.</p>
-                                
-                            <p>The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
-                            <p>When the above  program is executed  it gives the results  illustrated  below </p>
-                               <img src="../mediaa/4.PNG" style="border: 1px solid green; width: 95%;">
-                            
                             </div>
-
-                    <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
-                        <a class="codeWJ-left codeWJ-btn" href="../">&#10094; <span class="nn">Previous</span></a>
-                        <a class="codeWJ-right codeWJ-btn" href="../editors/"><span class="nn">Next</span> &#10095;</a>
-                    </div>
-
-
-    </section>
-    <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
-    <footer class="footer">
-        <div class="footer-left">
-    <h1><span>&copf;&oopf;&dopf;&#1241;</span>&Wopf;&jopf;</h1>
-            <p>codeWj is geared towards helping and training all kind of of programmers in basic skills of programming
-                by
-                setting a user friendly environment for learning. Hope you will learn and become a professional
-                developer in your
-                field</p>
-            <div class="socials">
-                <a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ"><i class="fa fa-youtube"></i></a>
-                <a href="https://wa.link/w1kegl"><i class="fa fa-whatsapp"></i></a>
-
-                <a href="tel:+254726354504"><i class="fa fa-phone"></i></a>
-                <a href="mailto:jon.codewj.dev@gmail.com"><i class="fa fa-envelope"></i></a>
-            </div>
+                        </div>
+                        <hr>
+        
+                        <h2>HTML Example</h2>
+        
+        
+                        <div class="codeWJ-example">
+                            <h3>A HTML document:</h3>
+                            <div class="codeWJ-code"
+                                style="width: 98%; max-height: 250px; overflow: scroll; border-left: 5px solid rgb(82, 8, 92);">
+                                <div class="text" style="width: 200%; ">
+                                    &lt;<span style="color: brown;">!DOCTYPE html</span> &gt;
+                                    <br>
+                                    &lt;<span style="color: brown;">html</span>&gt;<br>
+                                    &lt;<span style="color: brown;">head</span>&gt;
+                                    <br>
+                                    &lt;<span style="color: brown;">title</span>&gt;Page Title&lt;/<span
+                                        style="color: brown;">title
+                                    </span>&gt;
+                                    <br>
+                                    &lt;<span style="color: brown;">/head</span>&gt;
+                                    <br>
+                                    &lt;<span style="color: brown;">body</span>&gt;
+                                    <br>
+                                    <br>
+                                    &lt;<span style="color: brown;">h1</span>&gt;This is a Heading&lt;/h1&gt;
+                                    <br>&lt;<span style="color: brown;">p</span>&gt;This
+                                    is a paragraph.&lt;<span style="color: brown;">/p</span>&gt;
+                                    <br><br>
+                                    &lt;/<span style="color: brown;">body</span>&gt;<br>&lt;<span
+                                        style="color: brown;">/html</span>&gt;
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+        
+                        <div class="codeWJ-rest">
+                            <h2>Example Explained</h2>
+                            <div class="x">
+                                <ul>
+                                    <li>
+                                        The <strong> DOCTYPE</strong> defines the document type to be HTML.
+                                    </li>
+                                    <li>
+                                        The text between <strong>&lt;html&gt;</strong> and <strong>&lt;/html&gt;</strong>
+                                        describes HTML
+                                        document.
+                                    </li>
+                                    <li>
+                                        The text between <strong>&lt;head &gt;</strong> and <strong>&lt;/head&gt;</strong>
+                                        provides information
+                                        about the document.
+                                    </li>
+                                    <li>
+                                        The text between <strong>&lt;title&gt;</strong> and <strong>&lt;/title&gt;</strong>
+                                        provides a title for
+                                        the document.
+                                    </li>
+                                    <li>
+                                        The text between <strong>&lt;/body&gt;</strong> and <strong>&lt;/body&gt;</strong>
+                                        describes the visible
+                                        page content.
+                                    </li>
+                                    <li>
+                                        The text between <strong>&lt;/h1&gt;</strong> and <strong>&lt;/h1&gt;</strong> describes
+                                        a heading.
+                                    </li>
+                                    <li>
+                                        The text between <strong>&lt;/p1&gt;</strong> and <strong>&lt;/p1&gt;</strong> describes
+                                        a paragraph.
+                                    </li>
+                                </ul>
+                            </div>
+        
+        
+                        </div>
+                        <hr>
+                        <div class="codeWJ-rest">
+                            <h1>Web Broswer</h1>
+                            <p>The purpose of a web browser is to read HTML documents and display them.</p>
+        
+                            <p>The browser does not display the HTML tags, but uses them to determine how to display the
+                                document:</p>
+                            <p>When the above program is executed it gives the results illustrated below </p>
+                            <img src="../mediaa/4.PNG" style="border: 1px solid green; width: 95%;">
+        
+                        </div>
+        
+                        <div class="codeWJ-clear nextprev" style="margin-top: 20px;">
+                            <a class="codeWJ-left codeWJ-btn" href="../">&#10094; <span class="nn">Previous</span></a>
+                            <a class="codeWJ-right codeWJ-btn" href="../editors/"><span class="nn">Next</span> &#10095;</a>
+                        </div>
+    
         </div>
-        <ul class="footer-right">
-            <li>
-                <h2>&Lopf;anguages</h2>
-                <ul class="box">
-                    <li><a href="../../c/">&Copf; &Topf;utorials</a></li>
-                    <li><a href="../../html">&Hopf;TML </a></li>
-                    <li><a href="../../html&css">&Copf;SS </a></li>
-                    <li><a href="../../python">&Popf;ython</a></li>
-                    <li><a href="../../c++">&Copf;++</a></li>
-                    <li><a href="../../java">&Jopf;ava</a></li>
-                </ul>
+                </div>
+                </div>
+                
+        </section>
+        <hr style="margin-top: 40px; border: 1px solid rgba(145, 134, 134, 0.521);">
+        <footer class="footer">
+            <div class="footer-left">
+                <h1><span>&copf;&oopf;&dopf;&#1241;</span>&Wopf;&jopf;</h1>
+                <p>codeWj is geared towards helping and training all kind of of programmers in basic skills of programming
+                    by
+                    setting a user friendly environment for learning. Hope you will learn and become a professional
+                    developer in your
+                    field</p>
+                <div class="socials">
+                    <a href="https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ"><i class="fa fa-youtube"></i></a>
+                    <a href="https://wa.link/w1kegl"><i class="fa fa-whatsapp"></i></a>
+        
+                    <a href="tel:+254726354504"><i class="fa fa-phone"></i></a>
+                    <a href="mailto:jon.codewj.dev@gmail.com"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+            <ul class="footer-right">
+                <li>
+                    <h2>&Lopf;anguages</h2>
+                    <ul class="box">
+                        <li><a href="../../c/">&Copf; &Topf;utorials</a></li>
+                        <li><a href="../../html">&Hopf;TML </a></li>
+                        <li><a href="../../html&css">&Copf;SS </a></li>
+                        <li><a href="../../python">&Popf;ython</a></li>
+                        <li><a href="../../c++">&Copf;++</a></li>
+                        <li><a href="../../java">&Jopf;ava</a></li>
+                    </ul>
                 </li>
                 <li class="features">
                     <h2>Quick links</h2>
@@ -270,27 +285,31 @@
                 </li>
                 <li>
                     <h2>&Copf;ontact</h2>
-                <ul class="box">
-                    <li><a href="tel:+254726354504">+(254) 726-3545-04 </a></li>
-                    <li><a href="mailto:jonwaithira@gmail.com">info@codewj.ml</a></li>
-                    <li><a href="mailto:jonwaithira@gmail.com">jonwaithira@gmail.com</a></li>
-
-                </ul>
-            </li>
-        </ul>
-        <div class="footer-bottom" style="text-align:center; padding: 50px 50px 0px 50px;">
-
-            </p>
-
-<p>&copy; <span id="year"> </span> &copf;&oopf;&dopf;&#1241;<span>&Wopf;&jopf;, &Iopf;&nopf;&copf; &Aopf;&lopf;&lopf;
-        &ropf;&iopf;&gopf;&hopf;&topf;&sopf; &ropf;&#1241;&sopf;&#1241;&ropf;&vopf;&#1241;&dopf;
-</p>
-        </div>
-    </footer>
+                    <ul class="box">
+                        <li><a href="tel:+254726354504">+(254) 726-3545-04 </a></li>
+                        <li><a href="mailto:jonwaithira@gmail.com">info@codewj.ml</a></li>
+                        <li><a href="mailto:jonwaithira@gmail.com">jonwaithira@gmail.com</a></li>
+        
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-bottom" style="text-align:center; padding: 50px 50px 0px 50px;">
+        
+                </p>
+        
+                <p>&copy; <span id="year"> </span> &copf;&oopf;&dopf;&#1241;<span>&Wopf;&jopf;, &Iopf;&nopf;&copf;
+                        &Aopf;&lopf;&lopf;
+                        &ropf;&iopf;&gopf;&hopf;&topf;&sopf; &ropf;&#1241;&sopf;&#1241;&ropf;&vopf;&#1241;&dopf;
+                </p>
+            </div>
+        </footer>
 
 
     <script src="../js/jon.js">
-       
+
+    </script>
+    <script src="../../js/loader.js">
+
     </script>
 </body>
 

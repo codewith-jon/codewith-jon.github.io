@@ -103,9 +103,12 @@ nav ul{
      text-transform: uppercase;
  }
 
+.note{
+    color: rgb(168, 28, 56);
+    text-align: center;
+    background: rgba(138, 112, 93, 0.5);
 
-
-  }
+}
  a.active, a:hover{
      background: hsl(0, 0%, 100%);
      transition: .5s;
@@ -294,7 +297,7 @@ footer h4{
 .box a:hover{
     color: rgb(3, 90, 49);
     }
-}
+
 .footer-bottom p{
     text-align: center;
     color :#fff;
@@ -414,7 +417,7 @@ h2{
 .box a:hover{
     color: rgb(3, 90, 49);
     }
-}
+
 
 
 p a{
@@ -461,6 +464,9 @@ p a{
  }
 .fa-download{
     float: left;
-    color: rgb(199, 211, 199);
+    color: rgb(207, 214, 207);
  margin-left: 10%;
 }
+
+
+

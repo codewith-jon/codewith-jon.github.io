@@ -25,7 +25,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   -khtml-user-select:none;-moz-user-select:none;
   -ms-user-select:none;user-select:none}   
 .codeWJ-disabled,.codeWJ-btn:disabled{cursor:not-allowed;opacity:0.3}
-.codeWJ-btn:hover,.w3-btn:disabled:hover{box-shadow:none}
+.codeWJ-btn:hover{box-shadow:none}
 .codeWJ-panel:after,.codeWJ-panel:before,
 .codeWJ-row:after,.codeWJ-row:before,
 .codeWJ-row-padding:after,.codeWJ-row-padding:before,
@@ -64,13 +64,13 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 @media (min-width:601px){
   .codeWJ-col.m1{width:8.33333%}
   .codeWJ-col.m2{width:16.66666%}
-.codeWJ-col.m3,.w3-quarter{width:24.99999%}
-.codeWJ-col.m4,.w3-third{width:33.33333%}
+.codeWJ-col.m3{width:24.99999%}
+.codeWJ-col.m4{width:33.33333%}
 .codeWJ-col.m5{width:41.66666%}
-.codeWJ-col.m6,.w3-half{width:49.99999%}
+.codeWJ-col.m6{width:49.99999%}
 .codeWJ-col.m7{width:58.33333%}
-.codeWJ-col.m8,.w3-twothird{width:66.66666%}
-.codeWJ-col.m9,.w3-threequarter{width:74.99999%}
+.codeWJ-col.m8{width:66.66666%}
+.codeWJ-col.m9{width:74.99999%}
 .codeWJ-col.m10{width:83.33333%}
 .codeWJ-col.m11{width:91.66666%}
 .codeWJ-col.m12{width:99.99999%}}
@@ -92,16 +92,21 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .codeWJ-main{margin-left:0!important; max-width: 95%;margin-right:0!important}
 }
 
-.codeWJ-example{background-color:#0e7570a1;  max-width: 95%;padding:0.01em 16px;margin:20px 0;box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
+.codeWJ-example{background-color:#0e7570a1;  max-width: 95%;
+  padding:0.01em 16px;margin:20px 0;
+  box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important}
 .nextprev a {font-size:17px;border:1px solid #cccccc;}
 .nextprev a:link,.nextprev a:visited {background-color:#ffffff;color:#000000;}
-.nextprev a.codeWJ-right,.nextprev a.codeWJ-left {border-radius: 20px; background-color:#6a4caf;color:#ffffff;border-color:#4CAF50}
+.nextprev a.codeWJ-right,.nextprev 
+a.codeWJ-left {border-radius: 20px; background-color:#6a4caf;
+  color:#ffffff;border-color:#4CAF50}
 @media screen and (max-width:600px) {
 .codeWJ-example{margin-left:-16px;margin-right:-16px;  max-width: 100%;}
 }
 .codeWJ-col{float:left;width:100%}
 .intro {font-size:16px}
-.codeWJ-btn, .codeWJ-btn:link, .codeWJ-btn:visited {color:#FFFFFF;background-color:#5f063d; border-radius: 20px;}
+.codeWJ-btn, .codeWJ-btn:link,
+ .codeWJ-btn:visited {color:#FFFFFF;background-color:#5f063d; border-radius: 20px;}
 @media only screen and (max-device-width: 480px) {
 .codeWJ-code{font-family: 'Source Code Pro',Menlo,Consolas,monospace;}
 .codeWJ-code{font-size:14px;}

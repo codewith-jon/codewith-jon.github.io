@@ -1,6 +1,6 @@
 //popup begin
 
-var my = setTimeout(me, 100000);
+var my = setTimeout(me, 500000);
 function me() {
     document.getElementById("jon").style.display = ("block");
     document.getElementById("b").style.filter = ("blur(5px")
@@ -12,6 +12,7 @@ function c() {
     document.getElementById("b").style.filter = ("blur(0px")
     
 }
+
 
 function go() {
     window.location.assign("https://www.youtube.com/channel/UC0QUwLQsox1UIoSgobSv6kQ")
@@ -107,9 +108,14 @@ for (i = 0; i < codeWJ.length; i++) {
 function  download(){
     document.getElementById("download").style.display = "none";
     document.getElementById("downloadmessage").innerHTML
-        ="Thank for downloading  From codeWJ ....... your download will start right away ";
+        = "Thank for downloading  From codeWJ ....... your download will start right away ";
+
+    document.getElementById("downloadmessagetitle").innerHTML
+        = "Thanks for downloading  From codeWJ ....... your download will start right away ";
 
 }
 
 
+
 /*downloadmessage */
+
