@@ -18,7 +18,7 @@
    min-width: 805;
    width: 80%;
    left: 50%;
-   color: rgb(12, 129, 32);
+   color: #fff;
    position: fixed;
    font-size: 12px;
    width: 100%;
@@ -33,7 +33,7 @@ main page of the loader*/
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url(../5.png);
+  background-image: linear-gradient(rgba(212, 177, 177, 0.5),rgba(148, 57, 57, 0.5)), url(../5.png);
    background-size: cover;
     z-index: 999;
     height: 1000vh;
