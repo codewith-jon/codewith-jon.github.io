@@ -24,10 +24,11 @@
    transform: translate(-50%, -50%);
 }
 /*displaying info about Jon Waithira*/
-/*main page of the loader*/
+/*    background-color: #4e3686;
+main page of the loader*/
 #timeout
 {
-    background-color: #ffffff;
+      background-image: url(../5.png);
     width: 100%;
     z-index: 999;
     height: 100vh;
