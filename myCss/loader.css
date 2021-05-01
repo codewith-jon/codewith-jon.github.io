@@ -16,11 +16,14 @@
    text-align: center;
    margin: 0 auto;
    min-width: 805;
-   width: 80%;
+   width: 50%;
    left: 50%;
-   color: #fff;
+   background: rgb(224, 214, 214);
+   font-weight: 900;
+   color: rgb(10, 105, 61);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    position: fixed;
-   font-size: 12px;
+   font-size: 22px;
    width: 100%;
    margin: auto;
    transform: translate(-50%, -50%);
@@ -35,7 +38,7 @@ main page of the loader*/
   background-repeat: no-repeat;
   background-image:
    linear-gradient(rgba(212, 177, 177, 0.5),
-   rgba(148, 57, 57, 0.5)), url(../mediaa/dev.png);
+   rgba(148, 57, 57, 0.5)), url(../mediaa/IMG_20210501_123609.jpg);
    background-size: cover;
     z-index: 999;
     height: 1000vh;
