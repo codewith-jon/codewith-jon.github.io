@@ -2,6 +2,7 @@
 /*hiding main content*/
 #log{
     display: none;
+    z-index: 1;
 }
 #loglo{
       display: none;
@@ -17,6 +18,7 @@
    min-width: 805;
    width: 80%;
    left: 50%;
+   color: #fff;
    position: fixed;
    font-size: 12px;
    width: 100%;
@@ -28,8 +30,12 @@
 main page of the loader*/
 #timeout
 {
-      background-image: url(../5.png);
-    width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../5.png);
+   background-size: cover;
+  width: 100%;
     z-index: 999;
     height: 100vh;
 }
