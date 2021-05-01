@@ -1,4 +1,4 @@
-var mylo = setTimeout(loo, 5000);
+var mylo = setTimeout(loo, 10000);
 function loo() {
     document.getElementById("timeout").style.display = ("none");
     document.getElementById("log").style.display = ("block");
