@@ -32,14 +32,15 @@
 /*    background-color: #4e3686;
 main page of the loader*/
 #timeout
-{
-  
+{  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-image:url(../mediaa/IMG_20210501_123609.jpg);
    background-size: cover;
-    z-index: 999;
+
+  color: #276;
+  z-index: 999;
     height: 100vh;
 }
 /*rotating loaders*/
