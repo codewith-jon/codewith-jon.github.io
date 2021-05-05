@@ -1,0 +1,78 @@
+#body{
+    filter: blur(5px);
+}
+#timeout{
+    transform: translate(-50%, -50%);
+    position:fixed;
+    left:50%;
+    background: #286;
+    z-index: 99;
+    display: block;
+    top:50%;
+}
+
+/*hiding main content*/
+
+
+/* end of hiding main content*/
+/*displaying info about Jon Waithira*/
+
+/*displaying info about Jon Waithira*/
+/*    background-color: #4e3686;
+main page of the loader*/
+
+/*rotating loaders*/
+#rotateloader{
+ animation: 2s rotateloader infinite;
+height: 100px;
+width: 100px;
+background-color: #fff;
+margin: auto;
+border-radius: 50%;
+ border-right: 0px solid blue;
+ border-top: 2px solid red;
+border-bottom: 2px solid green;
+border-left: 0px solid black;
+      }
+      /*rotating loaders*/
+#loader{
+   top: 50%;
+   left: 50%;
+   position: fixed;
+   font-size: 22px;
+   width: 100%;
+   margin: auto;
+   transform: translate(-50%, -50%);
+}
+/*displaying company's logo*/
+
+/*displaying company's logo*/
+
+/*main page of the loader*/
+
+/************Animations***************/
+
+/*animation of the  rotating loader*/
+
+     @keyframes rotateloader{
+  0% { transform: rotate(0deg); 
+  } 
+
+
+   25% { transform: rotate(50deg); 
+  } 
+
+
+
+   75% { transform: rotate(100deg); 
+  } 
+  100%{ transform: rotate(360deg);}
+}}
+/*animation of the  rotating loadeer*/
+
+/*animation of the  changing color of the  company's logo*/
+
+   
+/*animation of the  changing color of the  company's logo*/
+
+/************Animations***************/

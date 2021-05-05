@@ -1,4 +1,7 @@
-*{
+
+
+
+ *{
     padding: 0;
     margin: 0;
     
@@ -9,6 +12,37 @@
 }
 *,*:before,*:after{
     box-sizing: border-box;
+}
+.menu-1{
+    width:12px;
+    margin: 20px 0 9px 0;   
+    background-color: black;
+    height:3px;
+    
+
+}
+.menu-2{
+    width:30px;
+    background-color: black;
+    height:3px;
+    margin: 0;   
+
+
+}
+
+.menu-3{
+    width:12px;
+    float:right;
+    margin: 9px 0 0 0;
+    background-color: black;
+    height:3px;
+}
+.time{
+    position: relative;
+     display: none;
+     font-size: 30px;
+     float: right;
+     margin: 20px ;
 }
 
 #myBtn {
@@ -467,6 +501,3 @@ p a{
     color: rgb(207, 214, 207);
  margin-left: 10%;
 }
-
-
-

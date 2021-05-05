@@ -1,68 +1,144 @@
 
-body{
-    height: 100%;
-}
-.profile{
-    max-width: 300px;
-    margin: auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    text-align: center;
-    border-radius: 6px;
-}
-img{
-    width: 100%;
-    background-color:linear-gradient(rgb(134, 9, 96),rgb(124, 6, 37)) ;
-}
-.title{
-    color: grey;
-    font-size: 18px;
-    
-}
-p{
-    line-height: 5px;
-}
-a{
-    font-size: 22px;
-    color: #000;
-}
-.fa-phone:hover{
-    color: #fff;
-    background-color: blue;
-    border-radius: 45%;
-}
-.fa-youtube:hover{
-    color: #fff;
-    background-color: red;
-    border-radius: 45%;
-}
-.fa-whatsapp:hover{
-    color: #fff;
-    background-color: green;
-    border-radius: 45%;
-}
-.fa-envelope:hover{
-    color: #fff;
-    background-color: grey;
-}
-.fa-home{
-    padding-left: 25%;
-}
-button{
-    width: 100%;
-    color: #fff;
-    background-color: #000;
-    padding: 8px;
-    cursor: pointer;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+     text-decoration: none;
 
 }
-button a{
-    color: #fff;
-    font-size: 18px;
-    text-decoration: none;
+.menu-1{
+    width:12px;
+    margin: 20px 0 9px 0;   
+    background-color: black;
+    height:3px;
+    
+
 }
-@media(max-width:250px ) {
- .nn{ 
-   display: none;
+.menu-2{
+    width:30px;
+    background-color: black;
+    height:3px;
+    margin: 0;   
+
+
+}
+ nav ul li a{
+     list-style-type: none;
+     text-decoration: none;
+ }
+.info{
+    margin-left: 5px;
+    font: normal normal lighter 15px avenir-lt-w01_35-light1475496,sans-serif;;
+
+
+}
+
+.menu-3{
+    width:12px;
+    float:right;
+    margin: 9px 0 0 0;
+    background-color: black;
+    height:3px;
+}
+
+nav{
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+
+}
+
+.logo{
+    font: normal normal bold 25px avenir-lt-w01_35-light1475496,sans-serif;;
+    font-size: 30px;
+            margin: 120px 30px 0 0;
+
+}
+
+nav ul{
+    float: right;
+
+
+}
+ nav ul li{
+     display: inline-block;
+    text-decoration: underline;
+
+ }
+ nav ul li a{
+     color: rgb(19, 17, 17);
+     font-size: 17px;
+     border-radius: 3px;
+
  }
 
+ .checkbtn{
+     color:#fff;
+     font-size: 40px;
+     margin-right: 30px;
+     cursor: pointer;
+     float: right;
+     display: none;
+     }
+     #check{
+         display: none;
+     }
+ @media (max-width: 952px){
+     .logo{
+         font-size: 20px;
+     }
+     nav ul li a{
+         font-size: 16px;
+     
+     }
+     }
+ @media (max-width: 500px){
+    .logo{
+        font-size: 30px;
+
+    }
 }
+@media (max-width: 400px){
+    .logo{
+        font-size: 30px;
+    }
+ }
+ @media (max-width: 953px)
+ {
+     .checkbtn{
+         color: #000;
+         display: block;
+     }
+   
+    nav ul{
+         position: absolute;
+         height:120px ;
+         width: 100%;
+         overflow: scroll;
+         background-color: #fff;
+         transition: .3s;
+         top: -150%;
+         z-index: 999;
+     }
+     nav ul li{
+         display: block;
+         z-index: 2;
+         text-align: center;    
+     }
+     nav ul li a{
+         font-size: 14px;
+ }
+     a:hover,a.active{
+         background: none;
+         color: #5ebdad;
+         text-decoration: none;
+     }
+     #check:checked ~ ul{   
+        height: 100vh;
+        top: 120px;
+     }
+     
+    }
