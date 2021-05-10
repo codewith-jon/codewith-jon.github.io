@@ -74,7 +74,6 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     display: grid;
-   
     font-size: 14px;
     
 }
@@ -219,7 +218,7 @@ nav ul{
 
 
  }
- @media (max-width: 885px)
+ @media (max-width: 955px)
  {
      .checkbtn{
          color: #000;
@@ -501,3 +500,4 @@ p a{
     color: rgb(207, 214, 207);
  margin-left: 10%;
 }
+
