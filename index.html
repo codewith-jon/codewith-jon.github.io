@@ -29,7 +29,6 @@
             
                     <span class="q" onclick="c()">&times;</span>
             
-                    <img src="./unDrawpng/undraw_youtube_tutorial_2gn3.svg" alt="">
                     <p style="text-align: center; font-size: 18px;">Subscribe to My youTube channel</p>
             
             
@@ -72,26 +71,147 @@
                     style="width: 30px; transform: rotate(180deg)"
                      alt=""></button>
             
-            <div class="bo" id="b">
-            
-            
-            
-                <!--start of main section or the body-->
-                <section>
-           
-<div class="main-container">
-    <div class="inner-container">
-        <div class="left-description">
+            <section>
+                <style>
+                    section::before
+                    {
+                        content:" ";
+                         display: block;
+                         height:10px;
+                    }
+                    .inner-body{
+                        background-image: 
+                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif.gif);
+                        height: 100vh;
+                        animation: body 10s infinite;
+                        min-width: 100%;
+                        text-align: center;
+                        background-position:center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
 
-        </div>
-        <div class="right-description">
-                
-         </div>
-    </div>
-</div>
-                </section>
-            
-            </div>
+                    }
+                    .inner-body-text
+                    {
+                        position: absolute;
+                        color: #fff;
+                        top: 50%;
+                        left:30%;
+                        transform: translate(-20%, -50%);
+                    }
+                    .inner-body-text button
+                    {
+                        padding: 2px 20px;
+                                              outline:none;
+
+                        border-radius: 25px;
+                        color: #fff;
+                        background: #000;
+                    }
+
+                  .button {
+                      width: 100%;
+                      display: flex;
+                      justify-content: center;
+                  }
+                   .button p{
+                       margin-right: 10px;
+                   }
+
+                        @keyframes body 
+                        {
+        0% {
+            background-image: 
+                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif0.gif);
+        }
+
+        25% {
+            background-image: 
+                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif1.gif);
+        }
+
+        50% {
+            background-image: 
+                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif2.gif);
+                        background-size: cover;
+        }
+
+        69% {
+            background-image: 
+                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif3.gif);
+        }
+
+        80% {
+             background-image: 
+                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif5.gif);
+        }
+
+        100% {
+            background-image:
+                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif.gif);
+        }
+                        }
+ @media(max-width:639px) {
+     .dev{
+         background: rgb(3, 15, 56);
+         padding: 10px;
+         border-radius: 5px;
+     }
+     .button {
+                      width: 100%;
+                      display: flex;
+                      flex-wrap: wrap;
+
+                      justify-content: center;
+                  }
+                   .button p{
+                       margin-right: 10px;
+                   }
+          .inner-body-text
+                    {
+                        position: absolute;
+                        color: #fff;
+                        top: 50%;
+                        left:30%;
+                        transform: translate(-20%, -35%);
+                    }
+          .inner-body-text h1
+{
+ font-size: 30px;
+}
+          .inner-body-text p buttons{
+              outline: none;
+          }
+
+ }
+
+                </style>
+                <div class="body">
+                                    <div class="inner-body">
+                                            <div class="inner-body-text">
+                                                <h1>Free codeWj Web Templates,
+                                               programming reference and youtube Tutorials
+                                                </h1>
+                                                <p class="dev">Collection of  Web
+                                                    Templates and other programming languages reference 
+                                                    for learning purpose. User friendly for both beginners and 
+                                                    professionals
+                                               </p>
+                                               <div class="button">
+                                                    <p> <a href="./tutorial/">
+                                                            <button>View codeWj Tutorials</button>
+                                                    
+                                                        </a> </p>
+                                                    <p> <a href="./languages/">
+                                                            <button style="background: rgb(61, 7, 19);">programming Languages</button>
+                                                    
+                                                        </a> </p>
+                                               </div>
+                                                        
+                                            </div>
+                                    </div>
+                </div>
+            </section>
             
             <!--end of main section-->
             <!--footer-->

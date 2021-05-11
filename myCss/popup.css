@@ -3,12 +3,11 @@
     display: none;
     background: linear-gradient(rgb(134, 9, 96),rgb(191, 7, 55)) ;
     position: fixed;
-    transition: 3s;
-    width: 500px;
+   max-width: 500px;
     top: 50%;
-    z-index: 999;
+    z-index: 99;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
 
   }
 
@@ -26,28 +25,19 @@
 
     }
     .q{
-            font-size: 40px;
-      padding: 0;
+      font-size: 40px;
       cursor: pointer;
-      color: #fff;
-      border-radius: 50%;
-      width: 35px;
+      color: rgb(58, 42, 42);
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 900;
+      background: linear-gradient(rgb(143, 9, 83),rgb(224, 224, 235)) ;
+      width: 45px;
+      border-radius:5px;
+      text-align: center;
+      transform: translate(30%, -35%);
       height: 45px;
-      margin-right: 20px;
     }
-    .q:hover{
-      color: green;
-            animation: spinn 1s;                  
-    }
-     @keyframes spinn {
-  0% { transform: rotate(0deg); 
-  background: rgb(30, 146, 82);
-color: black;}
- 
-  100% { transform: rotate(30deg);
-  background: rgb(71, 9, 151);
-color: rgb(219, 204, 204); }
-}
+    
  .c .button{
   background-color: rgb(224, 224, 235);
   padding: 5px;
@@ -59,10 +49,6 @@ color: rgb(219, 204, 204); }
   margin-top: 10px;
   border-radius: 10px;
 }
-  .boxi img {
-    width: 100%;
-    margin-top: -30px;
-  }
 
   .bo {
     z-index: 1;
@@ -100,6 +86,7 @@ color: black;}
     display: none;
     background: linear-gradient(rgb(134, 9, 96),rgb(191, 7, 55)) ;
     position: fixed;
+
     width: 90%;
     top: 50%;
      transition: 5s;
@@ -122,13 +109,11 @@ color: black;}
   border-radius: 10px;
 }
       .q{
-            font-size: 40px;
+         font-size: 40px;
       padding: 0;
       cursor: pointer;
       color: #fff;
-      border-radius: 50%;
-          transition: 5s;
-
+      border-radius: 5px;
       width: 35px;
       height: 45px;
       margin-top: -10px;
