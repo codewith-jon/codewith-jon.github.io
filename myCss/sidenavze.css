@@ -1,0 +1,94 @@
+      .sidenavz {
+        height: 100%;
+        margin-top: 80px;
+        z-index: 6;
+       width: 0;
+        left: 0;
+        top: 0;
+        padding-top: 50px;
+        position: fixed;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: .5s;
+        background: rgb(255, 255, 255);
+      }
+
+      .activee {
+         background: rgba(7, 75, 102, 0.473);
+      }
+      .sidenavz a {
+        text-decoration: none;
+        font-size: 20px;
+                margin-left: 20px;
+
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 8px 8px 8px 40px;
+
+
+      }
+
+      @media (max-width:600px) {
+        .sidenavz a {
+          text-decoration: none;
+          font-size: 20px;
+          display: block;
+          color: rgb(29, 28, 28);
+          padding: 8px 8px 8px 40px;
+
+
+        }
+      }
+
+      .closebtn {
+        color: #fff;
+        font-size: 30px;
+        top: 0;
+        position: absolute;
+        right: 35px;
+      }
+
+
+      .sidenavz a:hover {
+        color: rgba(255, 255, 255, 0.897);
+        background: grey;
+
+      }
+      
+
+      .sidenavz h2 {
+
+        margin-left: 20px;
+        padding: 5px 10px;
+        color: rgb(255, 255, 255);
+        background: rgba(18, 51, 47, 0.74);
+      }
+
+    @media (min-width: 994px) {
+.closebtn {
+  display: none;
+}
+        .sidenavz{
+       width: 200px;
+        } 
+         footer{
+           width: 60%;
+           margin: 0 auto;
+         }
+      .sidenavz a {
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+        color: rgb(0, 0, 0);
+        padding: 8px 8px 8px 40px;
+      }
+
+      }
+        
+
+     @media (max-width: 288px) {
+     .nn{
+               display: none;
+
+     }
+     }

@@ -73,17 +73,14 @@
             
             <section>
                 <style>
-                    section::before
+
+                    section
                     {
-                        content:" ";
-                         display: block;
-                         height:10px;
                     }
                     .inner-body{
-                        background-image: 
-                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif.gif);
+                        background-image: url(./gif.gif);
                         height: 100vh;
-                        animation: body 10s infinite;
+                        animation: body 100s infinite;
                         min-width: 100%;
                         text-align: center;
                         background-position:center;
@@ -94,7 +91,7 @@
                     .inner-body-text
                     {
                         position: absolute;
-                        color: #fff;
+                        color: rgb(37, 36, 36);
                         top: 50%;
                         left:30%;
                         transform: translate(-20%, -50%);
@@ -102,8 +99,7 @@
                     .inner-body-text button
                     {
                         padding: 2px 20px;
-                                              outline:none;
-
+                        outline:none;
                         border-radius: 25px;
                         color: #fff;
                         background: #000;
@@ -122,33 +118,28 @@
                         {
         0% {
             background-image: 
-                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif0.gif);
+                        url(./gif0.gif);
         }
 
         25% {
-            background-image: 
-                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif1.gif);
+            background-image:  url(./gif1.gif);
         }
 
         50% {
-            background-image: 
-                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif2.gif);
+            background-image:  url(./gif2.gif);
                         background-size: cover;
         }
 
         69% {
-            background-image: 
-                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif3.gif);
+            background-image:  url(./gif3.gif);
         }
 
         80% {
-             background-image: 
-                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif5.gif);
+             background-image: url(./gif5.gif);
         }
 
         100% {
-            background-image:
-                        linear-gradient(rgba(18, 5, 36, 0.966) ,rgba(220, 212, 226, 0.52)), url(./gif.gif);
+            background-image: url(./gif.gif);
         }
                         }
  @media(max-width:639px) {
@@ -185,6 +176,122 @@
 
  }
 
+.inner-text-body
+{
+    margin-top: 20px;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+    background: rgba(85, 102, 51, 0.149);
+    margin: 0 auto;
+    padding: 10px  5% 0 5%;
+   width: 100%;
+   max-width: 100%;
+}
+.inner-text-body-intro
+{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.inner-text-body-intro-img{
+flex:25%;
+text-align: center;
+
+
+}
+
+
+.inner-body-text h1{
+    color: #000;
+}
+.inner-text-body-intro-img-inner
+{
+    border-radius: 5px;
+margin: 5px;
+padding: 5px;
+background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+
+    
+}
+.inner-text-body-intro-img-inner button{
+    border: 1px transparent;
+    background: rgba(109, 102, 78, 0.363);
+}
+.inner-text-body-intro-img-inner button:hover{
+background: linear-gradient(rgba(33, 204, 176, 0.575),rgba(136, 110, 127, 0.575));
+
+}
+
+
+        @media (max-width:885px) {
+            .inner-text-body-intro-img {
+                flex: 50%;
+                max-width: 50%;
+
+                padding: 5px;
+                text-align: center;
+            }
+            .inner-text-body
+{
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    color: #000;
+    margin: 0 auto;
+   width: 100%;
+   max-width: 100%;
+}
+
+        }
+
+        /*mobile view*/
+        @media (max-width:550px) {
+            .inner-text-body-intro-img {
+                flex: 100%;
+                max-width: 100%;
+                text-align: center;
+            }
+        }
+.tt{
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0;
+background: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+
+
+}
+.tt h5{
+   padding: 20px;
+   color: rgb(121, 33, 33);
+
+}
+.tt h5::after{
+   content: ' ';
+   display: block;
+   height: 1px;
+   padding: 5px;
+   border-bottom: 2px solid rgb(6, 138, 28);
+   width:100px;
+  margin: 0 auto;
+
+}
+.learn{
+    text-align: left;
+
+}
+.intro-more p{
+    padding: 10px;
+        color: rgba(54, 44, 44, 0.61);
+}
+.intro-more
+{
+    display: flex;
+    justify-content: space-between;
+}
                 </style>
                 <div class="body">
                                     <div class="inner-body">
@@ -211,7 +318,108 @@
                                             </div>
                                     </div>
                 </div>
+
+
+
             </section>
+                            <div class="inner-text-body">
+                                <div class="tt">
+                                    <h5>This Week from codeWj </h5>
+                                </div>
+                                <div class="inner-text-body-intro">
+                            
+                            
+                            
+                                    <div class="inner-text-body-intro-img">
+                                        <div class="inner-text-body-intro-img-inner">
+                                            <div class="intro-more">
+                                                <div class="learn">
+                                                    <p>codeWj course</p>
+                                                </div>
+                                                <div class="course">
+                                                    <p> HTML</p>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <p>HTML Introduction</p>
+                                            <code><p>Getting started With Web</p></code>
+                                            <p> <a href="./html/html_intro/index.html">
+                                                    <button style="padding: 0 10px; border-radius: 25px; width: 80%;">Go Now
+                                                    </button> </a> </p>
+                                        </div>
+                            
+                                    </div>
+                                    <div class="inner-text-body-intro-img">
+                                        <div class="inner-text-body-intro-img-inner">
+                                            <div class="intro-more">
+                                                <div class="learn">
+                                                    <p>codeWj course</p>
+                                                </div>
+                                                <div class="course">
+                                                    <p> C++</p>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <p>C++ Examples</p>
+                                              <code><p>Worked C++ examples</p></code>
+
+                                            <p> <a href="./c++/examples/index.html">
+                                                    <button style="padding: 0 10px; border-radius: 25px; width: 80%; border: 1px transparent">Go Now
+                                                    </button> </a> </p>
+                                        </div>
+                            
+                                    </div>
+                            
+                                    <div class="inner-text-body-intro-img">
+                                        <div class="inner-text-body-intro-img-inner">
+                                            <div class="intro-more">
+                                                <div class="learn">
+                                                    <p>codeWj course</p>
+                                                </div>
+                                                <div class="course">
+                                                    <p> C++</p>
+
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <p>Introduction to C++</p>
+                                            <code><p>Getting started With C++ </p></code>
+
+                                            <p> <a href="./c++/cpp_intro/index.html">
+                                                    <button style="padding: 0 10px; border-radius: 25px; width: 80%;">Go Now
+                                                    </button> </a> </p>
+                                        </div>
+                            
+                                    </div>
+                                    <div class="inner-text-body-intro-img">
+                                        <div class="inner-text-body-intro-img-inner">
+                                            <div class="intro-more">
+                                                <div class="learn">
+                                                    <p>codeWj course</p>
+                                                </div>
+                                                <div class="course">
+                                                    <p> C</p>
+                                                </div>
+                            
+                                            </div>
+                            
+                                            <p>Introduction to C</p>
+                                                    <code><p>Getting started With C </p></code>
+
+                                            <p> <a href="./c/c_intro/index.html">
+                                                    <button style="padding: 0 10px; border-radius: 25px; width: 80%;">Go Now
+                                                    </button> </a> </p>
+                                        </div>
+                            
+                                    </div>
+                            
+                            
+                            
+                                </div>
+                            </div>
             
             <!--end of main section-->
             <!--footer-->
