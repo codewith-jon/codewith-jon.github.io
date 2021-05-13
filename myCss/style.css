@@ -275,7 +275,8 @@ footer{
     list-style-type: none;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;.footer > *{
+    background-attachment: fixed;}
+    .footer > *{
     flex: 1 100%;
 }
 footer h1{
