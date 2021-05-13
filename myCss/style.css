@@ -6,12 +6,7 @@
     margin: 0;
     
     text-decoration: none;
-   background-image: url(../bg-1.png);
-    background-position: center;
-    list-style-type: none;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+   
     
 }
 *,*:before,*:after{
@@ -275,8 +270,12 @@ footer{
     flex-flow: row wrap ;
     padding: 10px;
     color: rgb(10, 9, 9);
-    background-color:rgba(255, 253, 253, 0.267) ;}
-.footer > *{
+ background-image: url(../bg-1.png);
+    background-position: center;
+    list-style-type: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;.footer > *{
     flex: 1 100%;
 }
 footer h1{
