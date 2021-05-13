@@ -6,8 +6,12 @@
     margin: 0;
     
     text-decoration: none;
-
+   background-image: url(../bg-1.png);
+    background-position: center;
     list-style-type: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 *,*:before,*:after{

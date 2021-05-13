@@ -74,8 +74,37 @@
             <section>
                 <style>
 
-                    section
+                   .inner-text-body::before, section::after, .inner-text-body
+{
+                           background: rgb(204, 204, 192);
+
+
+}
+.inner-text-body::before
+{
+      content: ' ';
+
+                        display: block;
+                        height: 50px;
+                        left: 0;
+                        right:0;
+                        width: 100%;
+                        z-index: 1;
+                        position: relative;
+                        transform: skewY(-5deg);
+}
+                    section::after
                     {
+                        content: ' ';
+                        display: block;
+                        height: 100px;
+                        top: 33px;
+                        margin-bottom: -50px;
+                        left: 0;
+                        right:0;
+                        z-index: -1;
+                        position: relative;
+                        transform: skewY(5deg);
                     }
                     .inner-body{
                         background-image: url(./gif.gif);
@@ -178,11 +207,9 @@
 
 .inner-text-body
 {
-    margin-top: 20px;
     padding: 10px;
     color: #000;
     text-align: center;
-    background: rgba(85, 102, 51, 0.149);
     margin: 0 auto;
     padding: 10px  5% 0 5%;
    width: 100%;
@@ -479,7 +506,7 @@ background: rgb(255, 255, 255);
                 </ul>
                 <div class="footer-bottom" style=" color:; text-align:center; padding: 50px 50px 0px 50px;">
                     </p>
-                    <p>&copy; <span id="found"></span> <span id="year"> </span> &copf;&oopf;&dopf;&#1241;<span>&Wopf;&jopf;,
+                    <p><span>&copy;</span><span id="found"></span>&nbsp;<span id="year"></span><span> &copf;&oopf;&dopf;&#1241;&Wopf;&jopf;,
                             &Iopf;&nopf;&copf; &Aopf;&lopf;&lopf;
                             &ropf;&iopf;&gopf;&hopf;&topf;&sopf; &ropf;&#1241;&sopf;&#1241;&ropf;&vopf;&#1241;&dopf;
                     </p>

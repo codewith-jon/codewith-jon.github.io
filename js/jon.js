@@ -75,7 +75,7 @@ document.getElementById("year").innerHTML = d.getFullYear();
 var d = new Date();
 document.getElementById("found").innerHTML = "2021  - ";
 
-if (d.getFullYear()==2021){
+if (d.getFullYear()==201){
     document.getElementById("found").style.display = "none";
 }
 else{
