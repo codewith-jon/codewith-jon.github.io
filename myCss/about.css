@@ -26,6 +26,7 @@ body{
 .cardi{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         width: 100%;
+
 }
 
 .card img{
@@ -39,7 +40,6 @@ body{
   .card {
     box-shadow: 0 4px 8px 0 rgba(41, 40, 40, 0.2);
     margin: 8px; 
-
     text-align: center;
     border-radius: 5px;
     
@@ -96,6 +96,15 @@ body{
     .col-10{width: 83.33%;}
     .col-11{width: 91.66%;}
     .col-12{width: 100%;}
+}
+
+@media (min-width:417px)
+{
+    .card{
+        height: 400px;
+
+    }
+
 }
 @media screen and (max-width: 825px) {
 .column{

@@ -56,6 +56,7 @@
             <h2 class="left"><span class="left_h2">C++</span> Examples</h2>
             <a target="_top" href="../examples/index.html"> Examples of C++ programs</a>
             <a target="_top" href="../examples/hello.html">C++ "Hello, World!" Program</a>
+            <a target="_top" href="../examples/printinput.html">Print enterd by the user</a>
             <a target="_top" href="../examples/6x6-multiplication-table.html"class="activee">
                 C++ program to gene rate a
                 6x6 multiplication table
@@ -79,12 +80,9 @@
 
 
 
-                    <h2 class="example-h2">C++ program to generate a
-                        6x6 multiplication table</h2>
-                    <p class="example-p">Example to print a n-by-n multiplication 
-                        table arranged in horizontal rows and vertical columns  (entered by the user) 
-                        in C++ Programming. This problem is solved
-                    using nested for loop .</p>
+                    <h2 class="example-h2">C++ Program to Print Number Entered by User</h2>
+                    <p class="example-p">Example to Print Number Entered by User
+                     .</p>
 
                     <div class="codeWJ-example">
                         <div class="codeWJ-code">
@@ -92,28 +90,23 @@
     
                       
 <pre style="white-space:pre-wrap;">
-<span class="comment">
-    /*------simple c++ program print n-by-n multiplication table----*/</span> 
+
 <span class="meta-keyword">#include</span> <span class="meta-string">&lt;iostream&gt;</span>
 
 <span class="keyword">using namespace</span> std; 
 
 <span class="keyword">int</span><span class="meta-keyword"> main()</span>
 {
-    <span class="keyword">int </span>b, j, x, y;
+    <span class="keyword">int </span>num1, num2;
 
     <span class="built-in">cout&lt;&lt;</span><span class="meta-string">&quot;Enter the first operator \t&quot;</span>;
-    <span class="built-in">cin&gt;&gt;</span>x;
-    <span class="built-in">cout&lt;&lt;</span><span class="meta-string">&quot;Enter the second operator \t&quot;</span>;
-    <span class="built-in">cin&gt;&gt;</span>y;
-    <span class="keyword">for </span>(b=<span class="built-in"> 1</span>; b &lt;= <span class="built-in">x</span>; b++)
-     {
-       <span class="keyword">for </span>(j=<span class="built-in"> 1</span>; j &lt;= <span class="built-in">y</span>; j++)
-        {
-          <span class="built-in">cout</span>&lt;&lt; b*j &lt;&lt; <span class="meta-string">&quot;  &quot;</span>;
-        }
-      <span class="built-in">cout&lt;&lt;</span><span class="meta-string">&quot;\n&quot;</span>;
-     }
+     <span class="built-in">cin&gt;&gt;</span>num1;
+     <span class="built-in">cout&lt;&lt;</span><span class="meta-string">&quot;Enter the second operator \t&quot;</span>;
+      <span class="built-in">cin&gt;&gt;</span>num2;
+      <span class="built-in">cout&lt;&lt;</span><span class="meta-string">&quot;Your entry\n&quot;</span>;
+      <span class="built-in">cout&lt;&lt;</span><span class="meta-string">&quot;First number\n&quot;</span>&lt;&lt;num1;
+       <span class="built-in">cout&lt;&lt;</span><span class="meta-string">&quot;Second number&quot;</span>&lt;&lt;num2;
+    
    <span class="keyword">return</span> 0;
 }
 </pre>
