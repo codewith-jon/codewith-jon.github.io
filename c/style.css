@@ -1,0 +1,506 @@
+
+
+
+ *{
+    padding: 0;
+    margin: 0;
+    
+    text-decoration: none;
+   
+    
+}
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+.menu-1{
+    width:12px;
+    margin: 20px 0 9px 0;   
+    background-color: black;
+    height:3px;
+    
+
+}
+.menu-2{
+    width:30px;
+    background-color: black;
+    height:3px;
+    margin: 0;   
+
+
+}
+
+.menu-3{
+    width:12px;
+    float:right;
+    margin: 9px 0 0 0;
+    background-color: black;
+    height:3px;
+}
+.time{
+    position: relative;
+     display: none;
+     font-size: 30px;
+     float: right;
+     margin: 20px ;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 99;
+ 
+    transition: all  .9s ease;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: linear-gradient(rgba(26, 116, 201, 0.801),rgba(126, 12, 78, 0.801));
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50px 5px 10px 60px;
+  }
+  
+  #myBtn:hover {
+    background:linear-gradient(rgba(32, 201, 26, 0.801),rgba(206, 16, 120, 0.801));
+  }
+
+section{
+    margin-top: 80px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: grid;
+    font-size: 14px;
+    
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 4px 8px  0 rgba(0, 0, 0, 0.2);
+
+}
+
+:root{
+    --red:#41043ed7;
+}
+
+
+html::-webkit-scrollbar{
+    width:0.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
+ nav hr{
+     width: 90%;
+     display: none;
+     border-top: 2px solid rgb(10, 133, 31);
+     margin: 0 5%;
+ }
+label.logo{
+    padding: 0 0 0 10px;
+}
+label.logo img{
+    width: 180px;
+    overflow: hidden;
+    color: rgb(55, 4, 90);
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+ nav ul li{
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 5px;
+
+ }
+ nav ul li a{
+     color: rgb(19, 17, 17);
+     font-size: 17px;
+     padding: 7px 13px;
+     border-radius: 3px;
+     text-transform: uppercase;
+ }
+
+.note{
+    color: rgb(168, 28, 56);
+    text-align: center;
+    background: rgba(138, 112, 93, 0.5);
+
+}
+ a.active, a:hover{
+     background: hsl(0, 0%, 100%);
+     transition: .5s;
+     border: none;
+     color: #000;
+ }
+ .ytubecontainer {
+    position: relative;
+    width: 60%;
+    margin: 0 20%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 45%; }
+
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1%;
+    bottom: 0;
+    right: 0;
+    width: 98%;
+    height: 120%;
+    border: none;
+  }
+ .fa-youtube{
+     color: rgb(153, 31, 31);
+     font-size: 30px;
+ }
+ .checkbtn{
+     color:#fff;
+     font-size: 40px;
+     line-height: 80px;
+     margin-right: 20px;
+     cursor: pointer;
+     float: right;
+     display: none;
+     }
+     #check{
+         display: none;
+     }
+ @media (max-width: 952px){
+     label.logo{
+         font-size: 30px;
+         padding-left: 50px;
+     }
+     nav ul li a{
+         font-size: 16px;
+     
+     }
+     .ytubecontainer {
+        position: relative;
+        width: 100%;
+        margin: 0;
+    }
+
+
+ }
+ @media (max-width: 500px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 35px;
+    }
+    .container h2 span {
+        font-size: 12px;
+    }
+
+ }
+ @media (max-width: 400px){
+    label.logo{
+        font-size: 30px;
+        padding-left:20px;
+    }
+
+
+ }
+ @media (max-width: 992px)
+ {
+     .checkbtn{
+         color: #000;
+         display: block;
+     }
+   
+    nav ul{
+         position: absolute;
+         height:80px ;
+         width: 100%;
+         overflow: scroll;
+         background-color: #fff;
+         transition: .3s;
+         top: -100%;
+         text-align: center;
+     }
+     nav ul li{
+         display: block;
+         margin: 50px 0;
+        line-height: 30px;
+
+     }
+     nav ul li a{
+         font-size: 20px;
+     }
+     a:hover,a.active{
+         background: none;
+         color: #5ebdad;
+     }
+     #check:checked ~ ul{   
+        height: 100vh;
+        top: 80px;
+     }
+ }
+ section{
+
+     height: calc(100% - 80px);
+ }
+ /*slider*/
+
+ /*foooter section*/
+footer{
+    display: -webkit-flex;
+    display: -ms-flex;
+        width: 100%;
+
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+    padding: 10px;
+    color: rgb(10, 9, 9);
+ background-image: url(../bg-1.png);
+    background-position: center;
+    list-style-type: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;}
+    .footer > *{
+    flex: 1 100%;
+}
+footer h1{
+
+color: rgb(201, 24, 24);
+}
+footer span{
+    cursor: pointer;
+    color: black;
+}
+footer h4{
+
+    color: rgb(201, 24, 24);
+    }
+    footer span{
+        color: black;
+    }
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+.footer-left h1{
+    width: 50%;
+}
+ footer h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(10, 100, 22);
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer-right{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+}
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #999;
+}
+.box a:hover{
+    color: rgb(3, 90, 49);
+    }
+
+.footer-bottom p{
+    text-align: center;
+    
+}
+
+p a{
+    color: rgba(24, 124, 57, 0.575);
+    margin-top:10px;
+    line-height: 20px;
+
+}
+.footer-left p{
+    padding-right: 20%;
+    color: #999;
+}
+.socials a{
+    background: #364a62;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 40px;
+    display: inline-block;
+}
+.socials a i{
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 25px;
+}
+ 
+ @media screen and (min-width:600px){
+     .footer-right > *{
+         flex: 1;
+     }
+     .footer-left{
+         flex: 1 0px;
+     }
+     .footer-right{
+         flex: 2 0px;
+     }
+ }
+ @media(max-width:600px){
+     .footer{
+         padding:25px;
+     }
+     main{
+         font-size: 55px;
+     }
+ }
+
+/*main section*/
+ main{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+    padding: 50px;
+    background-color: #f4f4f565;
+}
+.main > *{
+    flex: 1 100%;
+}
+main h1{
+
+color: rgb(201, 24, 24);
+}
+main span{
+    cursor: pointer;
+    color: black;
+}
+main h4{
+
+    color: rgb(201, 24, 24);
+    }
+    main span{
+        color: black;
+    }
+.main-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+.main-left h1{
+    width: 50%;
+}
+h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(5, 5, 5);
+}
+.main ul{
+    list-style: none;
+    padding-left: 0;
+}
+.main li{
+    line-height: 2em;
+}
+.main a{
+    text-decoration: none;
+}
+.main-right{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap ;
+}
+.main-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #999;
+}
+.box a:hover{
+    color: rgb(3, 90, 49);
+    }
+
+
+
+p a{
+    color: rgb(226, 93, 15);
+    margin-top:10px;
+    line-height: 40px;
+}
+.main-left p{
+    padding-right: 20%;
+    color: #999;
+}
+.socials a{
+    background: #364a62;
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 20px;
+    height: 40px;
+    display: inline-block;
+}
+.socials a i{
+    color: #e7f2f4;
+    padding: 10px 12px;
+    font-size: 25px;
+}
+ 
+ @media screen and (min-width:600px){
+     .main-right > *{
+         flex: 1;
+     }
+     .main-left{
+         flex: 1 0px;
+     }
+     .main-right{
+         flex: 2 0px;
+     }
+ }
+ @media(max-width:600px){
+     .main{
+         padding:15px;
+     }
+     main{
+         font-size: 15px;
+     }
+ }
+.fa-download{
+    float: left;
+    color: rgb(207, 214, 207);
+ margin-left: 10%;
+}
+
