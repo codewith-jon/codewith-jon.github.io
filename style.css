@@ -3,70 +3,382 @@
     padding: 0;
 }
 @font-face {
-    font-family: "jon";
-    src: url(./font/TT-Interphases-Var-Roman.woff2);
+    font-family: "codewj";
+    src: url(./filescodewj.github.io/font/TT-Interphases-Var-Roman.woff2);
 }
-body{
-    font-family: jon;
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 105px;
 }
-.home{
-    text-align: center;
-    /* height: 100vh; */
-    
+html::-webkit-scrollbar{
+    width: 0;
 
+    
+}
+
+::selection{
+    background: rgb(28, 28, 109);
+    color: rgb(255, 255, 255);
+}
+:root{
+    --primaryColor:rgb(14, 14, 19);
+    --secondaryColor: #fff;
+    --secondaryColorRespo: rgb(197, 191, 191);
+}
+#topIcon{
+    position: fixed;
+    bottom: 30px;
+    font-size:30px;
+    animation: 5s  bounce;
+    right: 30px;
 }
 a{
     text-decoration: none;
     color: inherit;
-    font-weight: 200;
 }
-h1{
-        
-    position: absolute;
-    top: 40%;
+li{
+    list-style: none;
+}
+body{
+    font-family: codewj;
+    color: var(--primaryColor);
+    /* background-color: blanchedalmond; */
+    background: var(--secondaryColor);
+}
+header{
+    height: 90vh;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.6)),
+    url(./filescodewj.github.io/codewj%20inc/codewj-screenshot/codewj-phone.jpg);
+    background-size: contain;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.indicator{
+    width: 100%;
+    height: 4px;
+    background: var(--secondaryColor)
+}
+.progress-bar{
+    width: 0%;
+    height: inherit;
+    background: #251a64;
+}
+nav{
+    padding: 25px;
+    display: flex;
+    z-index: 9999;
+    transition: all 0.5s;
+    justify-content: space-between;
+    color: var(--secondaryColor);
+}
+.logo h1{
     font-weight: 900;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: 10px;
+    padding: -10px 0;
+    font-size: 40px;
+   
+}
+.nav-items .nav-links{
+    display: inline-block;
+    font-weight: 800;
+    padding: 15px 15px 0 15px;
+}
+.nav-links::after{
+    content: ' ';
+    margin-top: 5px;
+    border-radius: 20px;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s;
+    background: #000;
+    display: block;
+}
+.activenav::after{
+    content: ' ';
+    margin-top: 5px;
+    border-radius: 20px;
+    height: 3px;
+    width: 100%;
+    transition: 0.3s;
+    background: #000;
+    display: block;
+}
+.nav-links:hover::after {
+    width: 80%;
+}
+#responsive, #closeandopenmenu{
+    display: none;
+}
+.menu{
+    width: 35px;
+    height: 4px;
+    border-radius: 20px;
+    background: #000;
+    margin: 9px 0 0 0;
+}
+.left, .right{
+    width: 22px;
+}
+.right{
+    float: right;
+}
+.next{
+    width: 100%;
+    text-align: center;
+    transform: rotate(180 deg);
+}
+.next a{
+    font-weight: 900;
+    font-size: 40px
+}
+#courses{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.6)),
+    url(./filescodewj.github.io/all-images/programming/programming-4.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 80vh;
+
+    background-attachment: fixed;
+
+
+}
+.div-title{
+    padding: 20px 0;
+    font-size: 70%;
+    color: seashell;
+    text-align: center;
+}
+
+
+.course-box{
+display: flex;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+width: 95%;
+
+flex-wrap: wrap;
+}
+[class *='col-']{
+    max-width: 390px;
+}
+.box{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 0em 1.4em ;
+    color: cornsilk;
+    /* background: rgb(255, 254, 254); */
+    background: ffffff80;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.box:hover{
+    background-image: linear-gradient(rgba(216, 210, 210, 0.247), rgba(122, 120, 120, 0.116)),
+    url(./filescodewj.github.io/all-images/city/);
+    background-size: contain;
+    color: #070707fd;
+    background-position: center;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.course-btn{
+    padding-top: 20px;
+    text-align: center;
+}
+.course-btn a{
+    padding: 10px 20px;
+    background: rgb(29, 33, 46);
+    border-end-end-radius: 20px;
+    color: var(--secondaryColor);
+    font-weight: 650;
+    transition: all 1s;
+    border-start-end-radius: 20px;
+}
+.course-btn a:hover {
+  padding: 10px 30px 10px 10px ;
+  margin:0 10px 0 0;
+}
+#tutorials{
+    height: 100vh;
+}
+#about{
+    height: 100vh;
+}
+#team{
+    height: 100vh;
 }
 footer{
+    /* background: #351e1e; */
+    max-width: 100%;
+    height: 50vh;
+}
+
+footer hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#contact{
     display: flex;
+    padding: 0 0 30px 0;
     flex-direction: column;
 }
-.footer{
-    display: flex;
-    position: absolute;
-    bottom: 100px;
-    justify-content: space-evenly;
-    width: 100%;
-    font-weight: 500;
+#contact .youtube{
+    padding: 80px 0;
+    text-align: center;
+    background: rgba(120, 143, 122, 0.356);
 
+}
+#contact .youtube a{
+    background: rgb(175, 16, 16);
+    color: #fff;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.contact{
+    display: flex;
     flex-wrap: wrap;
+    width:80%;
+    margin: 0 auto;
 }
-span{
-    font-size: 60%;
-    font-weight: 100;
-    
+.col-title {
+    font-weight: 500;
+    color: rgb(5, 28, 70);
 }
-hr
-{
-    border-left: 7px  solid green;
-    
+.col-title{
+    padding: 10px 0;
 }
-.ytb p a::after{
-    width: 100%;
-    display: block;
-    content: '';
-    height: 3px;
-    background: green;
+.contact-details{
+    padding: 5px 0 20px 0;
+    cursor: pointer;
+    font-weight: 700;
+    color: #25265e;
+}
+#footer{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer-col{
+    width: 18.22%;
+}
+.footer-box, .footer-head{
+    padding: 20px;
+    margin-right: 10px;
+}
+.footer-head{
+    margin-left: 40px;
+}
+.footer-head p{
+    padding-top: 20px;
+}
+.social{
+    display: flex;
+}
+.social li .fa{
+   margin: 20px 15px;
+   font-size:22px;
+   border: 2px solid rgba(115, 119, 115, 0.459);
+   border-radius: 50%;
+   padding: 10px 13px;
+}
+
+.footer-bottom{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 30px 0 30px 0;
+}
+.footer-bottom p{
+    padding:10px 0;
+}
+.footer-box h1{
+    font-weight: 200;
+    font-size: 150%;
+
+}
+.footer-box ul{
+    padding: 10px;
+}
+.footer-box li{
+    padding-top: 5px;
+    font-weight: 550;
+}
+.footer-box li a::after{
+    content: ' ';
     margin-top: 5px;
+    border-radius: 20px;
+    height: 3px;
+    width: 0%;
+    transition: 0.3s;
+    background: rgb(58, 51, 51);
+    display: block;
 }
-.cpr{
-    bottom: 20px;
-    position: absolute;
-   right: 0;
-   left: 0;
-   text-align: center;
+.footer-box li a:hover::after
+{
+    width: 30%;
 }
-.cpr p{
-    padding-top:20px
+
+
+@media (max-width:992px){
+     #closeandopenmenu{
+        display: block;
+        
+    }
+    #responsive:checked ~ .nav-items{
+        top: 105px;
+    }
+    .nav-items{
+        width: 100%;
+        height: 85vh;
+        left: 0;
+        right: 0;
+        top: -100vh;
+        z-index: 999999;
+        display: flex;
+        transition: 0.53s;
+        flex-direction: column;
+        /* padding-top: 50px; */
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        position: absolute;
+        color: rgb(51, 51, 66);
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        background: var(--secondaryColorRespo);
+    }
+    .next{
+        display: none;
+    }
+    header{
+        height: 100vh;
+    }
+    .div-title{
+        font-size: 70%;
+    }
+
+    #courses{
+    height: 100%;
+
+    }
+
+}
+
+
+@keyframes bounce{
+    from{
+        border-bottom: 30px;
+    }
+    to
+    {
+        border-bottom: 40px;
+    }
 }
